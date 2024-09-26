@@ -1,0 +1,26 @@
+{
+  "Recherche.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Recherche_facture.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "test.ejs": {
+    "layoutPage": "LoginLayout",
+    "description": ""
+  },
+  "test2.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Visu_Contrat.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "visu.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  }
+}

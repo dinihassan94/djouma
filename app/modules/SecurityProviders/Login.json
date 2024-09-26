@@ -1,0 +1,23 @@
+{
+  "name": "security",
+  "module": "auth",
+  "action": "provider",
+  "options": {
+    "secret": "k8Hr1ko1FjoROlN",
+    "provider": "Database",
+    "connection": "postgres",
+    "users": {
+      "table": "attrib.util",
+      "identity": "mat",
+      "username": "mat",
+      "password": "mat"
+    },
+    "permissions": {}
+  },
+  "meta": [
+    {
+      "name": "identity",
+      "type": "text"
+    }
+  ]
+}

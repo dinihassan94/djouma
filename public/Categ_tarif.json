@@ -1,0 +1,96 @@
+{
+  "NewDataSet": {
+    "tv": [
+      {
+        "NUM_CATEG": 10,
+        "LIBELLE": "AGENT EDD",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 9,
+        "LIBELLE": "CHANTIERS",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 5,
+        "LIBELLE": "DEGRESSIF",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 2,
+        "LIBELLE": "DOMESTIQUE",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 1,
+        "LIBELLE": "DOMESTIQUE SOCIAL 1",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 17,
+        "LIBELLE": "DOMESTIQUE SOCIAL 2",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 8,
+        "LIBELLE": "ECLAIRAGE PUBLIC",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 3,
+        "LIBELLE": "GENERAL",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 18,
+        "LIBELLE": "HT DJIBOUTI",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 13,
+        "LIBELLE": "INDUSTRIEL1",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 15,
+        "LIBELLE": "INDUSTRIEL2",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 20,
+        "LIBELLE": "INDUSTRIEL3",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 11,
+        "LIBELLE": "MT DJIBOUTI",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 12,
+        "LIBELLE": "MT REGION DE INT.",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 14,
+        "LIBELLE": "PAIN POPULAIRE",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 16,
+        "LIBELLE": "PETITES &amp; MOYENNES INDUSTRIES",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 7,
+        "LIBELLE": "REGION DE INT.",
+        "NUM_TARIF": 1
+      },
+      {
+        "NUM_CATEG": 99,
+        "LIBELLE": "REPRISE",
+        "NUM_TARIF": 1
+      }
+    ]
+  }
+}

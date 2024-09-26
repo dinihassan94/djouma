@@ -1,0 +1,513 @@
+<!-- Wappler include head-page="layouts/LoginLayout" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="tst" appConnect="local" components="{dmxDataTraversal:{}}" -->
+<meta name="ac:route" content="/Report/tst">
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Impayes" appconnect="local" components="{dmxBootstrap5TableGenerator:{},dmxFormatter:{},dmxDataTraversal:{},dmxBootstrap5Modal:{},dmxAnimateCSS:{},dmxValidator:{},dmxBootstrap5Navigation:{},dmxDatastore:{},dmxStateManagement:{},dmxBootstrap5PagingGenerator:{}}" class="style3" -->
+
+<dmx-data-view id="FactureImpaye" dmx-bind:data="GetFactureImpaye.data.api.data" filter="id_Lettrage==Null"></dmx-data-view>
+
+<dmx-serverconnect id="GetFactureImpaye" url="/api/Impayes/ReadImpayes" dmx-param:idcontrat="form1.btn1.value" noload="true" dmx-on:unauthorized="Deconn.reload()"></dmx-serverconnect>
+<dmx-serverconnect id="GetContratDetails" url="/api/Impayes/ReadContrat" dmx-param:idcontrat="form1.btn1.value" dmx-on:error="modal1.show();GetContratDetails.reset();GetFactureImpaye.reset();form1.input1.validate();form1.reset()" noload="true" dmx-on:unauthorized="Deconn.reload()" dmx-on:invalid="modal1.show();GetFactureImpaye.reset();GetContratDetails.reset()"></dmx-serverconnect>
+<dmx-data-detail id="factureDetails" dmx-bind:data="GetFactureImpaye.data.api.data" key="trid"></dmx-data-detail>
+<dmx-datetime id="dateFacture" interval="days" dmx-show="factureDetails.data.trid"></dmx-datetime>
+
+
+<div class="modal text-white fade" id="modal1" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-light text-danger text-center">
+                <h5 class="modal-title fw-bold lead small">Infos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center text-danger fw-bold shadow-sm mark">Aucun Contrat Retrouvé ou Contrat Resilié</p>
+            </div>
+            <div class="modal-footer bg-body">
+                <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="printThis"></div>
+
+
+<div class="modal fade" id="facture" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-opacity-75 bg-light text-danger">
+                <a class="me-2 bg-light"><img src="/assets/images/arton142.png" width="40" class="bg-opacity-75 bg-light"></a>
+                <h4 class="text-primary">Facture&nbsp;&nbsp;</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center small">
+
+                <div id="factureBody">
+                    <div class="pt-2 pb-2 ps-2 pe-2 bg-white rounded-2 container-xxl border-dark small rounded border-bottom">
+                        <div class="row">
+                            <div class="border-success lh-1 mb-0 ms-2 me-2 offset-4 col-12 initialism">
+                                <h5 class="text-center pt-2 lh-1 fw-bolder text-capitalize">Electricité de Djibouti</h5>
+                            </div>
+                        </div>
+                        <div class="row lh-1">
+                            <div class="text-center text-light border border-dark mt-0 col-10 offset-1">
+                                <h5 class="mt-1 text-body lh-1">Facture Impayées</h5>
+                            </div>
+                        </div>
+                        <div class="row text-center pt-0">
+
+                            <div class="offset-4 border border-success col-4 mt-3 small font-monospace">
+                                <h6 class="fw-bold pt-2 font-monospace">N° CONTRAT : {{GetContratDetails.data.api.data.numContrat}}</h6>
+                            </div>
+                            <div class="col">
+                                <h6 class="pt-4">Date : <b>{{dateFacture.datetime.formatDate('dd-MMM-yyyy')}}</b></h6>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col pt-0">
+
+                                <p class="text-start lh-1"><span>Nom du Payeur :&nbsp;<b>{{GetContratDetails.data.api.data.nom}}</b></span></p>
+                                <p class="text-start lh-1">Adresse : <b>{{GetContratDetails.data.api.data.adresse}}</b></p>
+                                <p class="text-start mt-0 lh-1">№ CLIENT : <b>{{GetContratDetails.data.api.data.payeur}}</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; № PL : <b>{{GetContratDetails.data.api.data.numPl}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b><span>№ Compteur : <b>{{GetContratDetails.data.api.data.codeCompteur}}&nbsp;</b></span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="selectedDataDisplay" style="font-size:13px"></div>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-12 mt-1"><img src="/assets/images/2.PNG" class="w-50 img-fluid"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-start">
+                            <p class="text-center small">Préparé par : {{Userinfos.data.query.nom}} - le {{dateFacture.datetime.formatDate('dd-MMM-yyyy')}}</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="modal-footer text-center text-white">
+                <button id="btn3" class="btn mt-2 btn-sm btn-outline-danger" dmx-on:click="facture.hide()"><i class="far fa-times-circle"></i>&nbsp;Fermer</button><button id="btnPrint" type="button" class="btn btn-default mt-2 ms-2 btn-sm btn-primary bg-primary bg-opacity-75">&nbsp;<i class="fas fa-print"></i>&nbsp;Imprimer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="modal fade shadow border border-dark rounded-1 rounded" id="PlusDetails" is="dmx-bs5-modal" tabindex="-1" nobackdrop="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-opacity-75 text-primary bg-light">
+                <h5 class="modal-title text-primary bg-light">Num Contrat : <b>{{GetContratDetails.data.api.data.numContrat}}</b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body shadow-sm">
+                <div class="table-responsive">
+                    <div class="table-responsive">
+                        <div class="table-responsive">
+                            <div class="table-responsive">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover table-sm small">
+                                        <tbody dmx-generator="bs5table" dmx-populate="GetContratDetails.data.api.data">
+                                            <tr>
+                                                <th>Num contrat</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.numContrat" class="fw-bold"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Nom</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.nom" class="fw-bold text-primary shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Adresse</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.adresse"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Adresse physique</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.adressePhysique"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Num pl</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.numPl" class="fw-bold"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Phone</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.phone"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Email</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.email"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Payeur</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.payeur" class="fw-bold"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Utilisateur</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.utilisateur"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Solde</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.solde" class="text-danger fw-bold"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Position</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.position"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Code compteur</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.codeCompteur"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ps</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.ps" class="fw-bold"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Tarif</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.tarif"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Statut contrat</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.statutContrat" class="fw-bold text-black-50"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Is enable</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.isEnable"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Image</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.image"></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Couleur</th>
+                                                <td dmx-text="GetContratDetails.data.api.data.couleur"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mw-100 container-lg small">
+
+
+
+
+    <div class="row">
+        <div class="col shadow-sm mb-2 lh-1 border-bottom border-dark small rounded-bottom text-black-50 bg-primary bg-opacity-75" style="height: 30px;">
+            <p class="text-nowrap lh-1 text-light fw-bold text-start small mt-2 ms-3" dmx-style:color="'yellow'"><i class="fas fa-arrow-alt-circle-right"></i>&nbsp; Compteur :&nbsp;&nbsp;<i class="fas fa-angle-left"></i>&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i>&nbsp;&nbsp;<font face="Font Awesome 5 Free">Facture :&nbsp; <i class="fas fa-angle-left">&nbsp;&nbsp;</i><i class="fas fa-angle-right">&nbsp;</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i>&nbsp; Contrat :&nbsp;&nbsp;<i class="fas fa-angle-left"></i>&nbsp;<span style="" dmx-on:click="form1.input1.setValue(idcontrat.data.idcontrat)"><a href="#" dmx-style:color="'yellow'" style="">{{idcontrat.data.idcontrat}}</a></span>&nbsp;<i class="fas fa-angle-right" style=""></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i>&nbsp;Client :&nbsp;&nbsp;<i class="fas fa-angle-left"></i>&nbsp;<a href="#" dmx-style:color="'yellow'">{{idcontrat.data.idclient}}</a>&nbsp;<i class="fas fa-angle-right"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Relève :&nbsp;&nbsp;</font><i class="fas fa-angle-left" dmx-style:color="'yellow'">&nbsp;<a href="#" dmx-style:color="'yellow'">{{idcontrat.data.releve}}</a>&nbsp;</i><i class="fas fa-angle-right">&nbsp;</i></p>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col lh-1">
+            <p class="text-primary fw-bold lh-1 mt-1 ms-1">Factures impayées&nbsp;</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <div class="mw-100 border-success align-self-start text-muted bg-light small col-3 shadow-sm ms-2 me-1 ps-2 pe-2">
+
+
+                    <div class="row">
+
+                        <div class="border-top border-success border-1 rounded-2 rounded-top col-12 bg-white shadow-sm mb-2 ms-1">
+                            <p class="mark font-monospace">Recherche</p>
+
+
+
+                            <form id="form1">
+                                <div class="form-group mb-3 row">
+
+
+                                    <div class="col-sm-5">
+
+
+                                        <input type="number" class="form-control form-control-sm mt-2" id="input1" name="input1" aria-describedby="input1_help" placeholder="Num Contrat" data-rule-number="" data-msg-number="Saisir un contrat valid" required="" data-msg-required="Saisir un contrat" dmx-style:background-color="'#F9F7F7'">
+
+                                    </div>
+                                    <div class="col-7 mt-2 ms-0 ps-0"><button id="btn1" class="btn btn-sm shadow-sm font-monospace text-center btn-success bg-opacity-75 bg-primary" dmx-on:click="input1.validate();form1.btn1.setValue(input1.value);GetFactureImpaye.reset();GetFactureImpaye.load({idcontrat: input1.value});api1.load({idcontrat: input1.value});GetContratDetails.load({idcontrat: input1.value});group1.select_checkbox.select(false);idcontrat.set('idcontrat',input1.value)"><span class="spinner-border spinner-border-sm" role="status" dmx-show="GetContratDetails.state.executing"></span><i class="fas fa-search">&nbsp;Recherche</i></button>
+                                        <button id="btn2" class="btn btn-outline-primary mark small btn-sm" dmx-animate-enter="bounceIn" dmx-on:click="PlusDetails.show()" dmx-show="GetContratDetails.data.api.data.numContrat">Plus de details ...</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <ul class="list-group bg-light shadow-sm mb-2">
+
+
+
+
+
+
+                                <li class="list-group-item bg-light"><span>Nom du Payeur</span> :&nbsp;<span><a href="#" style=""><b>{{GetContratDetails.data.api.data.nom}}</b></a></span></li>
+                                <li class="list-group-item"><span style="">Addresse</span> : <b>{{GetContratDetails.data.api.data.adresse}}</b></li>
+                                <li class="list-group-item bg-white"><span style="">№ PL</span> : <a href="#"><b>{{GetContratDetails.data.api.data.numPl}}</b></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span>№ Compteur</span> :&nbsp;<b><a href="#">{{GetContratDetails.data.api.data.codeCompteur}}</a>&nbsp; &nbsp; </b>&nbsp; &nbsp;№ Client : <b>{{GetContratDetails.data.api.data.payeur}}</b></li>
+                                <li class="list-group-item bg-white"><i class="fas fa-wallet"></i>&nbsp;<span style="">Solde</span> : {{GetContratDetails.data.api.data.solde.formatCurrency(' ', '.', ' ', 0)}}<b>&nbsp;FDJ (<i>Débit</i>)</b></li>
+                                <li class="list-group-item">&nbsp;<i class="fas fa-envelope"></i>&nbsp;<span style="">Email </span>: <b>{{GetContratDetails.data.api.data.email}}&nbsp;</b><i class="fas fa-check-circle"></i></li>
+                                <li class="list-group-item"><i class="fas fa-phone"></i>&nbsp;<span style="">Tel. Portable</span> : <b>{{GetContratDetails.data.api.data.phone}}&nbsp;</b><i class="fas fa-check-circle"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="fw-lighter text-start align-self-stretch lh-1 rounded rounded-2 border-top border-success col-12 bg-white shadow-sm mark font-monospace ms-1">
+                            <h6 class="text-body mark small">Solde</h6>
+                            <div class="contentArea">
+                                <p class="text-primary lh-1 lead">Difference :&nbsp; <b>{{GetContratDetails.data.api.data.solde.formatCurrency(' ', '.', ' ', ' ')}}</b>&nbsp;<b>FDJ</b></p>
+                            </div>
+                            <div class="contentArea">
+                                <p class="text-primary lh-1 fw-bolder lead">Montant Proposé : {{GetContratDetails.data.api.data.solde-factureDetails.data.ddebit}}<span><b>&nbsp;FDJ</b></span></p>
+
+                            </div>
+                            <div class="contentArea">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col rounded-2 rounded border-success border-top offset-3 small bg-white shadow-sm mb-1 ms-2 me-1" style="min-height: 79vh;height: auto;">
+                    <style>
+                        .table-responsive {
+                            scrollbar-width: thin;
+                            /* "auto" or "thin" */
+                            scrollbar-color: #888 #f1f1f1;
+                            /* thumb and track color */
+                        }
+                    </style>
+
+                    <p class="mark">Mouvements non affectés</p>
+                    <div class="row">
+                        <div class="pt-2 col-3">
+                            <p class="fw-bold text-start mark small font-monospace shadow-sm ps-2"><i class="fas fa-times-circle">&nbsp;</i>Impayé(s) trouvé(s) : {{FactureImpaye.items}}&nbsp; &nbsp;&nbsp;</p>
+                        </div>
+                        <div class="col text-end mb-2">
+                            <button id="btn4" class="btn btn-sm text-white bg-success" dmx-on:click="facture.show()"><i class="fas fa-eye">&nbsp;</i>&nbsp;Facture&nbsp;</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col border rounded rounded-2 mb-4 ms-2 me-2 pt-2 pb-2 border-info" style="height: 71vh; overflow: hidden; display: flex; flex-direction: column;">
+                            <div class="table-responsive small">
+                                <div class="table-responsive text-center small">
+                                    <table class="table table-hover table-sm text-center table-borderless">
+                                        <thead>
+                                            <tr class="text-light">
+                                                <th scope="row" class="shadow-sm bg-primary bg-opacity-75"><input class="form-check-input" type="checkbox" value="" id="checkall1" name="checkall1" style="width: 15px; height: 15px;"></th>
+                                                <th class="shadow-sm bg-primary bg-opacity-75 text-light">№</th>
+                                                <th class="shadow-sm initialism bg-primary bg-opacity-75 text-light">Date</th>
+                                                <th class="shadow-sm initialism bg-primary bg-opacity-75 text-light">Type Mouvement</th>
+                                                <th class="shadow-sm initialism bg-primary bg-opacity-75 text-light">Débit</th>
+                                                <th class="shadow-sm initialism bg-primary bg-opacity-75 text-light">Crédit</th>
+                                                <th class="shadow-sm table-secondary initialism text-light bg-primary bg-opacity-75">Date echeance</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="FactureImpaye.data" id="tableRepeat2">
+                                            <tr dmx-on:click="factureDetails.select(trid)" dmx-on:dblclick="group2.select_checkbox1.select(true)" dmx-class:table-info="(trid == factureDetails.data.trid)" dmx-class:table-warning="group2.select_checkbox1.checked">
+                                                <td class="bg-light shadow-sm">
+                                                    <div is="dmx-checkbox-group" id="group2" class="checkbox-group">
+                                                        <input id="select_checkbox1" type="checkbox" dmx-bind:name="trid" dmx-bind:checked="checkall1.checked" dmx-bind:value="factureDetails.data.trid" class="select-checkbox" style="width: 15px; height: 15px;">
+                                                    </div>
+                                                </td>
+                                                <td dmx-text="trid" class="fw-bold"></td>
+                                                <td dmx-text="date.formatDate('dd-MMM-yyyy HH:mm')"></td>
+                                                <td dmx-text="libelle_Type_Mvt" class="fw-bold"></td>
+                                                <td dmx-text="ddebit" class="fw-bold"></td>
+                                                <td dmx-text="credit"></td>
+                                                <td dmx-text="date_Echeance.formatDate('dd-MMM-yyyy')"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="table-responsive small">
+                            </div>
+
+                            <div class="d-block text-center">
+                                <div class="spinner-border spinner-border-sm text-primary" role="status" dmx-show="GetFactureImpaye.state.executing">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col text-end">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+var form1 = document.getElementById('form1');
+
+form1.addEventListener('keydown', function (event) {
+if (event.key === 'Enter' && event.target.tagName !== 'TEXTAREA') {
+event.preventDefault();
+document.getElementById('btn1').click();
+}
+});
+});
+
+    function getSelectedData() {
+    const checkboxes = document.querySelectorAll('.select-checkbox:checked');
+    let selectedData = [];
+
+    checkboxes.forEach(checkbox => {
+      const row = checkbox.closest('tr');
+      if (row) {
+        const rowData = {
+          trid: (row.getElementsByTagName('td')[1]).innerHTML,
+          date: (row.getElementsByTagName('td')[2]).innerHTML,
+          libelle_Type_Mvt: (row.getElementsByTagName('td')[3]).innerHTML,
+          ddebit: (row.getElementsByTagName('td')[4]).innerHTML,
+          credit: (row.getElementsByTagName('td')[5]).innerHTML,
+          date_Echeance: (row.getElementsByTagName('td')[6]).innerHTML,
+        };
+
+        console.log(rowData);
+        selectedData.push(rowData);
+      }
+    });
+
+    const displayElement = document.getElementById('selectedDataDisplay');
+    displayElement.innerHTML = '';
+
+    let tableString = `
+      <div class="table-responsive">
+        <table class="table table-bordered table-sm small border-dark">
+          <tr>
+           <th>Date</th>
+            <th>№ Piéce</th>
+            <th>Type Mouvement</th>
+            <th>Débit</th>
+            <th>Crédit</th>
+          </tr>  
+
+    `;
+
+let totalDebit = 0;
+
+    selectedData.forEach(data => {
+let formattedDebit = parseInt(data.ddebit).toLocaleString('fr-DJ', {
+style: 'currency',
+currency: 'DJF',
+});
+
+let dataString = `
+<tr>
+    <td>${data.date}</td>
+    <td>${data.trid}</td>
+    <td>${data.libelle_Type_Mvt}</td>
+    <td>${formattedDebit}</td>
+    <td>${data.credit}</td>
+</tr>
+`;
+       totalDebit += parseInt(data.ddebit);;
+      tableString += dataString;
+    });
+
+
+const formattedTotalDebit = totalDebit.toLocaleString('fr-DJ', {
+style: 'currency',
+currency: 'DJF',
+});
+
+tableString += `
+<tr>
+    <td colspan="3"><b>Total Débit</b></td>
+    <td><b>${formattedTotalDebit}</b></td>
+    <td></td>
+</tr>
+`;
+
+
+    tableString += '</table></div>';
+    displayElement.innerHTML += tableString;
+  }
+
+  document.getElementById('btn4').addEventListener('click', getSelectedData);
+
+
+
+
+
+
+
+
+
+document.getElementById("btnPrint").onclick = function () {
+printElement(document.getElementById('factureBody'));
+}
+
+function printElement(elem) {
+var domClone = elem.cloneNode(true);
+
+var $printSection = document.getElementById("printSection");
+
+if (!$printSection) {
+$printSection = document.createElement("div");
+$printSection.id = "printSection";
+document.body.appendChild($printSection);
+}
+
+$printSection.innerHTML = "";
+$printSection.appendChild(domClone);
+
+// Add an event listener for 'afterprint' to clean up the print section
+window.addEventListener('afterprint', function () {
+document.body.removeChild($printSection);
+});
+
+// Print the content
+window.print();
+}
+
+
+</script>
+
+<style>
+    /* Add your print styles here */
+    @media print {
+        body * {
+            visibility: hidden;
+        }
+
+        #printSection,
+        #printSection * {
+            visibility: visible;
+
+        }
+
+        #printSection {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    }
+</style>
+
+<meta name="ac:route" content="/Visualisation/Impayes">

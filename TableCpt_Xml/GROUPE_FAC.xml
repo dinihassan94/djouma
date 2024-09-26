@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <tv>
+    <NUM_GR_FAC>1</NUM_GR_FAC>
+    <LIBELLE>DJIBOUTI A (mois pairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>2</NUM_GR_FAC>
+    <LIBELLE>DJIBOUTI B (mois impairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>3</NUM_GR_FAC>
+    <LIBELLE>ARTA-OUEAH (mois impairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>4</NUM_GR_FAC>
+    <LIBELLE>DIKHIL (mois impairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>5</NUM_GR_FAC>
+    <LIBELLE>TADJOURAH (mois impairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>6</NUM_GR_FAC>
+    <LIBELLE>ALI-SABIEH (mois impairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>7</NUM_GR_FAC>
+    <LIBELLE>OBOCK (mois impairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>8</NUM_GR_FAC>
+    <LIBELLE>ADMINISTRATION (mois pairs)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>2</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>9</NUM_GR_FAC>
+    <LIBELLE>AGENTS EDD (annuel)</LIBELLE>
+    <CC_CS>41</CC_CS>
+    <PERIODICITE>12</PERIODICITE>
+  </tv>
+  <tv>
+    <NUM_GR_FAC>10</NUM_GR_FAC>
+    <LIBELLE>CLIENTELE SPECIALE (mensuel)</LIBELLE>
+    <CC_CS>42</CC_CS>
+    <PERIODICITE>1</PERIODICITE>
+  </tv>
+</NewDataSet>

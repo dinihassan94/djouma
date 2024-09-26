@@ -1,0 +1,6 @@
+{
+  "LoginPage.ejs": {
+    "layoutPage": "LoginLayout",
+    "description": ""
+  }
+}

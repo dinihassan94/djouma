@@ -1,0 +1,66 @@
+{
+  "NewDataSet": {
+    "tv": [
+      {
+        "NUM_GR_FAC": 1,
+        "LIBELLE": "DJIBOUTI A (mois pairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 2,
+        "LIBELLE": "DJIBOUTI B (mois impairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 3,
+        "LIBELLE": "ARTA-OUEAH (mois impairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 4,
+        "LIBELLE": "DIKHIL (mois impairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 5,
+        "LIBELLE": "TADJOURAH (mois impairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 6,
+        "LIBELLE": "ALI-SABIEH (mois impairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 7,
+        "LIBELLE": "OBOCK (mois impairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 8,
+        "LIBELLE": "ADMINISTRATION (mois pairs)",
+        "CC_CS": 41,
+        "PERIODICITE": 2
+      },
+      {
+        "NUM_GR_FAC": 9,
+        "LIBELLE": "AGENTS EDD (annuel)",
+        "CC_CS": 41,
+        "PERIODICITE": 12
+      },
+      {
+        "NUM_GR_FAC": 10,
+        "LIBELLE": "CLIENTELE SPECIALE (mensuel)",
+        "CC_CS": 42,
+        "PERIODICITE": 1
+      }
+    ]
+  }
+}

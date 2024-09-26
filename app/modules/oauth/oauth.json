@@ -1,0 +1,6 @@
+{
+  "name": "oauth",
+  "module": "oauth",
+  "action": "provider",
+  "options": {}
+}

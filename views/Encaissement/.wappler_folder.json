@@ -1,0 +1,46 @@
+{
+  "encaissement_Divers.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Enc.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "hu.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Encaissement_facture1.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Encaissement_facture.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "index.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Enc_Multiple.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "multi.ejs": {
+    "layoutPage": "NormalPage",
+    "description": ""
+  },
+  "ENCSS_FACTURE.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "ENC_Diver_Multiple.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "ENC_divers.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  }
+}

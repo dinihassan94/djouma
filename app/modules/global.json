@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "new"
+      }
+    ]
+  },
+  "exec": {}
+}

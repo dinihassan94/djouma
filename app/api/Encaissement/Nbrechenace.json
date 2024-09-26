@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "number",
+        "name": "new"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "api",
+        "module": "api",
+        "action": "send",
+        "options": {
+          "url": "{{'http://localhost:8100/api/encaissement_Facture/nombreecheance?id_contrat='+$_GET.new}}",
+          "schema": [
+            {
+              "type": "object",
+              "name": "data",
+              "sub": [
+                {
+                  "type": "array",
+                  "name": "queryEcheance"
+                }
+              ]
+            },
+            {
+              "type": "object",
+              "name": "headers",
+              "sub": [
+                {
+                  "type": "text",
+                  "name": "access-control-allow-credentials"
+                },
+                {
+                  "type": "text",
+                  "name": "content-length"
+                },
+                {
+                  "type": "text",
+                  "name": "content-type"
+                },
+                {
+                  "type": "text",
+                  "name": "date"
+                },
+                {
+                  "type": "text",
+                  "name": "etag"
+                },
+                {
+                  "type": "text",
+                  "name": "vary"
+                }
+              ]
+            }
+          ]
+        },
+        "output": true,
+        "meta": [
+          {
+            "type": "object",
+            "name": "data",
+            "sub": [
+              {
+                "type": "array",
+                "name": "queryEcheance"
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "name": "headers",
+            "sub": [
+              {
+                "type": "text",
+                "name": "access-control-allow-credentials"
+              },
+              {
+                "type": "text",
+                "name": "content-length"
+              },
+              {
+                "type": "text",
+                "name": "content-type"
+              },
+              {
+                "type": "text",
+                "name": "date"
+              },
+              {
+                "type": "text",
+                "name": "etag"
+              },
+              {
+                "type": "text",
+                "name": "vary"
+              }
+            ]
+          }
+        ],
+        "outputType": "object"
+      },
+      {
+        "name": "nbrecheance",
+        "module": "core",
+        "action": "setvalue",
+        "options": {
+          "key": "nbrecheance",
+          "value": 0
+        },
+        "meta": [],
+        "outputType": "number"
+      },
+      {
+        "name": "list",
+        "module": "arraylist",
+        "action": "create",
+        "options": {
+          "value": "{{nbrecheance}}"
+        },
+        "meta": [],
+        "outputType": "array"
+      },
+      {
+        "name": "",
+        "module": "core",
+        "action": "while",
+        "options": {
+          "while": "{{nbrecheance<=api.data.queryEcheance[0].noechu}}",
+          "exec": {
+            "steps": [
+              {
+                "name": "",
+                "module": "arraylist",
+                "action": "add",
+                "options": {
+                  "ref": "list",
+                  "value": "{{nbrecheance}}"
+                },
+                "output": true
+              },
+              {
+                "name": "nbrecheance",
+                "module": "core",
+                "action": "setvalue",
+                "options": {
+                  "value": "{{nbrecheance+1}}"
+                },
+                "meta": [],
+                "outputType": "number"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "name": "listecheance",
+        "module": "arraylist",
+        "action": "value",
+        "options": {
+          "ref": "list"
+        },
+        "output": true,
+        "meta": [],
+        "outputType": "array"
+      }
+    ]
+  }
+}

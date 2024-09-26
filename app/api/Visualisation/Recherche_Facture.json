@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "number",
+        "name": "arg_sonutilisation"
+      },
+      {
+        "type": "text",
+        "name": "arg_criteriasearch"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "select * from fc_recherche_Facture (:P1,:P2)",
+          "params": [
+            {
+              "name": ":P1",
+              "value": "{{$_GET.arg_sonutilisation}}",
+              "test": "1"
+            },
+            {
+              "name": ":P2",
+              "value": "{{$_GET.arg_criteriasearch}}",
+              "test": "where NUM_CONTRAT = 35471"
+            }
+          ]
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "num_facture",
+          "type": "number"
+        },
+        {
+          "name": "date_emission",
+          "type": "datetime"
+        },
+        {
+          "name": "num_contrat",
+          "type": "number"
+        },
+        {
+          "name": "nom",
+          "type": "text"
+        },
+        {
+          "name": "montant",
+          "type": "number"
+        },
+        {
+          "name": "nro_lettrage",
+          "type": "text"
+        },
+        {
+          "name": "ano_fact",
+          "type": "text"
+        },
+        {
+          "name": "annulation",
+          "type": "text"
+        },
+        {
+          "name": "date_maj",
+          "type": "datetime"
+        },
+        {
+          "name": "user_maj",
+          "type": "text"
+        },
+        {
+          "name": "type_mvt",
+          "type": "text"
+        },
+        {
+          "name": "id_mvt",
+          "type": "text"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

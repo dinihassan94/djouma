@@ -1,0 +1,11 @@
+{
+  "name": "xmlImport",
+  "module": "import",
+  "action": "xml",
+  "options": {
+    "path": "/TableCpt_Xml/TABLES_VALEURS.xml"
+  },
+  "meta": [],
+  "output": true,
+  "outputType": "array"
+}

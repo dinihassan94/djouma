@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "id_contrat"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argmt_cash"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argmt_cheque"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argno_doc"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argbanque"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argusermaj"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argmvtpaye_tx"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argmode_paimnt"
+      },
+      {
+        "type": "text",
+        "name": "arg_totcr"
+      },
+      {
+        "type": "text",
+        "name": "arg_nomfenetre"
+      },
+      {
+        "type": "text",
+        "name": "arg_checkassign"
+      }
+    ],
+    "$_PARAM": [
+      {
+        "type": "text",
+        "name": "id_contrat"
+      },
+      {
+        "type": "text",
+        "name": "argmt_cash"
+      },
+      {
+        "type": "text",
+        "name": "argmt_cheque"
+      },
+      {
+        "type": "text",
+        "name": "argno_doc"
+      },
+      {
+        "type": "text",
+        "name": "argbanque"
+      },
+      {
+        "type": "text",
+        "name": "argusermaj"
+      },
+      {
+        "type": "text",
+        "name": "argmvtpaye_tx"
+      },
+      {
+        "type": "text",
+        "name": "argmode_paimnt"
+      },
+      {
+        "type": "boolean",
+        "name": "arg_checkassign"
+      },
+      {
+        "type": "text",
+        "name": "arg_totcr"
+      },
+      {
+        "type": "text",
+        "name": "arg_nomfenetre"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "select * from Fc_encaissement12(:P1,:P2,:P3,:P4,:P5,:P6,:P7,:P8,:P9,:P10,:P11)",
+          "params": [
+            {
+              "name": ":P1",
+              "value": "{{$_PARAM.id_contrat}}",
+              "test": "307310"
+            },
+            {
+              "name": ":P2",
+              "value": "{{$_PARAM.argmt_cash}}",
+              "test": "10935"
+            },
+            {
+              "name": ":P3",
+              "value": "{{$_PARAM.argmt_cheque}}",
+              "test": "0"
+            },
+            {
+              "name": ":P4",
+              "value": "{{$_PARAM.argno_doc}}",
+              "test": "6445"
+            },
+            {
+              "name": ":P5",
+              "value": "{{$_PARAM.argbanque}}",
+              "test": "88391"
+            },
+            {
+              "name": ":P6",
+              "value": "{{$_PARAM.argusermaj}}",
+              "test": "47433"
+            },
+            {
+              "name": ":P7",
+              "value": "{{$_PARAM.argmvtpaye_tx}}",
+              "test": "F§202305006100§14§0¿"
+            },
+            {
+              "name": ":P8",
+              "value": "{{$_GET.argmode_paimnt}}",
+              "test": "0"
+            },
+            {
+              "name": ":P9",
+              "value": "{{$_GET.arg_checkassign}}",
+              "test": "false"
+            },
+            {
+              "name": ":P10",
+              "value": "{{$_GET.arg_totcr}}",
+              "test": "0"
+            },
+            {
+              "name": ":P11",
+              "value": "{{$_GET.arg_nomfenetre}}",
+              "test": "frmautrecashmvmt"
+            }
+          ]
+        },
+        "test": true
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "out_nrolettrage",
+          "type": "text"
+        },
+        {
+          "name": "out_id_autremvt",
+          "type": "text"
+        },
+        {
+          "name": "out_id_autremvt2",
+          "type": "text"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

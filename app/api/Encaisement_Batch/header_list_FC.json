@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "arg_npiece"
+      },
+      {
+        "type": "text",
+        "name": "arg_nonfenetre"
+      },
+      {
+        "type": "text",
+        "name": "arg_nroligne"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "api",
+      "module": "api",
+      "action": "send",
+      "options": {
+        "url": "{{'http://192.168.9.60:8595/ListFacture?arg_Npiece='+$_GET.arg_npiece+'&nom_fenetre='+$_GET.arg_nonfenetre+'&arg_NroLigne='+$_GET.arg_nroligne}}",
+        "schema": [
+          {
+            "type": "array",
+            "name": "data",
+            "sub": [
+              {
+                "type": "number",
+                "name": "trid"
+              },
+              {
+                "type": "text",
+                "name": "date_emission"
+              },
+              {
+                "type": "text",
+                "name": "libelle_type_mvt"
+              },
+              {
+                "type": "number",
+                "name": "debit"
+              },
+              {
+                "type": "number",
+                "name": "credit"
+              },
+              {
+                "type": "number",
+                "name": "montant"
+              },
+              {
+                "type": "number",
+                "name": "type_mvt_portefeuille"
+              },
+              {
+                "type": "number",
+                "name": "type_mvt"
+              },
+              {
+                "type": "text",
+                "name": "ltype"
+              },
+              {
+                "type": "number",
+                "name": "ligneno"
+              },
+              {
+                "type": "number",
+                "name": "nro_lettrage"
+              },
+              {
+                "type": "number",
+                "name": "position1"
+              },
+              {
+                "type": "number",
+                "name": "suivi_proc_contrat"
+              },
+              {
+                "type": "text",
+                "name": "codepl"
+              },
+              {
+                "type": "text",
+                "name": "code_cpteur"
+              },
+              {
+                "type": "number",
+                "name": "id_contrat"
+              },
+              {
+                "type": "number",
+                "name": "solde_compte"
+              },
+              {
+                "type": "text",
+                "name": "date_echeance"
+              },
+              {
+                "type": "text",
+                "name": "nom"
+              },
+              {
+                "type": "text",
+                "name": "adresse"
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "name": "headers",
+            "sub": [
+              {
+                "type": "text",
+                "name": "content-type"
+              },
+              {
+                "type": "text",
+                "name": "date"
+              },
+              {
+                "type": "text",
+                "name": "server"
+              },
+              {
+                "type": "text",
+                "name": "transfer-encoding"
+              }
+            ]
+          }
+        ]
+      },
+      "output": true,
+      "meta": [
+        {
+          "type": "array",
+          "name": "data",
+          "sub": [
+            {
+              "type": "number",
+              "name": "trid"
+            },
+            {
+              "type": "text",
+              "name": "date_emission"
+            },
+            {
+              "type": "text",
+              "name": "libelle_type_mvt"
+            },
+            {
+              "type": "number",
+              "name": "debit"
+            },
+            {
+              "type": "number",
+              "name": "credit"
+            },
+            {
+              "type": "number",
+              "name": "montant"
+            },
+            {
+              "type": "number",
+              "name": "type_mvt_portefeuille"
+            },
+            {
+              "type": "number",
+              "name": "type_mvt"
+            },
+            {
+              "type": "text",
+              "name": "ltype"
+            },
+            {
+              "type": "number",
+              "name": "ligneno"
+            },
+            {
+              "type": "number",
+              "name": "nro_lettrage"
+            },
+            {
+              "type": "number",
+              "name": "position1"
+            },
+            {
+              "type": "number",
+              "name": "suivi_proc_contrat"
+            },
+            {
+              "type": "text",
+              "name": "codepl"
+            },
+            {
+              "type": "text",
+              "name": "code_cpteur"
+            },
+            {
+              "type": "number",
+              "name": "id_contrat"
+            },
+            {
+              "type": "number",
+              "name": "solde_compte"
+            },
+            {
+              "type": "text",
+              "name": "date_echeance"
+            },
+            {
+              "type": "text",
+              "name": "nom"
+            },
+            {
+              "type": "text",
+              "name": "adresse"
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "name": "headers",
+          "sub": [
+            {
+              "type": "text",
+              "name": "content-type"
+            },
+            {
+              "type": "text",
+              "name": "date"
+            },
+            {
+              "type": "text",
+              "name": "server"
+            },
+            {
+              "type": "text",
+              "name": "transfer-encoding"
+            }
+          ]
+        }
+      ],
+      "outputType": "object"
+    }
+  }
+}

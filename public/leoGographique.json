@@ -1,0 +1,46 @@
+{
+  "NewDataSet": {
+    "tv": [
+      {
+        "NUM_LIEUGEO": 9,
+        "LIBELLE": "AGAR"
+      },
+      {
+        "NUM_LIEUGEO": 6,
+        "LIBELLE": "ALI-SABIEH"
+      },
+      {
+        "NUM_LIEUGEO": 3,
+        "LIBELLE": "ARTA"
+      },
+      {
+        "NUM_LIEUGEO": 1,
+        "LIBELLE": "BALBALA"
+      },
+      {
+        "NUM_LIEUGEO": 2,
+        "LIBELLE": "BALBALA SUD"
+      },
+      {
+        "NUM_LIEUGEO": 4,
+        "LIBELLE": "DIKHIL"
+      },
+      {
+        "NUM_LIEUGEO": 0,
+        "LIBELLE": "DJIBOUTI"
+      },
+      {
+        "NUM_LIEUGEO": 8,
+        "LIBELLE": "JABAN-AS"
+      },
+      {
+        "NUM_LIEUGEO": 7,
+        "LIBELLE": "OBOCK"
+      },
+      {
+        "NUM_LIEUGEO": 5,
+        "LIBELLE": "TADJOURAH"
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "object",
+        "name": "type_seacrhtype"
+      },
+      {
+        "type": "text",
+        "name": "search_creteria"
+      },
+      {
+        "type": "text",
+        "name": "type_role"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "api",
+      "module": "api",
+      "action": "send",
+      "options": {
+        "url": "http://localhost:5127/VisuRechercheGlobal?type_seacrhtype=2&search_creteria='AND CL.NOM LIKE '|| '''%'||'DJOUMA'||'%'''&type_role=0",
+        "schema": [
+          {
+            "type": "array",
+            "name": "data",
+            "sub": [
+              {
+                "type": "number",
+                "name": "id_client"
+              },
+              {
+                "type": "text",
+                "name": "nom"
+              },
+              {
+                "type": "text",
+                "name": "adresse"
+              },
+              {
+                "type": "number",
+                "name": "id_contrat"
+              },
+              {
+                "type": "text",
+                "name": "roletp"
+              },
+              {
+                "type": "text",
+                "name": "pletat"
+              },
+              {
+                "type": "text",
+                "name": "poscnt"
+              },
+              {
+                "type": "number",
+                "name": "id_pl"
+              },
+              {
+                "type": "number",
+                "name": "ps"
+              },
+              {
+                "type": "text",
+                "name": "codepl"
+              },
+              {
+                "type": "text",
+                "name": "solde"
+              },
+              {
+                "type": "text",
+                "name": "code_cpteur"
+              },
+              {
+                "type": "text",
+                "name": "date_construction"
+              },
+              {
+                "type": "text",
+                "name": "adr_physique"
+              },
+              {
+                "type": "text",
+                "name": "num_cpteur"
+              },
+              {
+                "type": "number",
+                "name": "type_role"
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "name": "headers",
+            "sub": [
+              {
+                "type": "text",
+                "name": "content-type"
+              },
+              {
+                "type": "text",
+                "name": "date"
+              },
+              {
+                "type": "text",
+                "name": "server"
+              },
+              {
+                "type": "text",
+                "name": "transfer-encoding"
+              }
+            ]
+          }
+        ]
+      },
+      "output": true,
+      "meta": [
+        {
+          "type": "array",
+          "name": "data",
+          "sub": [
+            {
+              "type": "number",
+              "name": "id_client"
+            },
+            {
+              "type": "text",
+              "name": "nom"
+            },
+            {
+              "type": "text",
+              "name": "adresse"
+            },
+            {
+              "type": "number",
+              "name": "id_contrat"
+            },
+            {
+              "type": "text",
+              "name": "roletp"
+            },
+            {
+              "type": "text",
+              "name": "pletat"
+            },
+            {
+              "type": "text",
+              "name": "poscnt"
+            },
+            {
+              "type": "number",
+              "name": "id_pl"
+            },
+            {
+              "type": "number",
+              "name": "ps"
+            },
+            {
+              "type": "text",
+              "name": "codepl"
+            },
+            {
+              "type": "text",
+              "name": "solde"
+            },
+            {
+              "type": "text",
+              "name": "code_cpteur"
+            },
+            {
+              "type": "text",
+              "name": "date_construction"
+            },
+            {
+              "type": "text",
+              "name": "adr_physique"
+            },
+            {
+              "type": "text",
+              "name": "num_cpteur"
+            },
+            {
+              "type": "number",
+              "name": "type_role"
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "name": "headers",
+          "sub": [
+            {
+              "type": "text",
+              "name": "content-type"
+            },
+            {
+              "type": "text",
+              "name": "date"
+            },
+            {
+              "type": "text",
+              "name": "server"
+            },
+            {
+              "type": "text",
+              "name": "transfer-encoding"
+            }
+          ]
+        }
+      ],
+      "outputType": "object"
+    }
+  }
+}

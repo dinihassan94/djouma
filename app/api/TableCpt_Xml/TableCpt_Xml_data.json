@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "sort"
+      },
+      {
+        "type": "text",
+        "name": "dir"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "query",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "postgres",
+          "sql": {
+            "query": "select \"code_table\", \"id_ligne\", \"lib_court\" from \"gescli\".\"tables_valeurs\"",
+            "params": []
+          },
+          "test": true
+        },
+        "output": true,
+        "meta": [
+          {
+            "name": "code_table",
+            "type": "text"
+          },
+          {
+            "name": "id_ligne",
+            "type": "number"
+          },
+          {
+            "name": "lib_court",
+            "type": "text"
+          }
+        ],
+        "outputType": "array",
+        "type": "dbcustom_query"
+      },
+      {
+        "name": "xmlExport1",
+        "module": "export",
+        "action": "xml",
+        "options": {
+          "path": "/TableCpt_Xml/nouveau_xml.xml",
+          "data": "{{query}}",
+          "overwrite": true,
+          "item": "tv",
+          "root": "NewDataset"
+        },
+        "outputType": "text",
+        "output": true
+      },
+      {
+        "name": "csvExport",
+        "module": "export",
+        "action": "csv",
+        "options": {
+          "path": "/Nouveau_dossier/reportscv.csv",
+          "overwrite": true,
+          "data": "{{query}}",
+          "delimiter": ", .",
+          "header": true
+        },
+        "outputType": "text",
+        "output": true
+      }
+    ]
+  }
+}

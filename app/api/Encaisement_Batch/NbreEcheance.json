@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "id_contrat"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "custom",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "postgres",
+          "sql": {
+            "query": "SELECT  NOECHU FROM VIEW_NOMBRE_ECHU WHERE NUM_CONTRAT = :p1",
+            "params": [
+              {
+                "name": ":p1",
+                "value": "{{$_GET.id_contrat}}",
+                "test": "35471"
+              }
+            ]
+          }
+        },
+        "output": true,
+        "meta": [
+          {
+            "name": "noechu",
+            "type": "number"
+          }
+        ]
+      },
+      {
+        "name": "NbreEcheance",
+        "module": "core",
+        "action": "setvalue",
+        "options": {
+          "key": "NbreEcheance",
+          "value": 0
+        },
+        "meta": [],
+        "outputType": "number"
+      },
+      {
+        "name": "list",
+        "module": "arraylist",
+        "action": "create",
+        "options": {
+          "value": "{{NbreEcheance}}"
+        },
+        "meta": [],
+        "outputType": "array"
+      },
+      {
+        "name": "",
+        "module": "core",
+        "action": "while",
+        "options": {
+          "while": "{{NbreEcheance<=custom.noechu}}",
+          "exec": {
+            "steps": {
+              "name": "",
+              "module": "arraylist",
+              "action": "add",
+              "options": {
+                "ref": "list",
+                "value": "{{NbreEcheance+1}}"
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Nombre_Echeance",
+        "module": "arraylist",
+        "action": "value",
+        "options": {
+          "ref": "list"
+        },
+        "output": true,
+        "meta": [],
+        "outputType": "array"
+      }
+    ]
+  }
+}

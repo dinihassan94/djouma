@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "sort"
+      },
+      {
+        "type": "text",
+        "name": "dir"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "identity",
+        "module": "auth",
+        "action": "identify",
+        "options": {
+          "provider": "Login"
+        },
+        "output": true,
+        "meta": []
+      },
+      {
+        "name": "query",
+        "module": "dbconnector",
+        "action": "select",
+        "options": {
+          "connection": "postgres",
+          "sql": {
+            "type": "select",
+            "columns": [
+              {
+                "table": "util",
+                "column": "nom",
+                "schema": "attrib"
+              }
+            ],
+            "params": [
+              {
+                "operator": "equal",
+                "type": "expression",
+                "name": ":P1",
+                "value": "{{identity}}",
+                "test": ""
+              }
+            ],
+            "table": {
+              "name": "util",
+              "schema": "attrib"
+            },
+            "primary": "mat",
+            "joins": [],
+            "wheres": {
+              "condition": "AND",
+              "rules": [
+                {
+                  "id": "attrib.util.mat",
+                  "field": "attrib.util.mat",
+                  "type": "double",
+                  "operator": "equal",
+                  "value": "{{identity}}",
+                  "data": {
+                    "table": "util",
+                    "column": "mat",
+                    "type": "number",
+                    "columnObj": {
+                      "type": "decimal",
+                      "primary": false,
+                      "unique": true,
+                      "nullable": true,
+                      "name": "mat"
+                    },
+                    "schema": "attrib"
+                  },
+                  "operation": "="
+                }
+              ],
+              "conditional": null,
+              "valid": true
+            },
+            "query": "select \"nom\" from \"attrib\".\"util\" where \"attrib\".\"util\".\"mat\" = ?"
+          }
+        },
+        "output": true,
+        "meta": [
+          {
+            "type": "text",
+            "name": "nom"
+          }
+        ],
+        "outputType": "array"
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "page": "authentification/LoginPage",
+      "layout": "LoginLayout"
+    },
+    {
+      "path": "/encaissement_Divers",
+      "page": "encaissement_Divers",
+      "layout": "main"
+    },
+    {
+      "path": "/file:///C:/Users/47433/Desktop/testWappApi/public/reports/recu",
+      "page": "file:///C:/Users/47433/Desktop/testWappApi/public/reports/recu"
+    },
+    {
+      "path": "/authentification/LoginPage",
+      "page": "authentification/LoginPage",
+      "layout": "LoginLayout"
+    },
+    {
+      "path": "/Encaissement/ENC_Diver_Multiple",
+      "page": "Encaissement/ENC_Diver_Multiple",
+      "layout": "main",
+      "exec": "/api/Login/ApiVerif"
+    },
+    {
+      "path": "/Encaissement/Enc_Multiple",
+      "page": "Encaissement/Enc_Multiple",
+      "layout": "main",
+      "exec": "/api/Login/ApiVerif"
+    },
+    {
+      "path": "/Encaissement/ENCSS_FACTURE",
+      "page": "Encaissement/ENCSS_FACTURE",
+      "layout": "main",
+      "exec": "/api/Login/ApiVerif"
+    },
+    {
+      "path": "/Visualisation/Recherche",
+      "page": "Visualisation/Recherche",
+      "layout": "main"
+    },
+    {
+      "path": "/file:///C:/Users/47433/Desktop/testWappApi/public/reports/index",
+      "page": "file:///C:/Users/47433/Desktop/testWappApi/public/reports/index"
+    },
+    {
+      "path": "/Report/RecuReport",
+      "page": "Report/RecuReport",
+      "layout": "NormalPage",
+      "exec": ""
+    },
+    {
+      "path": "/Report/tst",
+      "page": "Report/tst",
+      "layout": "LoginLayout"
+    },
+    {
+      "path": "/Encaissement/ENC_divers",
+      "page": "Encaissement/ENC_divers",
+      "layout": "main",
+      "exec": "/api/Login/ApiVerif"
+    },
+    {
+      "path": "/Encaissement/multi",
+      "page": "Encaissement/multi",
+      "layout": "NormalPage"
+    },
+    {
+      "path": "/Visualisation/Recherche_facture",
+      "page": "Visualisation/Recherche_facture",
+      "layout": "main"
+    },
+    {
+      "path": "/Visualisation/Visu_Contrat",
+      "page": "Visualisation/Visu_Contrat",
+      "layout": "main"
+    },
+    {
+      "path": "/Visualisation/visu",
+      "page": "Visualisation/visu",
+      "layout": "main"
+    },
+    {
+      "path": "/Visualisation/test",
+      "page": "Visualisation/test",
+      "layout": "LoginLayout"
+    }
+  ],
+  "partials": {
+    "Enc_Multi": {}
+  }
+}

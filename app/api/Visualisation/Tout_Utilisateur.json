@@ -1,0 +1,23 @@
+{
+  "name": "custom",
+  "module": "dbupdater",
+  "action": "custom",
+  "options": {
+    "connection": "postgres",
+    "sql": {
+      "query": "select *  from  (SELECT  DISTINCT   ' TOUS'  as LIB    , -1  as MATRICULE FROM  EMPLOYE   UNION  SELECT  DISTINCT   to_char(MATRICULE)  ||  '  -  ' ||  NOM  as LIB , MATRICULE FROM  EMPLOYE  WHERE     (A_INIT = 'N') ) order by MATRICULE ",
+      "params": []
+    }
+  },
+  "output": true,
+  "meta": [
+    {
+      "name": "lib",
+      "type": "text"
+    },
+    {
+      "name": "matricule",
+      "type": "number"
+    }
+  ]
+}

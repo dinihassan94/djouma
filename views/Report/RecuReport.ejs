@@ -1,0 +1,213 @@
+<!-- Wappler include head-page="layouts/NormalPage" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="RecuReport" appconnect="local" components="{dmxStateManagement:{},dmxBootstrap5TableGenerator:{},dmxFormatter:{},dmxNotifications:{},dmxBootstrap5Alert:{},dmxBootstrap5Toasts:{}}" class="style92" -->
+<div is="dmx-bs5-toasts" id="toasts1"></div>
+<div class="alert" id="alert1" is="dmx-bs5-alert" role="alert" type="danger" dmx-on:show-bs-alert="notifies1.danger(server_Api.lastError.message)">
+</div>
+<dmx-notifications id="notifies1"></dmx-notifications>
+
+
+
+
+<div class="modal" id="modalValidation" is="dmx-bs5-modal" tabindex="-1" nocloseonclick="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body bg-success-subtle">
+                <h4 class="text-center lh-lg">Encaissement effectuer avec succes&nbsp;</h4>
+            </div>
+            <div class="modal-footer bg-success-subtle">
+                <button type="button" class="btn btn-secondary small lh-1 btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<dmx-serverconnect id="server_Api" url="/api/Encaisement_Batch/ReportRequeteMvt_copy" dmx-param:data="session1.data.jsonData" dmx-on:success="run([{runJS:{outputType:'text',function:'load'}},{run:{outputType:'text',action:`modalValidation.toggle();session1.set(\'enccSuccess\',1)`}}])" dmx-on:error="run([{runJS:{outputType:'text',function:'showAlert'}},{run:{outputType:'text',action:`notifies1.danger(lastError.message)`}}])" dmx-on:invalid="run([{run:{outputType:'text',action:`toasts1.show({message: lastError.message, icon: \'fas fa-exclamation\'})`}},{run:{outputType:'text',action:`notifies1.danger(lastError.message)`}}])"></dmx-serverconnect>
+<dmx-session-manager id="session1"></dmx-session-manager>
+<dmx-datetime id="var1"></dmx-datetime>
+
+<dmx-local-manager id="local1"></dmx-local-manager>
+<meta name="ac:route" content="/Report/RecuReport">
+<script src="/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/style.css" />
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="lh-base col-12 border-1 border-dark align-self-stretch text-start">
+            <div class="row row-cols-1">
+                <div class="col-1"><img src="/assets/images/logoEDD.ico" class="w-auto" width="10" height="50"></div>
+                <div class="col-10">
+                    <h5 class="text-center">Electricite de Djibouti</h5>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center border-1 rounded border-dark border offset-1 col-10">
+            <h6 class="text-center w-auto">Reçu N° {{server_Api.data.headers[0].id_recu}}</h6>
+        </div>
+        <div class="text-center gx-5 col-12">
+            <div class="row">
+                <div class="col-4 offset-4 border border-dark border-1 h-25">
+                    <h6>N°CONTRAT : {{server_Api.data.headers[0].id_contrat}}</h6>
+                </div>
+                <div class="col h-25">
+                    <h6 class="text-start">DATE : {{var1.datetime.formatDate('dd-MMM-yyyy')}}</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<main>
+    <div class="container-fluid">
+
+        <div class="row ">
+            <div class="pe-0 col-7">
+                <div class="row">
+                    <div class="col-11">
+                        <h6 class="style53">&nbsp;Nom : {{server_Api.data.headers.nom}}</h6>
+                        <h6 class="style69">Adresse :&nbsp; {{server_Api.data.headers[0].adresse}}</h6>
+
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-5">
+                                <h6 class="style58">&nbsp; &nbsp;B.P&nbsp; &nbsp; &nbsp;: {{server_Api.data.headers[0].id_pl}}</h6>
+                                <h6 class="style60">&nbsp;N°PL&nbsp; &nbsp; &nbsp;: {{server_Api.data.headers[0].codepl}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</h6>
+                            </div>
+                            <div class="col">
+                                <h6>Adresse : {{server_Api.data.headers[0].adr_physique}}</h6>
+                                <h6>N°Compteur :&nbsp; &nbsp;{{server_Api.data.headers[0].code_cpteur1}}</h6>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-5 pt-4 ps-0">
+
+                <h6>N°Contrat :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{server_Api.data.headers[0].id_contrat}}</h6>
+                <h6>&nbsp; &nbsp;N°Client :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{server_Api.data.headers[0].id_client}}</h6>
+                <h6>Solde Compte :&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{server_Api.data.headers[0].solde_compte}}</h6>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <h6>Recu le montant de :&nbsp; &nbsp; {{server_Api.data.headers[0].montant_recu}} DJF&nbsp; &nbsp; par notre Caissier :&nbsp; &nbsp; &nbsp; &nbsp;{{server_Api.data.headers[0].caissier_nom_mat}}</h6>
+            </div>
+        </div>
+        <div class="row mt-3 pt-2">
+
+            <div class="col-12">
+
+                <div class="table-responsive ">
+                    <table class="table table-striped small table-bordered border-dark table-borderless">
+                        <thead>
+                            <tr>
+                                <th>N°piece</th>
+                                <th>Date</th>
+                                <th>Type mouvement</th>
+                                <th>Debit</th>
+                                <th>Credit</th>
+
+                            </tr>
+                        </thead>
+                        <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="server_Api.data.LigneMvt" id="tableRepeat2">
+
+                            <tr>
+                                <td dmx-text="n_piece"></td>
+                                <td dmx-text="date_.formatDate('dd-MM-yyyy')"></td>
+                                <td dmx-text="type_mouvement"></td>
+                                <td dmx-text="debit"></td>
+                                <td dmx-text="credit"></td>
+
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th id="total" colspan="3" class="text-end">Total :</th>
+                                <td dmx-html="server_Api.data.LigneMvt.sum(`debit`)"></td>
+                                <td dmx-html="server_Api.data.LigneMvt.sum(`credit`)"></td>
+
+
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<footer class="fixed-bottom pb-0">
+    <div class="row">
+        <div class="col">
+            <p class="text-start">{{var1.datetime.formatDate('dddd MM yyyy HH:mm')}}</p>
+        </div>
+        <div class="col">
+            <p class="text-center">{{server_Api.data.headers[0].misc}}</p>
+        </div>
+    </div>
+
+
+</footer>
+
+<script>
+    //window.addEventListener("ready", load);
+function load() {
+    // Optionally adjust or remove the timeout
+    setTimeout(() => {
+        window.print();
+        console.log('cest bon');
+   
+             
+    }, 500);  // You can shorten the delay if 1000ms is not required
+
+
+
+
+}
+
+
+ function showAlert() { alert("This is an alert message!");   }
+     /*
+     function() {
+        setTimeout(() => {
+         window.print();       
+      console.log('cest bon');
+    },1000) 
+
+});*/
+
+     /*  window.onafterprint = function() {
+          var modal = document.getElementById('modalValidation');
+        //modal.toggle();
+        // window.open('/Encaissement/ENCSS_FACTURE','_top');
+       
+    };*/
+
+      /* window.addEventListener("afterprint", fc);
+        function fc() {
+            console.log('cest before the alert');
+        
+             window.top.location.reload()   
+           
+               
+               
+        }*/
+
+    
+
+   /*function go_back ()
+  {
+       window.close();
+	    if (window.opener && !window.opener.closed) {
+	    window.opener.location.reload();
+	    }
+  }*/
+</script>

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "options": {
+      "linkedFile": "/views/authentification/LoginPage.ejs",
+      "linkedForm": "login1"
+    },
+    "$_POST": [
+      {
+        "type": "number",
+        "fieldName": "email",
+        "options": {
+          "rules": {
+            "core:number": {}
+          }
+        },
+        "name": "email"
+      },
+      {
+        "type": "text",
+        "fieldName": "password",
+        "name": "password"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "identity",
+      "module": "auth",
+      "action": "login",
+      "options": {
+        "provider": "Login",
+        "remember": "",
+        "username": "{{$_POST.email}}"
+      },
+      "output": true,
+      "meta": []
+    }
+  }
+}

@@ -1,0 +1,423 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Recherche" appconnect="local" components="{dmxStripe:{},dmxBootstrap5Offcanvas:{},dmxBootstrap5Modal:{},dmxBootstrap5TableGenerator:{},dmxFormatter:{},dmxStateManagement:{},dmxBootbox5:{},dmxNotifications:{},dmxValidator:{},dmxDataTraversal:{}}" class="style4" dmx-on:load="searchCritique.setValue(' ');VarSearchType.setValue(' ')" style="/* overflow: unset */" -->
+<dmx-serverconnect id="scCompteur" url="/api/Contrat/Compteur" dmx-param:idcontrat="" noload="true"></dmx-serverconnect>
+<dmx-data-detail id="ReleveDetail" dmx-bind:data="ApiReleve.data.api.data" key="numReleve"></dmx-data-detail>
+<dmx-serverconnect id="ReleveDetails" url="/api/Contrat/ReleveDetails" noload="true" dmx-param:idreleve="VisuContrat.tableRepeat2[0].numReleve" dmx-on:done="run({runJS:{function:'fetchImageAndDisplay',args:[`ReleveDetails.data.api.data.photo_Releve`],outputType:'text'}})" dmx-on:unauthorized="Deconn.reload()"></dmx-serverconnect>
+<dmx-serverconnect id="ApiReleve" url="/api/Contrat/releve" dmx-param:idcontrat="" dmx-on:unauthorized="Deconn.reload()" noload="true"></dmx-serverconnect>
+<dmx-serverconnect id="scRole" url="/api/Contrat/Role" dmx-param:idcontrat="" noload="true"></dmx-serverconnect>
+<dmx-serverconnect id="DetailsPL" url="/api/Contrat/detailsPL" dmx-param:idcontrat="" noload="true"></dmx-serverconnect>
+<dmx-value id="vartypesearch" dmx-bind:value="0"></dmx-value>
+<dmx-serverconnect id="rechercheAgents" url="/api/Visu/visu_recherche"></dmx-serverconnect>
+<dmx-json-datasource id="json_groupfac" is="dmx-serverconnect" url="/Group_Fac.json"></dmx-json-datasource>
+<dmx-json-datasource id="json_lieugeo" is="dmx-serverconnect" url="/leoGographique.json"></dmx-json-datasource>
+<dmx-json-datasource id="json_categtarif" is="dmx-serverconnect" url="/Categ_tarif.json"></dmx-json-datasource>
+<dmx-json-datasource id="json_tablevaleurs" is="dmx-serverconnect" url="/table_valeurs.json"></dmx-json-datasource>
+<dmx-session-manager id="sessVarIdContrat"></dmx-session-manager>
+<dmx-value id="searchCritique" dmx-bind:value="''"></dmx-value>
+<dmx-notifications id="notifies1"></dmx-notifications>
+<script is="dmx-flow" id="flow1" type="text/dmx-flow" src=""></script>
+<dmx-local-manager id="local1"></dmx-local-manager>
+<dmx-serverconnect id="servCntVisuCompteContrat" url="/api/Visualisation/Recherche" dmx-on:success="notifies1.success(lastError.response.message())" dmx-on:error="notifies1.warning(lastError.response.message())" noload="true"></dmx-serverconnect>
+<dmx-value id="VarSearchType"></dmx-value>
+<meta name="ac:route" content="/Visualisation/test">
+<div class="container-fluid">
+    <div class="row pb-0" style="height : 90vh">
+        <div class="ps-0 pe-md-1 col-xxl-2 col-lg-3 col-md-3 col-4" style="height : 100hv">
+            <div class="card-deck text-start" style="height: 100hv ">
+                <div class="card">
+                    <div class="card-body ">
+                        <div class="row">
+                            <div>
+                                <div class="row g-0 style10">
+                                    <div class="style135 col-12 h-100 mb-5">
+                                        <form class="style7" id="form1">
+
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_client" class="col-sm-3 col-form-label offset-0 ps-0 pe-0 text-left">N° client</label>
+                                                <div class="order-1 col-sm-7">
+                                                    <input type="number" class="form-control style19 mt-2 me-0 ps-0 form-control-sm" id="input_client" name="input2" aria-describedby="input2_help">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_Nomclient" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Nom Client</label>
+                                                <div class="pt-0 col-sm-7">
+                                                    <input type="text" class="form-control ps-0 style20 form-control-sm" id="input_Nomclient" name="input1" aria-describedby="input2_help" dmx-on:focus="VarSearchType.setValue(2)" dmx-on:changed="searchCritique.setValue(searchCritique.value+'CL.NOM LIKE &quot;%'+value+'%&quot;')">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_NumContrat" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">N° Contrat</label>
+
+                                                <div class="col-sm-7">
+                                                    <input type="number" class="form-control ps-0 autofocus style21 form-control-sm" id="input_NumContrat" name="input3" aria-describedby="input2_help" dmx-on:focus="VarSearchType.setValue(3)" dmx-on:change="searchCritique.setValue(searchCritique.value+'CNT.ID_CONTRAT = '+value)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row style289" is="dmx-input-group">
+                                                <label for="input_Numportable" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">N° Portable</label>
+                                                <div class="col-sm-7">
+                                                    <input class="form-control ps-0 style22 form-control-sm" id="input_Numportable" name="input4" aria-describedby="input2_help" dmx-on:changed.self="searchCritique.setValue(searchCritique.value+' AND CL.NUM_PORTABLE = '+value)" type="number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_Matricule" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Matricule</label>
+                                                <div class="col-sm-7">
+                                                    <input type="number" class="form-control ps-0 style23 form-control-sm" id="input_Matricule" name="input5" aria-describedby="input2_help" dmx-on:change="searchCritique.setValue(searchCritique.value+' EM.MATRICULE = '+value)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_BoitePostale" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Boite Postale</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control ps-0 style24 form-control-sm" id="input_BoitePostale" name="input6" aria-describedby="input2_help" dmx-on:change="searchCritique.setValue(searchCritique.value+' CL.BOITE_POSTAL LIKE &quot;%'+value+'%&quot;')">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input7" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Type Role</label>
+                                                <div class="col-sm-7 style12">
+                                                    <select id="type_role" class="form-select style13 form-select-sm" dmx-bind:options="json_tablevaleurs.data.NewDataSet.tv.where(`CODE_TABLE`, 'TPRL', '==')" optiontext="LIB_COURT" optionvalue="ID_LIGNE">
+                                                        <option value="0">Aucun</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input8" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Position Cnt.</label>
+                                                <div class="col-sm-7">
+                                                    <select id="select_PositionCnt" class="form-select style14 form-select-sm" dmx-on:changed="" dmx-bind:options="json_tablevaleurs.data.NewDataSet.tv.where(`CODE_TABLE`, 'POCO', '==')" optiontext="LIB_COURT" optionvalue="ID_LIGNE">
+                                                        <option selected="" value="0">Aucun</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_CodeSpt" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Code Support&nbsp;</label>
+                                                <div class="col-sm-7">
+                                                    <input type="number" class="form-control ps-0 style25 form-control-sm" id="input_CodeSpt" name="input9" aria-describedby="input2_help" dmx-on:changed="searchCritique.setValue(searchCritique.value+' PL.CODE_SUPPORT = '+value)">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_NPL" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Numero PL</label>
+                                                <div class="bg-dark-subtle style280 ms-2 ps-0 pe-0 border-1 rounded rounded-2 col-5 w-50 offset-2">
+                                                    <div class="row g-0 w-100 text-bg-light">
+                                                        <div class="mt-0 mb-0 ps-1 col-8">
+                                                            <input id="N_Pl_1" name="text2" type="text" class="form-control style44 form-control-sm" maxlength="6">
+                                                        </div>
+                                                        <div class="ps-1 pe-1 col-4"><input id="N_Pl_2" maxlength="1" name="text1" type="number" class="form-control style43 form-control-sm"></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input11" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Etat PL</label>
+                                                <div class="col-sm-7">
+                                                    <select id="select_etatPL" class="form-select style15 form-select-sm" dmx-bind:options="json_tablevaleurs.data.NewDataSet.tv.where(`CODE_TABLE`, 'ETPL', '==')" optiontext="LIB_COURT" optionvalue="ID_LIGNE">
+                                                        <option selected="" value="0">Aucun</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_Compteur" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">N° Compteur</label>
+                                                <div class="col-sm-7 lh-sm">
+                                                    <input type="text" class="form-control ps-0 style27 form-control-sm" id="input_Compteur" name="input12" aria-describedby="input2_help">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input13" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Status Social</label>
+                                                <div class="col-sm-7">
+                                                    <select id="select_statusSocial" class="form-select style16 form-select-sm" dmx-bind:options="json_tablevaleurs.data.NewDataSet.tv.where(`CODE_TABLE`, 'STCL', '==') " optiontext="LIB_COURT" optionvalue="ID_LIGNE">
+                                                        <option selected="" value="0">Aucun</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input14" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Categ. Tarif</label>
+                                                <div class="col-sm-7">
+                                                    <select id="select_CtTarif" class="form-select style17 form-select-sm" dmx-bind:options="json_categtarif.data.NewDataSet.tv" optiontext="LIBELLE" optionvalue="NUM_CATEG">
+                                                        <option selected="" value="0">Aucun</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input15" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Groupe de Fact.</label>
+                                                <div class="col-sm-7">
+                                                    <select id="select_GpFact" class="form-select style18 form-select-sm" dmx-bind:options="json_groupfac.data.NewDataSet.tv" optiontext="LIBELLE" optionvalue="NUM_GR_FAC">
+                                                        <option selected="" value="0">Aucun</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_AdsPhys" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">Adresse Phys.</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control ps-0 style28 form-control-sm" id="input_AdsPhys" name="input16" aria-describedby="input2_help">
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-1 row" is="dmx-input-group">
+                                                <label for="input_PS" class="col-sm-3 col-form-label offset-0 ps-0 pe-0">PS</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control ps-0 style29 form-control-sm" id="input_PS" name="input17" aria-describedby="input2_help">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-12 mt-5">
+                                        <div class="row">
+                                            <div is="dmx-radio-group" id="group2" class="radio-group pe-0 col-8">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" value="" id="rd_simple" name="radio5">
+                                                    <label class="form-check-label" for="radio5">Simple</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" value="" id="rd_complexe" name="radio5">
+                                                    <label class="form-check-label" for="radio4">Complexe</label>
+                                                </div>
+
+
+                                            </div>
+                                            <div class="col-auto col">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="check_Agent" name="input1">
+                                                    <label class="form-check-label" for="input1">Agent</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+
+                                            <div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <div class="row mb-1 w-100">
+                                            <div class="col-6">
+                                                <button id="btn1" class="btn w-100 btn-outline-secondary mb-1 style30 btn-sm" dmx-on:click="run([{runJS:{outputType:'text',function:'rechrcheavance_txt'}},{condition:{outputType:'boolean',if:`content.searchCritique.value!=\'\'`,then:{steps:{run:{outputType:'text',action:`servCntVisuCompteContrat.load({searchtype: 2, typerole: 0, searchcreteria: content.searchCritique.value})`}}},else:{steps:{run:{outputType:'text',action:`modal2.show()`}}}}}])">Effacer</button>
+                                            </div>
+                                            <div class="col-6 style31">
+                                                <button id="btn3" class="btn w-100 btn-outline-secondary style32 btn-sm" dmx-on:click="run([{runJS:{outputType:'text',function:'rechrcheavance_txt'}},{condition:{outputType:'boolean',if:`content.searchCritique.value!=\'\'`,then:{steps:{condition:{outputType:'boolean',if:`vartypesearch.value==0`,then:{steps:{condition:{outputType:'boolean',if:`input18.checked`,then:{steps:{run:{outputType:'text',action:`servCntVisuCompteContrat.load({searchtype: 2, typerole: form1.type_role.value, searchcreteria: searchCritique.value.replace(\'&quot;\', \'\\\'\').uppercase(), agentsearch: 1});rechercheAgents.load({type_search: 2, search_creteria: searchCritique.value, type_role: form1.type_role.value})`}}},else:{steps:{run:{outputType:'text',action:`servCntVisuCompteContrat.load({searchtype: 2, typerole: form1.type_role.value, searchcreteria: searchCritique.value.replace(\'&quot;\', \'\\\'\').uppercase(), agentsearch: 0});rechercheAgents.load({type_search: 2, search_creteria: searchCritique.value, type_role: form1.type_role.value})`}}}}}}}}},else:{steps:{run:{outputType:'text',action:`modal1.show()`}}}}}])">
+                                                    Rechercher<span class="spinner-border spinner-border-sm" role="status" dmx-show="servCntVisuCompteContrat.state.executing"></span></button>
+                                            </div>
+                                            <div class="col-6 mb-1">
+                                                <button id="btn4" class="btn w-100 btn-outline-secondary style33 btn-sm" dmx-on:click="">Selectionner</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <button id="btn5" class="btn w-100 btn-outline-secondary style34 btn-sm">Fermer</button>
+                                            </div>
+                                            <div class="col" dmx-on:click="modal1.show()"><button id="btn2" class="btn btn-outline-secondary w-100 ms-0 style35 btn-sm">Imprimer</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="text-end style134">
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                                <div class="row style36">
+
+                                    <small class="text-muted style37">Objet(s) Trouve(s) :{{servCntVisuCompteContrat.data.custom.count()}} </small>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ps-md-1 col-xxl-10 col-md-9 h-100 col" style="height:100vh">
+            <div class="card-deck ">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="row ">
+
+                            <div class="style6 col-xxl-12 h-75 mb-0 pb-2" style="">
+                                <div class="table-responsive" style="max-height: 85vh; overflow: auto;">
+                                    <table class="table table-striped table-bordered table-hover" id="tbl_Recher_Contrat">
+                                        <thead style=" background: #F0F0F1; ">
+                                            <tr>
+                                                <th>N°client</th>
+                                                <th>Nom Client</th>
+                                                <th>Adresse</th>
+                                                <th>N°contrat</th>
+                                                <th>Type Role</th>
+                                                <th>Etat PL</th>
+                                                <th>Possition Contrat</th>
+                                                <th class="d-none">Id pl</th>
+                                                <th>Ps</th>
+                                                <th>N° Pl</th>
+                                                <th>Solde</th>
+                                                <th>N° Compteur</th>
+                                                <th>Date construction</th>
+                                                <th>Adresse PL </th>
+                                                <th class="d-none">Num cpteur</th>
+                                                <th class="d-none">Matricule</th>
+                                                <th class="d-none">Type role</th>
+                                                <th class="d-none">Type cellule</th>
+                                                <th class="d-none">Inst phys</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="servCntVisuCompteContrat.data.custom" id="tableRepeat1">
+                                            <tr dmx-on:click="run([{run:{outputType:'text',action:`sessVarIdContrat.set(\'idContrat\',id_contrat)`}},{run:{outputType:'text',action:`scCompteur.load({idcontrat: id_contrat});ApiReleve.load({idcontrat: id_contrat});scRole.load({idcontrat: id_contrat});DetailsPL.load({idcontrat: id_contrat})`}},{condition:{outputType:'boolean',if:`sessVarIdContrat.data.PageFrom==1`,then:{steps:{runJS:{outputType:'text',function:'history_back'}}},else:{steps:{run:{outputType:'text',action:`VisuContrat.toggle()`}}}}}])">
+                                                <td dmx-text="id_client"></td>
+                                                <td dmx-text="nom"></td>
+                                                <td dmx-text="adresse"></td>
+                                                <td dmx-text="id_contrat"></td>
+                                                <td dmx-text="roletp"></td>
+                                                <td dmx-text="pletat"></td>
+                                                <td dmx-text="poscnt"></td>
+                                                <td class="d-none" dmx-text="id_pl"></td>
+                                                <td dmx-text="ps"></td>
+                                                <td dmx-text="codepl"></td>
+                                                <td dmx-text="solde"></td>
+                                                <td dmx-text="code_cpteur"></td>
+                                                <td dmx-text="date_construction"></td>
+                                                <td dmx-text="adr_physique"></td>
+                                                <td class="d-none" dmx-text="num_cpteur"></td>
+                                                <td class="d-none" dmx-text="matricule"></td>
+                                                <td class="d-none" dmx-text="type_role"></td>
+                                                <td class="d-none" dmx-text="type_cellule"></td>
+                                                <td class="d-none" dmx-text="inst_phys"></td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</div>
+<script>
+    // document.getElementById('btn1').addEventListener("click", myFunction);
+  // document.getElementById('radio1').addEventListener("click", myFunction);
+   //document.getElementById('radio2').addEventListener("click", myFunction);
+    
+   
+
+function myfunction() {
+  // Your code here
+ //console.log( dmx.app.data.content.searchCritique.value)
+     console.log(dmx.app.data.content.vartypesearch.value);
+}
+function rechrcheavance_txt()
+{
+    
+   dmx.app.data.content.searchCritique.value = '';
+    if ( document.getElementById('input_Numportable').value.length != 0)
+    {
+         dmx.app.data.content.searchCritique.value += '  and CL.NUM_PORTABLE = '+  document.getElementById('input_Numportable').value;
+
+          console.log( dmx.app.data.content.searchCritique.value);
+
+    }
+    if(document.getElementById('input_Nomclient').value.length != 0) 
+    {
+        
+         dmx.app.data.content.searchCritique.value += ' and CL.NOM LIKE  "' + '%' + document.getElementById('input_Nomclient').value + '%" ' ;
+          console.log( dmx.app.data.content.searchCritique.value);
+    }
+     if(document.getElementById('input_client').value.length != 0) 
+    {
+        dmx.app.data.content.searchCritique.value += ' and   CL.ID_CLIENT =  ' + document.getElementById('input_client').value 
+      
+       console.log( dmx.app.data.content.searchCritique.value);
+    }
+      if(document.getElementById('input_NumContrat').value.length != 0) 
+    {
+         dmx.app.data.content.searchCritique.value += ' and CNT.ID_CONTRAT =  ' + document.getElementById('input_NumContrat').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+     if(document.getElementById('input_Matricule').value.length != 0) 
+    {
+         dmx.app.data.content.searchCritique.value += ' and  EM.MATRICULE  =  ' + document.getElementById('input_Matricule').value 
+      
+         console.log( dmx.app.data.content.searchCritique.value);
+    }
+     if(document.getElementById('input_BoitePostale').value.length != 0) 
+    {
+         dmx.app.data.content.searchCritique.value += ' and   CL.BOITE_POSTAL LIKE  =  "'+ '' + document.getElementById('input_client').value + '%"'
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+     if(document.getElementById('input_CodeSpt').value.length != 0) 
+    {
+         dmx.app.data.content.searchCritique.value += ' and  CODE_SUPPORT =  ' + document.getElementById('input_CodeSpt').value 
+      
+       console.log( dmx.app.data.content.searchCritique.value);
+    }
+      if(document.getElementById('input_Compteur').value.length != 0) 
+    {
+         dmx.app.data.content.searchCritique.value += ' and CMPT.CODE_CPTEUR  =' + document.getElementById('input_Compteur').value 
+      
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+     if(document.getElementById('input_AdsPhys').value.length != 0) 
+    {
+         dmx.app.data.content.searchCritique.value += ' and  PL.ADR_PHYSIQUE LIKE =  "' + '%'+ document.getElementById('input_AdsPhys').value + '%"'
+      
+       console.log( dmx.app.data.content.searchCritique.value);
+        
+    }
+     if(document.getElementById('input_PS').value.length != 0) 
+    {
+         dmx.app.data.content.searchCritique.value += ' and CNT.ps  =  ' + document.getElementById('input_PS').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+       
+    }
+    if (document.getElementById('type_role').value != 0 )
+    {
+       dmx.app.data.content.searchCritique.value += ' and RL.TYPE_ROLE =  ' + document.getElementById('type_role').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+      if (document.getElementById('select_PositionCnt').value != 0 )
+    {
+       dmx.app.data.content.searchCritique.value += ' and CNT.POSITION =  ' + document.getElementById('select_PositionCnt').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+      if (document.getElementById('select_etatPL').value != 0 )
+    {
+       dmx.app.data.content.searchCritique.value += ' and PL.ETAT_PL =   ' + document.getElementById('select_etatPL').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+      if (document.getElementById('select_statusSocial').value != 0 )
+    {
+       dmx.app.data.content.searchCritique.value += ' and CNT.STATUT_CONTRAT =   ' + document.getElementById('select_statusSocial').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+    if (document.getElementById('select_CtTarif').value != 0 )
+    {
+       dmx.app.data.content.searchCritique.value += ' and  CNT.SOUS_CATEG IN  (SELECT  NUM_SOUS_CAT_TAR   FROM   sous_categ_tarif  WHERE  num_categ =  ' + document.getElementById('select_CtTarif').value 
+      +')'
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+    if (document.getElementById('select_GpFact').value != 0 )
+    {
+       dmx.app.data.content.searchCritique.value += ' and CNT.GROUPE_FAC = ' + document.getElementById('select_GpFact').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+    if (document.getElementById('select_statusSocial').value != 0 )
+    {
+       dmx.app.data.content.searchCritique.value += ' and CNT.STATUT_CONTRAT =   ' + document.getElementById('select_statusSocial').value 
+      
+        console.log( dmx.app.data.content.searchCritique.value);
+    }
+    
+     
+}
+ 
+   function history_back() {
+            window.history.back();
+        } 
+
+</script>

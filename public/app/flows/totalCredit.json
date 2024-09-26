@@ -1,0 +1,12 @@
+{
+  meta: {
+    $param: [
+      {type: "number", name: "new"}
+    ]
+  },
+  exec: {
+    steps: {
+      runJS: {function: "seprated", outputType: "text"}
+    }
+  }
+}

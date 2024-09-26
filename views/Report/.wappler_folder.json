@@ -1,0 +1,10 @@
+{
+  "RecuReport.ejs": {
+    "layoutPage": "NormalPage",
+    "description": ""
+  },
+  "tst.ejs": {
+    "layoutPage": "LoginLayout",
+    "description": ""
+  }
+}

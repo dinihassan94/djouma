@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "searchtype"
+      },
+      {
+        "type": "text",
+        "name": "searchcreteria"
+      },
+      {
+        "type": "number",
+        "name": "typerole"
+      },
+      {
+        "type": "number",
+        "name": "agentsearch"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "",
+      "module": "core",
+      "action": "condition",
+      "options": {
+        "if": "{{$_GET.agentsearch==0}}",
+        "then": {
+          "steps": {
+            "name": "custom",
+            "module": "dbupdater",
+            "action": "custom",
+            "options": {
+              "connection": "postgres",
+              "sql": {
+                "query": "select * from fc_RechercheAvancee(:P1,:P2,:P3)",
+                "params": [
+                  {
+                    "name": ":P1",
+                    "value": "{{$_GET.searchtype}}",
+                    "test": "2"
+                  },
+                  {
+                    "name": ":P2",
+                    "value": "{{$_GET.searchcreteria}}",
+                    "test": "AND CL.NOM LIKE  '%DJOUMA%'"
+                  },
+                  {
+                    "name": ":P3",
+                    "value": "{{$_GET.typerole}}",
+                    "test": "0"
+                  }
+                ]
+              },
+              "test": true
+            },
+            "output": true,
+            "meta": [
+              {
+                "name": "id_client",
+                "type": "number"
+              },
+              {
+                "name": "nom",
+                "type": "text"
+              },
+              {
+                "name": "person_visite",
+                "type": "text"
+              },
+              {
+                "name": "date_visite",
+                "type": "text"
+              },
+              {
+                "name": "agmobil",
+                "type": "text"
+              },
+              {
+                "name": "adresse",
+                "type": "text"
+              },
+              {
+                "name": "id_contrat",
+                "type": "number"
+              },
+              {
+                "name": "roletp",
+                "type": "text"
+              },
+              {
+                "name": "pletat",
+                "type": "text"
+              },
+              {
+                "name": "poscnt",
+                "type": "text"
+              },
+              {
+                "name": "id_pl",
+                "type": "number"
+              },
+              {
+                "name": "ps",
+                "type": "number"
+              },
+              {
+                "name": "codepl",
+                "type": "text"
+              },
+              {
+                "name": "solde",
+                "type": "text"
+              },
+              {
+                "name": "code_cpteur",
+                "type": "text"
+              },
+              {
+                "name": "date_construction",
+                "type": "text"
+              },
+              {
+                "name": "adr_physique",
+                "type": "text"
+              },
+              {
+                "name": "num_cpteur",
+                "type": "text"
+              },
+              {
+                "name": "matricule",
+                "type": "number"
+              },
+              {
+                "name": "type_role",
+                "type": "number"
+              },
+              {
+                "name": "type_cellule",
+                "type": "text"
+              },
+              {
+                "name": "inst_phys",
+                "type": "text"
+              }
+            ]
+          }
+        },
+        "else": {
+          "steps": {
+            "name": "custom1",
+            "module": "dbupdater",
+            "action": "custom",
+            "options": {
+              "connection": "postgres",
+              "sql": {
+                "query": "select * from fc_rechercheavancee_Agents (?,?,?)",
+                "params": [
+                  {
+                    "name": "?",
+                    "value": "{{$_GET.searchtype}}",
+                    "test": "2",
+                    "recid": 1
+                  },
+                  {
+                    "name": "0",
+                    "value": "{{$_GET.searchcreteria}}",
+                    "test": "and CL.NUM_PORTABLE = 77832308",
+                    "recid": 2
+                  },
+                  {
+                    "name": "?",
+                    "value": "{{$_GET.typerole}}",
+                    "test": "0",
+                    "recid": 3
+                  }
+                ]
+              }
+            },
+            "output": true,
+            "meta": [
+              {
+                "name": "id_client",
+                "type": "number"
+              },
+              {
+                "name": "nom",
+                "type": "text"
+              },
+              {
+                "name": "person_visite",
+                "type": "text"
+              },
+              {
+                "name": "date_visite",
+                "type": "datetime"
+              },
+              {
+                "name": "agmobil",
+                "type": "number"
+              },
+              {
+                "name": "adresse",
+                "type": "text"
+              },
+              {
+                "name": "id_contrat",
+                "type": "number"
+              },
+              {
+                "name": "roletp",
+                "type": "text"
+              },
+              {
+                "name": "pletat",
+                "type": "text"
+              },
+              {
+                "name": "poscnt",
+                "type": "text"
+              },
+              {
+                "name": "id_pl",
+                "type": "number"
+              },
+              {
+                "name": "ps",
+                "type": "number"
+              },
+              {
+                "name": "codepl",
+                "type": "text"
+              },
+              {
+                "name": "solde",
+                "type": "text"
+              },
+              {
+                "name": "code_cpteur",
+                "type": "text"
+              },
+              {
+                "name": "date_construction",
+                "type": "text"
+              },
+              {
+                "name": "adr_physique",
+                "type": "text"
+              },
+              {
+                "name": "num_cpteur",
+                "type": "text"
+              },
+              {
+                "name": "matricule",
+                "type": "number"
+              },
+              {
+                "name": "type_role",
+                "type": "number"
+              }
+            ],
+            "outputType": "array"
+          }
+        }
+      },
+      "outputType": "boolean"
+    }
+  }
+}

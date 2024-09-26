@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "data"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "sp_",
+        "module": "core",
+        "action": "exec",
+        "options": {
+          "exec": "sp_encaissement_api",
+          "params": {
+            "data": "{{$_GET.data}}"
+          }
+        },
+        "output": true
+      },
+      {
+        "name": "LigneMvt",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "postgres",
+          "sql": {
+            "query": "SELECT * from ReportRecu_MVT(:P1, :P2);",
+            "params": [
+              {
+                "name": ":P1",
+                "value": "{{sp_.api.data.tmp_PayNo}}",
+                "test": "F§202401007682§2§1¿"
+              },
+              {
+                "name": ":P2",
+                "value": "{{sp_.api.data.nro_lettrage}}",
+                "test": "5630054"
+              }
+            ]
+          }
+        },
+        "output": true,
+        "meta": [
+          {
+            "name": "n_piece",
+            "type": "number"
+          },
+          {
+            "name": "date_",
+            "type": "datetime"
+          },
+          {
+            "name": "type_mouvement",
+            "type": "text"
+          },
+          {
+            "name": "id_contrat",
+            "type": "number"
+          },
+          {
+            "name": "numero_lettrage",
+            "type": "number"
+          },
+          {
+            "name": "total",
+            "type": "number"
+          },
+          {
+            "name": "ligne_nro",
+            "type": "number"
+          },
+          {
+            "name": "mvt_type",
+            "type": "text"
+          },
+          {
+            "name": "sense",
+            "type": "text"
+          },
+          {
+            "name": "debit",
+            "type": "number"
+          },
+          {
+            "name": "credit",
+            "type": "number"
+          },
+          {
+            "name": "nro_cheque",
+            "type": "text"
+          }
+        ],
+        "outputType": "array"
+      },
+      {
+        "name": "headers",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "postgres",
+          "sql": {
+            "query": "select * from reportrecu (:P1,:P2,'HFHVHVGHVH4547C','DJOUMA',:P3 ,:P4)",
+            "params": [
+              {
+                "name": ":P1",
+                "value": "{{sp_.api.data.tmp_PayNo}}",
+                "test": "202409517002"
+              },
+              {
+                "name": ":P2",
+                "value": "{{sp_.api.data.argmt_cash+sp_.api.data.argmt_cheque}}",
+                "test": "1427"
+              },
+              {
+                "name": ":P3",
+                "value": "{{sp_.api.data.argusermaj}}",
+                "test": "47433"
+              },
+              {
+                "name": ":P4",
+                "value": "{{sp_.api.data.id_contrat}}",
+                "test": "37348"
+              }
+            ]
+          }
+        },
+        "output": true,
+        "meta": [
+          {
+            "name": "nom",
+            "type": "text"
+          },
+          {
+            "name": "adresse",
+            "type": "text"
+          },
+          {
+            "name": "boite_postal",
+            "type": "text"
+          },
+          {
+            "name": "id_client",
+            "type": "number"
+          },
+          {
+            "name": "id_contrat",
+            "type": "number"
+          },
+          {
+            "name": "id_pl",
+            "type": "number"
+          },
+          {
+            "name": "adr_physique",
+            "type": "text"
+          },
+          {
+            "name": "codepl",
+            "type": "text"
+          },
+          {
+            "name": "code_cpteur1",
+            "type": "number"
+          },
+          {
+            "name": "id_recu",
+            "type": "number"
+          },
+          {
+            "name": "payant",
+            "type": "number"
+          },
+          {
+            "name": "misc",
+            "type": "text"
+          },
+          {
+            "name": "caissier_nom_mat",
+            "type": "text"
+          },
+          {
+            "name": "montant_recu",
+            "type": "number"
+          },
+          {
+            "name": "solde_compte",
+            "type": "number"
+          },
+          {
+            "name": "solde_sens",
+            "type": "text"
+          }
+        ],
+        "outputType": "array"
+      }
+    ]
+  }
+}

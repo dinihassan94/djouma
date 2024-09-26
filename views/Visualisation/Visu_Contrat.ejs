@@ -1,0 +1,662 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Visu_Contrat" appConnect="local" components="{dmxBootstrap5Navigation:{},dmxAnimateCSS:{},dmxValidator:{},dmxFormatter:{},dmxBootstrap5TableGenerator:{},dmxBootstrap5Modal:{},dmxDataTraversal:{},dmxCharts:{},dmxDatastore:{},dmxBootstrap5PagingGenerator:{},dmxBootstrap5Collapse:{},dmxLightbox:{},dmxTagify:{}}" -->
+
+
+
+
+<dmx-data-view id="client" dmx-bind:data="ApiGetPayeur.data.api.data" dmx-bind:pagesize="5"></dmx-data-view>
+
+
+
+
+<dmx-data-detail id="ReleveDetail" dmx-bind:data="ApiReleve.data.api.data" key="numReleve"></dmx-data-detail>
+
+
+
+
+<div class="modal text-white fade" id="invalid" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-light text-danger text-center">
+                <h5 class="modal-title fw-bold lead small">Infos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center text-danger fw-bold shadow-sm mark">Aucun Contrat Retrouvé ou Contrat Resilié</p>
+            </div>
+            <div class="modal-footer bg-body">
+                <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal text-white fade" id="invalid1" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-light text-danger text-center">
+                <h5 class="modal-title fw-bold lead small">Infos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center text-danger fw-bold shadow-sm mark">Aucun Client retrouvé</p>
+            </div>
+            <div class="modal-footer bg-body">
+                <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="releve" is="dmx-bs5-modal" tabindex="-1" nobackdrop="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-opacity-75 text-primary">
+                <h5 class="modal-title">Recherche Reléve</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" dmx-on:click="consoKWH.hide()"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="shadow-sm rounded-top rounded-2 col-4 ms-2 me-3 border border-info">
+
+
+                        <p class="mark small font-monospace">Reléve</p>
+                        <div class="row">
+                            <div class="rounded rounded-2 border-info col-12 pt-3 pb-3">
+                                <div class="table-responsive small">
+                                    <table class="table table-hover table-sm table-bordered">
+                                        <tbody dmx-generator="bs5table" dmx-populate="ReleveDetails.data.api.data">
+                                            <tr>
+                                                <th class="shadow-sm bg-success bg-opacity-10">Num reléve</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.numReleve" class="text-primary fw-bold text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-success bg-opacity-10">Num facture</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.numFacture" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-success bg-opacity-10">Num line</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.numLine" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Montant</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.montant" class="fw-bold text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Status</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.status" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Index a</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.index_A" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Ancien index</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.ancienIndex" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Periode</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.periode" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Date reléve</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.dateReleve.formatDate('dd-MMM-yyyy')" class="fw-bold text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Date pf</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.datePF.formatDate('dd-MMM-yyyy')" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Date emission</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.dateEmission.formatDate('dd-MMM-yyyy')" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Compteur</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.compteur" class="text-center fw-bold shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Commentaire</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.commentaire" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Conso</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.conso" class="text-center shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="shadow-sm bg-secondary bg-opacity-10">Contrat</th>
+                                                <td dmx-text="ReleveDetails.data.api.data.contrat" class="text-center fw-bold shadow-sm"></td>
+                                            </tr>
+                                            <tr>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center bg-dark rounded rounded-2 border-success border ms-3 col-7">
+
+
+                        <p class="text-start lh-1 mark small font-monospace">Photo Reléve : <b>{{ReleveDetails.data.api.data.numReleve}}</b></p>
+                        <p class="text-light mt-5 pt-5" dmx-show="ReleveDetails.state.executing">Chargement en cours ...</p>
+                        <div class="d-block bg-dark pt-3 pb-3" id="relevephoto" dmx-hide="ReleveDetails.state.executing">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<div class="modal fade" id="modal1" is="dmx-bs5-modal" tabindex="-1" nobackdrop="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-opacity-75 bg-light text-primary">
+                <h5 class="modal-title">Num Contrat : <b>{{apiportefeuille.data.api.data.numContrat}}</b></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-sm small table-bordered table-borderless">
+                        <tbody dmx-generator="bs5table" dmx-populate="apiportefeuille.data.api.data">
+                            <tr>
+                                <th>Num contrat</th>
+                                <td dmx-text="apiportefeuille.data.api.data.numContrat" class="fw-bold"></td>
+                            </tr>
+                            <tr>
+                                <th>Nom</th>
+                                <td dmx-text="apiportefeuille.data.api.data.nom" class="fw-bold text-primary shadow-sm"></td>
+                            </tr>
+                            <tr>
+                                <th>Adresse</th>
+                                <td dmx-text="apiportefeuille.data.api.data.adresse"></td>
+                            </tr>
+                            <tr>
+                                <th>Adresse physique</th>
+                                <td dmx-text="apiportefeuille.data.api.data.adressePhysique"></td>
+                            </tr>
+                            <tr>
+                                <th>Num pl</th>
+                                <td dmx-text="apiportefeuille.data.api.data.numPl" class="fw-bold"></td>
+                            </tr>
+                            <tr>
+                                <th>Phone</th>
+                                <td dmx-text="apiportefeuille.data.api.data.phone"></td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td dmx-text="apiportefeuille.data.api.data.email"></td>
+                            </tr>
+                            <tr>
+                                <th>Payeur</th>
+                                <td dmx-text="apiportefeuille.data.api.data.payeur" class="fw-bold"></td>
+                            </tr>
+                            <tr>
+                                <th>Utilisateur</th>
+                                <td dmx-text="apiportefeuille.data.api.data.utilisateur"></td>
+                            </tr>
+                            <tr>
+                                <th>Solde</th>
+                                <td dmx-text="apiportefeuille.data.api.data.solde" class="fw-bold text-danger"></td>
+                            </tr>
+                            <tr>
+                                <th>Position</th>
+                                <td dmx-text="apiportefeuille.data.api.data.position"></td>
+                            </tr>
+                            <tr>
+                                <th>Code compteur</th>
+                                <td dmx-text="apiportefeuille.data.api.data.codeCompteur"></td>
+                            </tr>
+                            <tr>
+                                <th>Ps</th>
+                                <td dmx-text="apiportefeuille.data.api.data.ps" class="fw-bold"></td>
+                            </tr>
+                            <tr>
+                                <th>Tarif</th>
+                                <td dmx-text="apiportefeuille.data.api.data.tarif"></td>
+                            </tr>
+                            <tr>
+                                <th>Statut contrat</th>
+                                <td dmx-text="apiportefeuille.data.api.data.statutContrat" class="fw-bold text-black-50"></td>
+                            </tr>
+                            <tr>
+                                <th>Is enable</th>
+                                <td dmx-text="apiportefeuille.data.api.data.isEnable"></td>
+                            </tr>
+                            <tr>
+                                <th>Image</th>
+                                <td dmx-text="apiportefeuille.data.api.data.image"></td>
+                            </tr>
+                            <tr>
+                                <th>Couleur</th>
+                                <td dmx-text="apiportefeuille.data.api.data.couleur"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<dmx-serverconnect id="scCompteur" url="/api/Contrat/Compteur" noload="true" dmx-param:idcontrat="form1.input1.value"></dmx-serverconnect>
+<dmx-serverconnect id="scRole" url="/api/Contrat/Role" noload="true" dmx-param:idcontrat="form1.input1.value"></dmx-serverconnect>
+<dmx-serverconnect id="DetailsPL" url="/api/Contrat/detailsPL" noload="true" dmx-param:idcontrat="form1.input1.value"></dmx-serverconnect>
+<dmx-serverconnect id="ApiGetPayeur" url="/api/Portefeuille/ReadPayeur" noload="true" dmx-param:idpayeur="payeur.input5.value" dmx-on:error="invalid1.show();ApiGetPayeur.reset();ApiReleve.reset()" dmx-on:unauthorized="Deconn.reload()" dmx-on:invalid="invalid1.show();ApiGetPayeur.reset();ApiReleve.reset()"></dmx-serverconnect>
+<dmx-serverconnect id="ApiReleve" url="/api/Contrat/releve" dmx-param:idcontrat="form1.input1.value" noload="true" dmx-on:unauthorized="Deconn.reload()"></dmx-serverconnect>
+<dmx-serverconnect id="apiportefeuille" url="/api/Portefeuille/Readcontrat" noload="true" dmx-param:idcontract="form1.input1.value" dmx-on:unauthorized="Deconn.reload()" dmx-on:invalid="invalid.show();apiportefeuille.reset();ApiReleve.reset();ReleveDetails.reset();ReleveDetails2.reset()" dmx-on:error="invalid.show();ReleveDetails.reset();ReleveDetails2.reset();ApiReleve.reset();ReleveDetails.reset();ReleveDetails2.reset();apiportefeuille.reset()"></dmx-serverconnect>
+<meta name="ac:route" content="/Visualisation/Visu_Contrat">
+<dmx-serverconnect id="ReleveDetails" url="/api/Contrat/ReleveDetails" noload="true" dmx-param:idreleve="releve.form2.input2.value" dmx-on:done="run({runJS:{function:'fetchImageAndDisplay',args:[`ReleveDetails.data.api.data.photo_Releve`],outputType:'text'}})" dmx-on:unauthorized="Deconn.reload()"></dmx-serverconnect>
+<dmx-serverconnect id="ReleveDetails2" url="/api/Contrat/ReleveDetails" noload="true" dmx-on:done="run({runJS:{function:'miniDisplay',args:[`ReleveDetails2.data.api.data.photo_Releve`],outputType:'text'}})"></dmx-serverconnect>
+<div class="container-lg mw-100 mb-5 small">
+
+    <div class="row">
+        <div class="col shadow-sm mb-2 lh-1 border-bottom border-dark small rounded-bottom text-black-50 bg-primary bg-opacity-75" style="height: 30px;">
+            <p class="text-nowrap lh-1 fw-bold text-start small mt-2 ms-3 text-light"><i class="fas fa-arrow-alt-circle-right"></i>&nbsp; Compteur :&nbsp;&nbsp;<i class="fas fa-angle-left"></i>&nbsp;&nbsp;<i class="fas fa-angle-right">&nbsp;</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i>&nbsp;&nbsp;<font face="Font Awesome 5 Free">Facture :&nbsp; <i class="fas fa-angle-left">&nbsp;&nbsp;</i><i class="fas fa-angle-right">&nbsp;</i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i>&nbsp; Contrat :&nbsp;&nbsp;<i class="fas fa-angle-left"></i>&nbsp;<span style="" dmx-on:click="form1.input1.setValue(idcontrat.data.idcontrat)"><a href="#" dmx-style:color="'yellow'" style="" dmx-on:click="form1.input1.setValue(idcontrat.data.idcontrat)">{{idcontrat.data.idcontrat}}</a></span>&nbsp;<i class="fas fa-angle-right" style=""></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<i class="fas fa-arrow-alt-circle-right"></i>&nbsp;Client :&nbsp;&nbsp;<i class="fas fa-angle-left"></i>&nbsp;<a href="#" dmx-style:color="'yellow'" dmx-on:click="payeur.input5.setValue(idcontrat.data.idclient)">{{idcontrat.data.idclient}}&nbsp;</a><i class="fas fa-angle-right"></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i class="fas fa-arrow-alt-circle-right">&nbsp;&nbsp;</i>Relève :&nbsp;&nbsp;</font><i class="fas fa-angle-left">&nbsp;<a href="#" dmx-style:color="'yellow'" dmx-on:click="releve.form2.input2.setValue(idcontrat.data.releve);ReleveDetails.load({idreleve: idcontrat.data.releve});releve.show()">{{idcontrat.data.releve}}</a>&nbsp;</i><i class="fas fa-angle-right">&nbsp;</i></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <p class="text-primary fw-bold lh-1 mt-1 ms-1">Contrat</p>
+    <div class="row mt-2 ps-2 pe-2">
+        <div class="border-top rounded-top rounded-2 border-dark ps-3 pe-3 col-3 shadow-sm bg-white" style="min-height: 75vh;height: auto;">
+
+
+
+
+            <p class="mark font-monospace">Recherche</p>
+            <form id="form1">
+                <div class="form-group mb-3 row">
+
+                    <div class="small col-sm-5">
+                        <input type="number" class="form-control form-control-sm" id="input1" name="input1" aria-describedby="input1_help" placeholder="Num Contrat" required="" data-rule-number="" dmx-style:background-color="'#F9F7F7'">
+                    </div>
+                    <div class="col ps-0">
+                        <button id="btn1" class="btn btn-sm me-2 shadow-sm fw-bold font-monospace text-center bg-opacity-75 btn-primary bg-primary" dmx-on:click="input1.validate();form1.btn1.setValue(input1.value);apiportefeuille.load({idcontract: input1.value});ApiReleve.load({idcontrat: input1.value});DetailsPL.load({idcontrat: input1.value});payeur.reset();idcontrat.set('idcontrat',input1.value);scRole.load({idcontrat: input1.value});scCompteur.load({idcontrat: input1.value})"><span class="spinner-border spinner-border-sm" role="status" dmx-show="apiportefeuille.state.executing"></span><i class="fas fa-search">&nbsp;Recherche&nbsp;</i></button><button id="btn2" class="btn btn-sm ms-0 shadow-sm btn-outline-primary" dmx-animate-enter="bounceIn" dmx-on:click="modal1.show()" dmx-show="apiportefeuille.data.api.data.numContrat">Plus de details ...</button>
+
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+
+                <div class="col small">
+
+
+                    <ul class="list-group">
+
+
+
+
+                        <li class="list-group-item bg-opacity-75 bg-light">Nom du Payeur : <b><a href="#">{{apiportefeuille.data.api.data.nom}}</a></b></li>
+                        <li class="list-group-item">Addresse : <b>{{apiportefeuille.data.api.data.adresse}}</b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col small mt-2">
+
+
+                    <ul class="list-group">
+
+
+
+
+                        <li class="list-group-item">№ PL : <b><a href="#">{{apiportefeuille.data.api.data.numPl}}</a></b></li>
+                        <li class="list-group-item">№ Compteur : <b><a href="#">{{apiportefeuille.data.api.data.codeCompteur}}</a>&nbsp; &nbsp;&nbsp;</b><span>№ Client :&nbsp; <b>{{apiportefeuille.data.api.data.payeur}}</b></span></li>
+                        <li class="list-group-item">&nbsp;Source : -</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-opacity-75 text-bg-danger mt-2">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold"><i class="fas fa-wallet">&nbsp;&nbsp;</i>SOLDE :</h6>
+                            <h6 class="card-text fw-bold">{{apiportefeuille.data.api.data.solde.formatCurrency(' ', '.', ' ', 0)}} FDJ</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-2">
+                <div class="small col">
+                    <div class="accordion" id="accordion1">
+                        <div class="card rounded-2 shadow-sm">
+                            <div class="card-body">
+                                <h6 class="card-title text-start text-uppercase fw-bold">Role :</h6>
+                                <div id="accordion1_collapseOne" class="collapse small" is="dmx-bs5-collapse" aria-labelledby="accordion1_headingOne" data-bs-parent="#accordion1" show="true">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col ps-0 pe-0">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-sm table-bordered">
+                                                        <thead>
+                                                            <tr class="text-white">
+                                                                <th class="bg-opacity-75 shadow-sm">Type role</th>
+                                                                <th class="bg-opacity-75 shadow-sm">Lib court</th>
+                                                                <th class="bg-opacity-75 shadow-sm">Id client</th>
+                                                                <th class="bg-opacity-75 shadow-sm">Nom</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="scRole.data.Role" id="tableRepeat1">
+                                                            <tr class="text-danger">
+                                                                <td dmx-text="type_role"></td>
+                                                                <td dmx-text="lib_court" class="bg-danger text-white bg-opacity-75"></td>
+                                                                <td dmx-text="id_client"></td>
+                                                                <td dmx-text="nom"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="col rounded-top rounded-2 ms-2 ps-3 pe-3 border-top border-dark bg-white small" style="min-height: 79vh;height: auto;">
+
+
+
+
+            <p class="mark font-monospace">Détails</p>
+
+
+
+
+
+
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <div class="row mt-0 pt-0">
+                <div class="col mt-0 pt-0">
+                    <ul class="nav initialism mt-0 mb-2 nav-tabs" id="navTabs1_tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bolder" id="navTabs1_1_tab" data-bs-toggle="tab" href="#" data-bs-target="#navTabs1_1" role="tab" aria-controls="navTabs1_1" aria-selected="true"><i class="fas fa-copy">&nbsp;&nbsp;</i>Releve</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder" id="navTabs1_2_tab" data-bs-toggle="tab" href="#" data-bs-target="#navTabs1_2" role="tab" aria-controls="navTabs1_2" aria-selected="false"><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>DETAILS PL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder" id="navTabs1_3_tab" data-bs-toggle="tab" href="#" data-bs-target="#navTabs1_3" role="tab" aria-controls="navTabs1_3" aria-selected="false"><i class="fas fa-bolt">&nbsp;&nbsp;</i>cOmpteur</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="navTabs1_content">
+                        <div class="tab-pane show active fade pb-3 ps-2 pe-2 bg-transparent text-white" id="navTabs1_1" role="tabpanel">
+                            <div class="row mb-1">
+
+
+                                <div class="rounded rounded-1 border-dark border-top mt-2 mb-0 pb-0 ps-0 pe-0 col-12">
+
+                                    <p class="mark">Reléve</p>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="row pe-0">
+                                <div class="shadow-sm border border-info rounded rounded-2 col-10 pb-2">
+
+                                    <p class="fw-bold mb-3 mark small font-monospace lh-1">Reléve Pour le contrat № : {{apiportefeuille.data.api.data.numContrat}}</p>
+                                    <div class="table-responsive small">
+                                        <table class="table table-sm text-center table-hover table-striped table-borderless">
+                                            <thead>
+                                                <tr class="initialism text-light">
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Num releve</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Num facture</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Montant</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Status</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Index</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Periode</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Date releve</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Date pf</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Date emission</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Compteur</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Type releve</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Commentaire</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Conso</th>
+                                                    <th class="small shadow-sm bg-primary bg-opacity-75 text-white">Contrat</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="ApiReleve.data.api.data" id="tableRepeat2">
+                                                <tr class="small" dmx-class:table-warning="numReleve==ReleveDetail.data.numReleve" dmx-on:click="run([{run:{action:`ReleveDetail.select(numReleve)`,outputType:'text'}},{run:{action:`ReleveDetails2.load({idreleve: ReleveDetail.data.numReleve})`,outputType:'text'}}])" dmx-on:dblclick="ReleveDetails.load({idreleve: ReleveDetail.data.numReleve});releve.form2.input2.setValue(ReleveDetail.data.numReleve);releve.show()">
+                                                    <td dmx-text="numReleve" class="fw-bold"></td>
+                                                    <td dmx-text="numFacture"></td>
+                                                    <td dmx-text="montant.formatCurrency(' ', ' ', ' ', 0)" class="fw-bold"></td>
+                                                    <td dmx-text="status"></td>
+                                                    <td dmx-text="index_A" class="fw-bold"></td>
+                                                    <td dmx-text="periode"></td>
+                                                    <td dmx-text="dateReleve.formatDate('dd-MMM-yyyy ')" class="fw-bold"></td>
+                                                    <td dmx-text="datePF.formatDate('dd-MMM-yyyy ')"></td>
+                                                    <td dmx-text="dateEmission.formatDate('dd-MMM-yyyy ')"></td>
+                                                    <td dmx-text="compteur" class="fw-bold"></td>
+                                                    <td dmx-text="typeReleve"></td>
+                                                    <td dmx-text="commentaire"></td>
+                                                    <td dmx-text="conso"></td>
+                                                    <td dmx-text="contrat" class="fw-bold"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+
+                                    <div class="d-block text-center">
+                                        <div class="spinner-border spinner-border-sm text-primary" role="status" dmx-show="ApiReleve.state.executing">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small text-center align-self-start rounded-2 col-2">
+
+
+                                    <p class="lh-1 text-start mark font-monospace fw-bold"><i class="fas fa-file-image">&nbsp;&nbsp;</i>Photo Reléve : <b>{{ReleveDetail.data.numReleve}}</b></p>
+
+                                    <div class="d-block mb-3 bg-dark text-danger shadow" id="displayphoto" dmx-animate-enter="fadeIn">
+                                    </div>
+                                    <p class="font-monospace fw-bold" dmx-show="ReleveDetails2.state.executing" dmx-animate-enter="fadeIn">Chargement en cours ...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade ps-2 pe-2" id="navTabs1_2" role="tabpanel">
+                            <div class="mt-3 ps-0 pe-0 container-fluid">
+                                <div class="row rounded rounded-2 border-dark border-top pb-2">
+                                    <p class="mark lh-1">Details Points de Livraison&nbsp;</p>
+
+                                    <div class="col-4 mt-2">
+                                        <ul class="list-group shadow">
+                                            <li class="list-group-item bg-opacity-10">N PL : <b>{{DetailsPL.data.PL[0].codepl}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b><span>ID </span><span>PL :</span><b> {{DetailsPL.data.PL[0].id_pl}}&nbsp;</b></li>
+                                            <li class="list-group-item bg-opacity-10">Addresse Physique :&nbsp;&nbsp;<b>{{DetailsPL.data.PL[0].adr_physique}}</b></li>
+                                            <li class="list-group-item">Support : <b>{{DetailsPL.data.PL[0].code_support}}</b></li>
+                                            <li class="list-group-item">PS Permise : <b>{{DetailsPL.data.PL[0].ps_permise}}</b></li>
+                                            <li class="list-group-item">N ordre tournee : <b>{{DetailsPL.data.PL[0].num_tourne}}</b></li>
+                                            <li class="list-group-item">Forme energie : <b>{{DetailsPL.data.PL[0].formeng}}</b></li>
+                                            <li class="list-group-item list-group-item-dark bg-opacity-10">Etat PL : <b>{{DetailsPL.data.PL[0].etatpl}}</b></li>
+                                            <li class="list-group-item">Access Compteur : <b>{{DetailsPL.data.PL[0].accessc}}</b></li>
+                                            <li class="list-group-item">Etat Coupure : <b>{{DetailsPL.data.PL[0].etat_coupure}}</b></li>
+                                            <li class="list-group-item">Commentaire 1 : <b>{{DetailsPL.data.PL[0].coment1}}</b></li>
+                                            <li class="list-group-item">Commentaire 2 : <b>{{DetailsPL.data.PL[0].coment2}}</b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 mt-2">
+                                        <ul class="list-group shadow">
+                                            <li class="list-group-item">Rang branchement : <b>{{DetailsPL.data.PL[0].rang_branchement}}</b></li>
+                                            <li class="list-group-item">Date Construction : <b>{{DetailsPL.data.PL[0].date_construction}}</b></li>
+                                            <li class="list-group-item">Cellule : <b>{{DetailsPL.data.PL[0].nom_cellule}}</b></li>
+                                            <li class="list-group-item">Lieu Geographique : <b>{{DetailsPL.data.PL[0].lieu_geo}}</b></li>
+                                            <li class="list-group-item">Zone Geographique : <b>{{DetailsPL.data.PL[0].num_zonegeo}}</b></li>
+                                            <li class="list-group-item">Tournee de Releve : <b>{{DetailsPL.data.PL[0].num_tourne}}</b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 mt-2">
+                                        <ul class="list-group shadow">
+                                            <li class="list-group-item bg-opacity-10">Position TI : <b>{{DetailsPL.data.PL[0].posit_ti}}</b></li>
+                                            <li class="list-group-item bg-opacity-10">Rapport TI : <b>{{DetailsPL.data.PL[0].rappo_ti}}</b></li>
+                                            <li class="list-group-item bg-opacity-10">Coeff. Multi Actif : <b>{{DetailsPL.data.PL[0].coeff_mult_act}}</b></li>
+                                            <li class="list-group-item bg-opacity-10">Coeff Multi Reactif : <b>{{DetailsPL.data.PL[0].coeff_mult_rea}}</b></li>
+                                            <li class="list-group-item bg-opacity-10">Coeff Multi Ind Max : <b>{{DetailsPL.data.PL[0].coeff_mult_ipm}}</b></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade pb-2 ps-0 pe-0" id="navTabs1_3" role="tabpanel">
+                            <div class="container-fluid mt-3">
+                                <div class="row border-top rounded-2 border-dark rounded-top">
+                                    <p class="mark">Compteur</p>
+
+                                    <div class="col-4 mt-2">
+                                        <ul class="list-group shadow">
+                                            <li class="list-group-item bg-primary bg-opacity-10">Num Compteur : <b>{{scCompteur.data.compteur[0].code_cpteur}}</b></li>
+                                            <li class="list-group-item">Num Sequentiel : <b>{{scCompteur.data.compteur[0].num_cpteur}}</b></li>
+                                            <li class="list-group-item">Annee Fab : <b>{{scCompteur.data.compteur[0].annee_fab}}</b></li>
+                                            <li class="list-group-item">Installe : <b>{{scCompteur.data.compteur[0].inst_phys}}</b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4 mt-2">
+                                        <ul class="list-group shadow">
+                                            <li class="list-group-item">Modele : <b>{{scCompteur.data.compteur[0].libelle}}</b></li>
+                                            <li class="list-group-item">Etat Compteur : <b>{{scCompteur.data.compteur[0].lib_court}}</b></li>
+                                            <li class="list-group-item">NB Roues :&nbsp;</li>
+                                            <li class="list-group-item">Type Compteur : <b>{{scCompteur.data.compteur[0].type_cmpt}}</b></li>
+                                            <li class="list-group-item">Type courant : <b>{{scCompteur.data.compteur[0].type_crnt}}</b></li>
+                                            <li class="list-group-item">Voltage : <b>{{scCompteur.data.compteur[0].voltage}}</b></li>
+                                            <li class="list-group-item">Rapport Compteur : <b>{{scCompteur.data.compteur[0].rapport_cmp}}</b></li>
+                                            <li class="list-group-item">Commentaire : <b>{{scCompteur.data.compteur[0].commentaire}}</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+var form1 = document.getElementById('form1');
+
+form1.addEventListener('keydown', function (event) {
+if (event.key === 'Enter' && event.target.tagName !== 'TEXTAREA') {
+event.preventDefault();
+document.getElementById('btn1').click();
+}
+});
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+var form1 = document.getElementById('payeur');
+
+form1.addEventListener('keydown', function (event) {
+if (event.key === 'Enter' && event.target.tagName !== 'TEXTAREA') {
+event.preventDefault();
+document.getElementById('btn3').click();
+}
+});
+});
+
+
+
+
+    function fetchImageAndDisplay(base64String) {
+    const maxWidth = 700;
+    const maxHeight = 500;    
+    // Clear previous image
+    const targetDiv = document.getElementById("relevephoto");
+    while (targetDiv.firstChild) {
+    targetDiv.removeChild(targetDiv.firstChild);
+    }
+    const byteCharacters = atob(base64String);
+    const byteNumbers = new Array(byteCharacters.length);   
+    for (let i = 0; i < byteCharacters.length; i++) { byteNumbers[i]=byteCharacters.charCodeAt(i); } const byteArray=new Uint8Array(byteNumbers); const blob=new Blob([byteArray], { type: 'image/jpeg' }); const dataUrl=URL.createObjectURL(blob); const image=new Image(); image.onload=function () { const aspectRatio=image.width / image.height; let newWidth=maxWidth; let newHeight=maxWidth / aspectRatio; if (newHeight> maxHeight) {
+        newHeight = maxHeight;
+        newWidth = maxHeight * aspectRatio;
+        }
+        image.width = newWidth;
+        image.height = newHeight;
+        image.style.opacity = 0;
+        targetDiv.appendChild(image);   
+        // Trigger reflow to apply initial opacity
+        image.offsetWidth;  
+        // Add bounce-in effect using CSS transition
+        image.style.transition = 'transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.2s ease-in-out';
+        image.style.opacity = 1;
+        image.style.transform = 'scale(0.5)';   
+        // Trigger reflow to apply transform
+        image.offsetWidth;
+        // Set final transform
+        image.style.transform = 'scale(1)';
+        };
+        image.src = dataUrl;
+        }
+    
+    
+    
+        function miniDisplay(base64String) {
+        const maxWidth = 400;
+        const maxHeight = 200;
+    
+        // Clear previous image
+        const targetDiv = document.getElementById("displayphoto");
+        while (targetDiv.firstChild) {
+        targetDiv.removeChild(targetDiv.firstChild);
+        }
+        const byteCharacters = atob(base64String);
+        const byteNumbers = new Array(byteCharacters.length); 
+        for (let i = 0; i < byteCharacters.length; i++) { byteNumbers[i]=byteCharacters.charCodeAt(i); } const byteArray=new Uint8Array(byteNumbers); const blob=new Blob([byteArray], { type: 'image/jpeg' }); const dataUrl=URL.createObjectURL(blob); const image=new Image(); image.onload=function () { const aspectRatio=image.width / image.height; let newWidth=maxWidth; let newHeight=maxWidth / aspectRatio; if (newHeight> maxHeight) {
+            newHeight = maxHeight;
+            newWidth = maxHeight * aspectRatio;
+            }
+            image.width = newWidth;
+            image.height = newHeight;
+            image.style.opacity = 0;
+            targetDiv.appendChild(image);
+            // Trigger reflow to apply initial opacity
+            image.offsetWidth;
+            // Add bounce-in effect using CSS transition
+            image.style.transition = 'transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.2s ease-in-out';
+            image.style.opacity = 1;
+            image.style.transform = 'scale(0.5)';
+            // Trigger reflow to apply transform
+            image.offsetWidth;
+            // Set final transform
+            image.style.transform = 'scale(1)';
+            };
+            image.src = dataUrl;
+            }
+
+
+
+</script>

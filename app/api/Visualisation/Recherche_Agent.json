@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "number",
+        "name": "searchtype"
+      },
+      {
+        "type": "number",
+        "name": "role_type"
+      },
+      {
+        "type": "text",
+        "name": "searchcriteria"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "select * from fc_rechercheavancee_Agents (?,?,?)",
+          "params": [
+            {
+              "name": ":P1",
+              "value": "{{$_GET.searchtype}}",
+              "test": "2"
+            },
+            {
+              "name": ":P2",
+              "value": "{{$_GET.searchcriteria}}",
+              "test": "AND CL.NUM_PORTABLE =  77832308"
+            },
+            {
+              "name": ":P3",
+              "value": "{{$_GET.role_type}}",
+              "test": "0"
+            }
+          ]
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "id_client",
+          "type": "number"
+        },
+        {
+          "name": "nom",
+          "type": "text"
+        },
+        {
+          "name": "person_visite",
+          "type": "text"
+        },
+        {
+          "name": "date_visite",
+          "type": "datetime"
+        },
+        {
+          "name": "agmobil",
+          "type": "number"
+        },
+        {
+          "name": "adresse",
+          "type": "text"
+        },
+        {
+          "name": "id_contrat",
+          "type": "number"
+        },
+        {
+          "name": "roletp",
+          "type": "text"
+        },
+        {
+          "name": "pletat",
+          "type": "text"
+        },
+        {
+          "name": "poscnt",
+          "type": "text"
+        },
+        {
+          "name": "id_pl",
+          "type": "number"
+        },
+        {
+          "name": "ps",
+          "type": "number"
+        },
+        {
+          "name": "codepl",
+          "type": "text"
+        },
+        {
+          "name": "solde",
+          "type": "text"
+        },
+        {
+          "name": "code_cpteur",
+          "type": "text"
+        },
+        {
+          "name": "date_construction",
+          "type": "text"
+        },
+        {
+          "name": "adr_physique",
+          "type": "text"
+        },
+        {
+          "name": "num_cpteur",
+          "type": "text"
+        },
+        {
+          "name": "matricule",
+          "type": "number"
+        },
+        {
+          "name": "type_role",
+          "type": "number"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "encaissement_Divers.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "index.ejs": {
+    "layoutPage": "",
+    "description": ""
+  },
+  "ibedx2.ejs": {
+    "layoutPage": "",
+    "description": ""
+  }
+}

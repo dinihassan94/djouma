@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "module": "auth",
+  "action": "restrict",
+  "options": {
+    "provider": "Login",
+    "loginUrl": "/authentification/LoginPage",
+    "forbiddenUrl": "/authentification/LoginPage"
+  }
+}

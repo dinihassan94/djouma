@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "id_contrat"
+      },
+      {
+        "type": "text",
+        "name": "argmt_cash"
+      },
+      {
+        "type": "text",
+        "name": "argmt_cheque"
+      },
+      {
+        "type": "text",
+        "name": "argno_doc"
+      },
+      {
+        "type": "text",
+        "name": "argbanque"
+      },
+      {
+        "type": "text",
+        "name": "argusermaj"
+      },
+      {
+        "type": "text",
+        "name": "argmvtpaye_tx"
+      },
+      {
+        "type": "text",
+        "name": "argmode_paimnt"
+      },
+      {
+        "type": "boolean",
+        "name": "arg_checkassign"
+      },
+      {
+        "type": "text",
+        "name": "arg_totcr"
+      },
+      {
+        "type": "text",
+        "name": "arg_nomfenetre"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "list",
+        "module": "arraylist",
+        "action": "create",
+        "options": {},
+        "meta": [],
+        "outputType": "array"
+      },
+      {
+        "name": "sp_encaiss",
+        "module": "core",
+        "action": "exec",
+        "options": {
+          "exec": "Spencaissement1",
+          "params": {
+            "id_contrat": "{{$_GET.id_contrat}}",
+            "argmt_cash": "{{$_GET.argmt_cash}}",
+            "argmt_cheque": "{{$_GET.argmt_cheque}}",
+            "argno_doc": "{{$_GET.argno_doc}}",
+            "argbanque": "{{$_GET.argbanque}}",
+            "argusermaj": "{{$_GET.argusermaj}}",
+            "argmvtpaye_tx": "{{$_GET.argmvtpaye_tx}}",
+            "argmode_paimnt": "{{$_GET.argmode_paimnt}}",
+            "arg_checkassign": "{{$_GET.arg_checkassign}}",
+            "arg_totcr": "{{$_GET.arg_totcr}}",
+            "arg_nomfenetre": "{{$_GET.arg_nomfenetre}}"
+          }
+        },
+        "output": true
+      },
+      {
+        "name": "LigneMvt",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "postgres",
+          "sql": {
+            "query": "SELECT * from ReportRecu_MVT(:P1, :P2);",
+            "params": [
+              {
+                "name": ":P1",
+                "value": "{{sp_encaiss.custom[0].out_id_autremvt}}",
+                "test": "202408521288",
+                "recid": 1
+              },
+              {
+                "name": ":P2",
+                "value": "{{sp_encaiss.custom[0].out_nrolettrage}}",
+                "test": "5229797",
+                "recid": 2
+              }
+            ]
+          },
+          "test": true
+        },
+        "output": true,
+        "meta": [
+          {
+            "name": "n_piece",
+            "type": "number"
+          },
+          {
+            "name": "date_",
+            "type": "datetime"
+          },
+          {
+            "name": "type_mouvement",
+            "type": "text"
+          },
+          {
+            "name": "id_contrat",
+            "type": "number"
+          },
+          {
+            "name": "numero_lettrage",
+            "type": "number"
+          },
+          {
+            "name": "total",
+            "type": "number"
+          },
+          {
+            "name": "ligne_nro",
+            "type": "number"
+          },
+          {
+            "name": "mvt_type",
+            "type": "text"
+          },
+          {
+            "name": "sense",
+            "type": "text"
+          },
+          {
+            "name": "debit",
+            "type": "number"
+          },
+          {
+            "name": "credit",
+            "type": "number"
+          },
+          {
+            "name": "nro_cheque",
+            "type": "text"
+          }
+        ],
+        "outputType": "array"
+      },
+      {
+        "name": "Header",
+        "module": "dbupdater",
+        "action": "custom",
+        "options": {
+          "connection": "postgres",
+          "sql": {
+            "query": "select * from reportrecu (:P1,:P2,'HFHVHVGHVH4547C','DJOUMA',:P3 ,:P4)",
+            "params": [
+              {
+                "name": ":P1",
+                "value": "{{sp_encaiss.custom[0].out_id_autremvt}}"
+              },
+              {
+                "name": ":P2",
+                "value": "{{$_GET.argmt_cash+$_GET.argmt_cheque}}"
+              },
+              {
+                "name": ":P3",
+                "value": "{{$_GET.argusermaj}}"
+              },
+              {
+                "name": ":P4",
+                "value": "{{LigneMvt[0].id_contrat}}"
+              }
+            ]
+          }
+        },
+        "output": true,
+        "meta": [],
+        "outputType": "array"
+      }
+    ]
+  }
+}

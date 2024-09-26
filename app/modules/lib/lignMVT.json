@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "$_PARAM": [
+      {
+        "type": "text",
+        "name": "TEST1"
+      },
+      {
+        "type": "text",
+        "name": "TEST2"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "SELECT * from ReportRecu_MVT(:P1, :P2);",
+          "params": [
+            {
+              "name": ":P1",
+              "value": "{{$_PARAM.TEST1}}",
+              "test": "202401500070",
+              "recid": 1
+            },
+            {
+              "name": ":P2",
+              "value": "{{$_PARAM.TEST2}}",
+              "test": "5229797",
+              "recid": 2
+            }
+          ]
+        },
+        "test": true
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "trid_1",
+          "type": "number"
+        },
+        {
+          "name": "trdate_1",
+          "type": "datetime"
+        },
+        {
+          "name": "libelle_type_mvt_1",
+          "type": "text"
+        },
+        {
+          "name": "num_contrat_1",
+          "type": "number"
+        },
+        {
+          "name": "nro_lettrage_1",
+          "type": "number"
+        },
+        {
+          "name": "montant_1",
+          "type": "number"
+        },
+        {
+          "name": "ligneno_1",
+          "type": "number"
+        },
+        {
+          "name": "ltype_1",
+          "type": "number"
+        },
+        {
+          "name": "sens_1",
+          "type": "text"
+        },
+        {
+          "name": "d_1",
+          "type": "number"
+        },
+        {
+          "name": "c_1",
+          "type": "number"
+        },
+        {
+          "name": "no_chq_1",
+          "type": "text"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

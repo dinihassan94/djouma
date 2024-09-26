@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "id_piece"
+      },
+      {
+        "type": "text",
+        "name": "argmt_cash"
+      },
+      {
+        "type": "text",
+        "name": "argmt_cheque"
+      },
+      {
+        "type": "text",
+        "name": "argno_doc"
+      },
+      {
+        "type": "text",
+        "name": "argbanque"
+      },
+      {
+        "type": "text",
+        "name": "argusermaj"
+      },
+      {
+        "type": "text",
+        "name": "argmvtpaye_tx"
+      },
+      {
+        "type": "text",
+        "name": "arg_montant"
+      },
+      {
+        "type": "text",
+        "name": "argno_contrat"
+      },
+      {
+        "type": "text",
+        "name": "arg_solde"
+      },
+      {
+        "type": "text",
+        "name": "arg_table"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "call sp_encaissement_batch12(:P1,:P2,:P3,:P4,:P5,:P6,:P7,:P8,:P9,:P10,:P11)",
+          "params": [
+            {
+              "name": ":P1",
+              "value": "{{$_GET.id_piece}}",
+              "test": "200308281840",
+              "recid": 1
+            },
+            {
+              "name": ":P2",
+              "value": "{{$_GET.argmt_cash}}",
+              "test": "0",
+              "recid": 2
+            },
+            {
+              "name": ":P3",
+              "value": "{{$_GET.argmt_cheque}}",
+              "test": "25471",
+              "recid": 3
+            },
+            {
+              "name": ":P4",
+              "value": "{{$_GET.arg_montant}}",
+              "test": "24863",
+              "recid": 4
+            },
+            {
+              "name": ":P5",
+              "value": "{{$_GET.argno_doc}}",
+              "test": "4465",
+              "recid": 5
+            },
+            {
+              "name": ":P6",
+              "value": "{{$_GET.argbanque}}",
+              "test": "86",
+              "recid": 6
+            },
+            {
+              "name": ":P7",
+              "value": "{{$_GET.argusermaj}}",
+              "test": "47433",
+              "recid": 7
+            },
+            {
+              "name": ":P8",
+              "value": "{{$_GET.argmvtpaye_tx}}",
+              "test": "1§200308281840§15§1§13§0¿",
+              "recid": 8
+            },
+            {
+              "name": ":P9",
+              "value": "{{$_GET.argno_contrat}}",
+              "test": "35471",
+              "recid": 9
+            },
+            {
+              "name": ":P10",
+              "value": "{{$_GET.arg_solde}}",
+              "test": "1104",
+              "recid": 10
+            },
+            {
+              "name": ":P11",
+              "value": "{{$_GET.arg_table}}",
+              "test": "1",
+              "recid": 11
+            }
+          ]
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "out_nrolettrage",
+          "type": "text"
+        },
+        {
+          "name": "out_id_autremvt",
+          "type": "text"
+        },
+        {
+          "name": "out_id_autremvt2",
+          "type": "text"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

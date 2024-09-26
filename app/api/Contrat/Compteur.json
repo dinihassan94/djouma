@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "number",
+        "name": "idcontrat"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "select * from view_details_cmpt where id_contrat in (?)",
+          "params": [
+            {
+              "name": "?",
+              "value": "{{$_GET.idcontrat}}",
+              "test": "37348"
+            }
+          ]
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "num_cpteur",
+          "type": "number"
+        },
+        {
+          "name": "inst_phys",
+          "type": "text"
+        },
+        {
+          "name": "commentaire",
+          "type": "text"
+        },
+        {
+          "name": "id_utilis_maj",
+          "type": "number"
+        },
+        {
+          "name": "date_maj",
+          "type": "datetime"
+        },
+        {
+          "name": "num_pl",
+          "type": "number"
+        },
+        {
+          "name": "modele_cpteur",
+          "type": "number"
+        },
+        {
+          "name": "etat_cpt",
+          "type": "number"
+        },
+        {
+          "name": "annee_fab",
+          "type": "number"
+        },
+        {
+          "name": "numerateur_comptage",
+          "type": "number"
+        },
+        {
+          "name": "code_cpteur",
+          "type": "text"
+        },
+        {
+          "name": "num_comptage_actif",
+          "type": "number"
+        },
+        {
+          "name": "num_comptage_react",
+          "type": "number"
+        },
+        {
+          "name": "libelle",
+          "type": "text"
+        },
+        {
+          "name": "lib_court",
+          "type": "text"
+        },
+        {
+          "name": "lg_index",
+          "type": "number"
+        },
+        {
+          "name": "voltage",
+          "type": "number"
+        },
+        {
+          "name": "type_crnt",
+          "type": "text"
+        },
+        {
+          "name": "type_cmpt",
+          "type": "text"
+        },
+        {
+          "name": "rapport_cmp",
+          "type": "text"
+        },
+        {
+          "name": "id_contrat",
+          "type": "number"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

@@ -1,0 +1,394 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Recherche_facture" appConnect="local" components="{dmxBootstrap5TableGenerator:{},dmxValidator:{},dmxFormatter:{},dmxDatePicker:{}}" jquery_slim_35="cdn" moment_2="cdn" -->
+<dmx-serverconnect id="tout_utlisateur" url="/api/Visualisation/Tout_Utilisateur"></dmx-serverconnect>
+<dmx-json-datasource id="type_mvt" is="dmx-serverconnect" url="/type_Mvt.json"></dmx-json-datasource>
+<dmx-value id="var_utlisateur" dmx-bind:value="1"></dmx-value>
+<script src="https://momentjs.com/downloads/moment.js"></script>
+<dmx-serverconnect id="Server_Recherche" url="/api/Visualisation/Recherche_Facture"></dmx-serverconnect>
+<dmx-value id="searchCritique" dmx-bind:value="''"></dmx-value>
+<meta name="ac:route" content="/Visualisation/Recherche_facture">
+<div class="container-fluid">
+
+
+    <div class="row border-1 border-dark border mb-2 pt-1 pb-1 ps-1 pe-1">
+        <div class="border-dark-subtle col-12">
+
+            <div class="row pt-0 pb-0 mb-32">
+                <div class="col-12">
+                    <form id="form2">
+                        <table class="table">
+                            <tbody>
+
+                                <tr>
+                                    <td class="label">Nom Client </td>
+                                    <td class="content">
+                                    </td>
+                                    <td class="label">N Client&nbsp; :</td>
+                                    <td class="content">
+                                        <input type="text" class="form-control  form-control-sm" id="input5" name="dossier1" aria-describedby="input1_help">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="label">N support :</td>
+                                    <td class="content">
+                                        <input type="text" class="form-control  form-control-sm" id="input_NSupport" name="statut1" aria-describedby="input1_help">
+                                    </td>
+                                    <td class="label">N Contrat :</td>
+                                    <td class="content">
+                                        <input type="text" class="form-control  form-control-sm" id="input_Ncnt" name="cellule1" aria-describedby="input1_help">
+                                    </td>
+                                    <td class="label pe-0">date d'emission de :</td>
+                                    <td class="content ps-0 pe-0">
+                                        <div class="row">
+                                            <div class="col-5"><input type="datetime-local" class="form-control style155 form-control-sm" id="date_A1" name="input4" aria-describedby="input1_help" dmx-bind:disabled="!checkbox_a.checked"></div>
+                                            <div class="col-1">
+                                                <div class="form-check style154">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkbox_a1" name="input4">
+                                                </div>
+                                            </div>
+                                            <div class="align-self-end ps-0 col-auto">
+                                                <h6>a</h6>
+                                            </div>
+                                            <div class="ps-0 style153 border-1 col-5">
+                                                <div class="row align-items-center">
+                                                    <div class="col-1">
+                                                        <div class="form-check style154">
+                                                            <input class="form-check-input" type="checkbox" value="" id="checkbox_de1" name="input4">
+                                                        </div>
+                                                    </div>
+                                                    <div class="border-secondary-subtle col-9">
+                                                        <input type="datetime-local" class="form-control style155 form-control-sm" id="date_De1" name="input4" aria-describedby="input1_help" dmx-bind:disabled="!checkbox_de.checked">
+                                                    </div>
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>N Compteur :</td>
+                                    <td><input type="text" class="form-control ps-0 form-control-sm" id="input_Cnt" name="input6" aria-describedby="input1_help"></td>
+                                    <td>N facture :</td>
+
+
+                                    <td><input type="text" class="form-control ps-0 form-control-sm" id="input_NFact" name="input6" aria-describedby="input1_help"></td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="align-self-end ps-0 pe-0 col">
+
+                                                <div class="form-check">
+                                                    <div>
+                                                        <input class="form-check-input" type="radio" value="" id="radio1" name="radio1" checked="">
+                                                        <label class="form-check-label style141" for="radio1">Par Utilisateur&nbsp;</label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="ps-0 col-12"><select id="select_Utilisateur" class="form-select" dmx-bind:options="tout_utlisateur.data.custom" optiontext="lib" optionvalue="matricule">
+                                                </select></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+
+                                    <td>
+                                        <div class="form-check style146 col-2"><input class="form-check-input" type="radio" value="1" id="R_NonPayee1" name="transaction_type3" checked="">
+                                            <label class="form-check-label style149 col" for="R_NonPayee1">Non payees</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline style147 col-1">
+                                            <input class="form-check-input" type="radio" value="2" id="R_Payee1" name="transaction_type3">
+                                            <label class="form-check-label style149" for="R_Payee1">Payees</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-check form-check-inline style148 col-3">
+                                            <input class="form-check-input" type="radio" value="3" id="R_Payee_NonPay1" name="transaction_type3">
+                                            <label class="form-check-label style149 col" for="R_Payee_NonPay1">Payees&amp;Non Payees</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="row">
+                                            <div class="align-self-end pe-0 col-6">
+                                                <h6>Mvt. portefeuille :</h6>
+                                            </div>
+                                            <div class="ps-0 col-11"><select id="select_Mvt" class="form-select" dmx-bind:options="type_mvt.data.NewDataSet.tv" optiontext="LIBELLE_TYPE_MVT" optionvalue="ID_TYPE_MVT">
+                                                </select></div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                    </form>
+                </div>
+
+
+            </div>
+
+
+            <div class="row pt-0 pb-0">
+
+                <div class="col ps-0">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row pt-0 pb-0">
+                <div class="col-7">
+                    <div is="dmx-radio-group" id="group1" class="radio-group">
+                        <div class="form-check form-check-inline style146 col-2"><input class="form-check-input" type="radio" value="1" id="R_NonPayee" name="transaction_type" checked="">
+                            <label class="form-check-label style149" for="R_NonPayee">Non payees</label>
+                        </div>
+                        <div class="form-check form-check-inline style147 col-1">
+                            <input class="form-check-input" type="radio" value="2" id="R_Payee" name="transaction_type">
+                            <label class="form-check-label style149" for="R_Payee">Payees</label>
+                        </div>
+                        <div class="form-check form-check-inline style148 col-3">
+                            <input class="form-check-input" type="radio" value="3" id="R_Payee_NonPay" name="transaction_type">
+                            <label class="form-check-label style149" for="R_Payee_NonPay">Payees&amp;Non Payees</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div is="dmx-radio-group" id="group4" class="radio-group">
+
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div is="dmx-radio-group" id="group2" class="radio-group">
+                    <div class="form-check form-check-inline style146 col-1"><input class="form-check-input" type="radio" value="1" id="r_annulee" name="transaction_type1" checked="">
+                        <label class="form-check-label style149" for="r_annulee">Annulees</label>
+                    </div>
+                    <div class="form-check form-check-inline style147 col-1">
+                        <input class="form-check-input" type="radio" value="2" id="R_NonAnnulee" name="transaction_type1">
+                        <label class="form-check-label style149" for="r_annulee">Non annulees</label>
+                    </div>
+                    <div class="form-check col-3 form-check-inline style148">
+                        <input class="form-check-input" type="radio" value="3" id="R_annule_Nonanulee" name="transaction_type1">
+                        <label class="form-check-label style149" for="r_annulee">Annulees&amp;Non annulees</label>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="row bg-secondary">
+        <div class="col-6 mt-1 mb-1">
+            <div is="dmx-radio-group" id="group3" class="radio-group">
+                <div class="form-check form-check-inline style146 col-2"><input class="form-check-input" type="radio" value="1" id="sans_Anomalie" name="transaction_type2" checked="">
+                    <label class="form-check-label style143" for="sans_Anomalie">Sans anomalie</label>
+                </div>
+                <div class="form-check form-check-inline style147 col-1">
+                    <input class="form-check-input" type="radio" value="2" id="anomalie" name="transaction_type2">
+                    <label class="form-check-label style144" for="anomalie">En anomalie</label>
+                </div>
+                <div class="form-check col-3 form-check-inline style148">
+                    <input class="form-check-input" type="radio" value="3" id="Toutes" name="transaction_type2">
+                    <label class="form-check-label style145" for="Toutes">Toutes</label>
+                </div>
+            </div>
+        </div>
+        <div class="text-end col-6 mt-1 mb-1">
+            <button id="btn_Recherche" class="btn text-light w-25 bg-primary" dmx-on:click="run([{runJS:{outputType:'text',function:'rechrcheavance_txt'}},{condition:{outputType:'boolean',if:`content.searchCritique.value!=\'\'`,then:{steps:{run:{outputType:'text',action:`Server_Recherche.load({arg_sonutilisation: 1, arg_criteriasearch: searchCritique.value.replace(\'&quot;\', \'\\\'\').uppercase()})`}}}}}])">Rechercher</button>
+            <button id="btn_Effacer" class="btn text-bg-light w-25 btn-outline-secondary">Effacer</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive mb-2 pb-1 style268" style="height: 450px ; overflow: auto;">
+                <table class="table table-striped table-hover style156 table-bordered">
+                    <thead style=" background: #F0F0F1;position: -webkit-sticky; position: sticky; top: 0;  z-index: 1200;">
+                        <tr>
+                            <th>Num facture</th>
+                            <th>Date emission</th>
+                            <th>Num contrat</th>
+                            <th>Nom</th>
+                            <th>Montant</th>
+                            <th>Nro lettrage</th>
+
+                        </tr>
+                    </thead>
+                    <tbody is="dmx-repeat" dmx-generator="bs5table" dmx-bind:repeat="Server_Recherche.data.custom" id="tableRepeat2">
+                        <tr dmx-class:table-danger="nro_lettrage=='N'">
+                            <td dmx-text="num_facture"></td>
+                            <td dmx-text="date_emission"></td>
+                            <td dmx-text="num_contrat"></td>
+                            <td dmx-text="nom"></td>
+                            <td dmx-text="montant"></td>
+                            <td dmx-text="nro_lettrage"></td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2 pt-2" style="/* position: absolute */ /* bottom: 10px */">
+        <div class="col-10 d-flex style157">
+            <span><i class="far fa-square style152"></i>&nbsp; &nbsp;Paye &nbsp; &nbsp; </span>
+            <span class="style151"><i class="far fa-square style150"></i>&nbsp; &nbsp;Non Paye</span>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var condition = '';
+    function myfunction() {
+  // Your code here
+ //console.log( dmx.app.data.content.searchCritique.value)
+     console.log(dmx.app.data.content.vartypesearch.value);
+}
+function rechrcheavance_txt()
+{
+    if (dmx.app.data.content.var_utlisateur.value.value=1)
+    {
+       condition = 'where'
+
+    }else 
+    {
+        condition = 'and'
+    }
+
+      dmx.app.data.content.searchCritique.value = '';
+    if ( document.getElementById('checkbox_de').checked ||  document.getElementById('checkbox_a').checked)
+      {
+        if ( document.getElementById('checkbox_de').checked )
+        {
+            var td = " "
+            td = moment(document.getElementById('date_De').value.toString()).format("DD/MM/YYYY").toString()
+
+            dmx.app.data.content.searchCritique.value += condition + ' TRUNC(FT.DATE_EMISSION) >= TO_DATE("' +  td.toString() + '")';
+
+            condition = 'and';
+        }
+
+        if (document.getElementById('checkbox_a').checked  )
+        {
+             var td = moment( document.getElementById('date_A').value,"DD/MM/YYYY").toString()
+
+         dmx.app.data.content.searchCritique.value += condition +  ' TRUNC(FT.DATE_EMISSION) >= TO_DATE("' + td.toString() + '")';
+             condition = 'and';
+        }
+      }
+
+     if (document.getElementById('select_Utilisateur').value != -1 && document.getElementById('select_Mvt').value !=  0 )
+        {
+          dmx.app.data.content.searchCritique.value +=  condition + '  FT.USER_MAJ ='  +  document.getElementById('select_Utilisateur').value + ' and FT.USER_MAJ IS NOT  NULL  '; 
+
+          condition = 'and';
+        }
+
+        if (document.getElementById('select_Mvt').value != -1 && document.getElementById('select_Mvt').value !=  0 )
+        {
+          dmx.app.data.content.searchCritique.value +=  condition + ' FT.TYPE_MVT_PORTEFEUILLE ='  +  document.getElementById('select_Mvt').value + ' and FT.TYPE_MVT_PORTEFEUILLE IS NOT NULL  '; 
+
+          condition = 'and';
+        }
+
+   if (  document.getElementById('r_annulee').checked )
+
+       {
+          dmx.app.data.content.searchCritique.value +=  condition + '  FT.ANNULATION = "O" '; 
+          condition = 'and';
+       }
+
+    if (  document.getElementById('R_NonAnnulee').checked )
+    {
+          dmx.app.data.content.searchCritique.value +=  condition + ' FT.ANNULATION = "N" '; 
+
+          condition = 'and';
+    }
+    if (  document.getElementById('R_Payee').checked )
+    {
+          dmx.app.data.content.searchCritique.value += condition + ' FT.NRO_LETTRAGE IS NOT NULL '; 
+          condition = 'and';
+    }
+
+    if (  document.getElementById('R_NonPayee').checked )
+    {
+          dmx.app.data.content.searchCritique.value += condition + ' FT.NRO_LETTRAGE IS NULL '; 
+
+          condition = 'and';
+    }
+
+    if (  document.getElementById('sans_Anomalie').checked )
+    {
+          dmx.app.data.content.searchCritique.value +=  condition + '  FT.ANO_FACT="N" '; 
+
+          condition = 'and';
+    }
+     if (  document.getElementById('anomalie').checked )
+    {
+          dmx.app.data.content.searchCritique.value +=  condition +  '  FT.ANO_FACT="O" '; 
+
+          condition = 'and';
+    }
+
+    
+     if ( document.getElementById('input_Cnt').value.length != 0) 
+     {
+         dmx.app.data.content.searchCritique.value +=  condition +'  FT.CODE_COMPTEUR = ' + document.getElementById('input_Cnt').value; 
+         condition = 'and';
+         console.log(dmx);
+     }
+     if ( document.getElementById('input_NFact').value.length != 0) 
+     {
+         dmx.app.data.content.searchCritique.value += condition + '  FT.NUM_FACTURE =  ' + document.getElementById('input_NFact').value; 
+
+         condition = 'and';
+     }
+      if ( document.getElementById('input_NSupport').value.length != 0) 
+     {
+         dmx.app.data.content.searchCritique.value +=  condition + '   SUBSTR(FT.CODE_PL_PHYS,3,5)  =  ' + document.getElementById('input_NSupport').value; 
+
+         condition = 'and';
+     }
+      if ( document.getElementById('input_Ncnt').value.length != 0) 
+      {
+         dmx.app.data.content.searchCritique.value +=  condition +'  FT.NUM_CONTRAT = ' + document.getElementById('input_Ncnt').value; 
+
+         condition = 'and';
+      }
+
+      if ( document.getElementById('input_NClient').value.length != 0) 
+     {
+         dmx.app.data.content.searchCritique.value +=  condition +'  FT.ID_PAYEUR = ' + document.getElementById('input_NClient').value; 
+
+         condition = 'and';
+     }
+}
+
+    //console.log(dmx.app.data.content.searchCritique.value);
+
+
+// console.log(dmx.app.data.content.searchCritique.value);
+
+</script>

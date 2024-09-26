@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <tv>
+    <NUM_LIEUGEO>9</NUM_LIEUGEO>
+    <LIBELLE>AGAR                                    </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>6</NUM_LIEUGEO>
+    <LIBELLE>ALI-SABIEH                              </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>3</NUM_LIEUGEO>
+    <LIBELLE>ARTA                                    </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>1</NUM_LIEUGEO>
+    <LIBELLE>BALBALA                                 </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>2</NUM_LIEUGEO>
+    <LIBELLE>BALBALA SUD                             </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>4</NUM_LIEUGEO>
+    <LIBELLE>DIKHIL                                  </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>0</NUM_LIEUGEO>
+    <LIBELLE>DJIBOUTI                                </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>8</NUM_LIEUGEO>
+    <LIBELLE>JABAN-AS                                </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>7</NUM_LIEUGEO>
+    <LIBELLE>OBOCK                                   </LIBELLE>
+  </tv>
+  <tv>
+    <NUM_LIEUGEO>5</NUM_LIEUGEO>
+    <LIBELLE>TADJOURAH                               </LIBELLE>
+  </tv>
+</NewDataSet>

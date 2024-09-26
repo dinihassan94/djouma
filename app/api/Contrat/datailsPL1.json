@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "number",
+        "name": "idcontrat"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "select * from VIEW_DETAILS_PL where id_contrat in (?)",
+          "params": [
+            {
+              "name": "?",
+              "value": "{{$_GET.idcontrat}}",
+              "test": "37348"
+            }
+          ]
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "rang_branchement",
+          "type": "number"
+        },
+        {
+          "name": "adr_physique",
+          "type": "text"
+        },
+        {
+          "name": "date_construction",
+          "type": "datetime"
+        },
+        {
+          "name": "id_pl",
+          "type": "number"
+        },
+        {
+          "name": "detection_fraude",
+          "type": "text"
+        },
+        {
+          "name": "num_ordre_pl",
+          "type": "number"
+        },
+        {
+          "name": "coment1",
+          "type": "text"
+        },
+        {
+          "name": "coment2",
+          "type": "text"
+        },
+        {
+          "name": "id_utilis_maj",
+          "type": "number"
+        },
+        {
+          "name": "date_maj",
+          "type": "datetime"
+        },
+        {
+          "name": "forme_energie",
+          "type": "number"
+        },
+        {
+          "name": "acces_compteur",
+          "type": "number"
+        },
+        {
+          "name": "ps_permise",
+          "type": "number"
+        },
+        {
+          "name": "etat_coupure",
+          "type": "number"
+        },
+        {
+          "name": "etat_pl",
+          "type": "number"
+        },
+        {
+          "name": "code_support",
+          "type": "text"
+        },
+        {
+          "name": "num_tourne",
+          "type": "number"
+        },
+        {
+          "name": "posit_ti",
+          "type": "number"
+        },
+        {
+          "name": "urgence_coupure",
+          "type": "number"
+        },
+        {
+          "name": "num_rapport_ti",
+          "type": "number"
+        },
+        {
+          "name": "den_rapport_ti",
+          "type": "number"
+        },
+        {
+          "name": "coeff_mult_act",
+          "type": "number"
+        },
+        {
+          "name": "coeff_mult_rea",
+          "type": "number"
+        },
+        {
+          "name": "coeff_mult_ipm",
+          "type": "number"
+        },
+        {
+          "name": "ancien_pl",
+          "type": "text"
+        },
+        {
+          "name": "id_dernier_contrat",
+          "type": "number"
+        },
+        {
+          "name": "code_cpteur",
+          "type": "text"
+        },
+        {
+          "name": "rappo_ti",
+          "type": "text"
+        },
+        {
+          "name": "formeng",
+          "type": "text"
+        },
+        {
+          "name": "accessc",
+          "type": "text"
+        },
+        {
+          "name": "etatcp",
+          "type": "text"
+        },
+        {
+          "name": "etatpl",
+          "type": "text"
+        },
+        {
+          "name": "num_zonegeo",
+          "type": "text"
+        },
+        {
+          "name": "nom_cellule",
+          "type": "text"
+        },
+        {
+          "name": "id_contrat",
+          "type": "number"
+        },
+        {
+          "name": "codepl",
+          "type": "text"
+        },
+        {
+          "name": "lieu_geo",
+          "type": "text"
+        },
+        {
+          "name": "num_cellule",
+          "type": "number"
+        },
+        {
+          "name": "posit_ti_lib",
+          "type": "text"
+        }
+      ]
+    }
+  }
+}

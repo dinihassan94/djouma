@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "arg_sonutilisation"
+      },
+      {
+        "type": "text",
+        "name": "arg_criteriasearch"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "api",
+      "module": "api",
+      "action": "send",
+      "options": {
+        "url": "{{'http://192.168.9.60:8595/VisuRechercheFacture?sonutilisation='+$_GET.arg_sonutilisation+'&search_creteria='+$_GET.arg_criteriasearch}}",
+        "schema": [
+          {
+            "type": "array",
+            "name": "data",
+            "sub": [
+              {
+                "type": "number",
+                "name": "num_facture"
+              },
+              {
+                "type": "text",
+                "name": "date_emission"
+              },
+              {
+                "type": "number",
+                "name": "num_contrat"
+              },
+              {
+                "type": "text",
+                "name": "nom"
+              },
+              {
+                "type": "number",
+                "name": "montant"
+              },
+              {
+                "type": "text",
+                "name": "nro_lettrage"
+              },
+              {
+                "type": "text",
+                "name": "ano_fact"
+              },
+              {
+                "type": "text",
+                "name": "annulation"
+              },
+              {
+                "type": "text",
+                "name": "date_maj"
+              },
+              {
+                "type": "text",
+                "name": "user_maj"
+              },
+              {
+                "type": "text",
+                "name": "type_mvt"
+              },
+              {
+                "type": "text",
+                "name": "id_mvt"
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "name": "headers",
+            "sub": [
+              {
+                "type": "text",
+                "name": "content-type"
+              },
+              {
+                "type": "text",
+                "name": "date"
+              },
+              {
+                "type": "text",
+                "name": "server"
+              },
+              {
+                "type": "text",
+                "name": "transfer-encoding"
+              }
+            ]
+          }
+        ]
+      },
+      "output": true,
+      "meta": [
+        {
+          "type": "array",
+          "name": "data",
+          "sub": [
+            {
+              "type": "number",
+              "name": "num_facture"
+            },
+            {
+              "type": "text",
+              "name": "date_emission"
+            },
+            {
+              "type": "number",
+              "name": "num_contrat"
+            },
+            {
+              "type": "text",
+              "name": "nom"
+            },
+            {
+              "type": "number",
+              "name": "montant"
+            },
+            {
+              "type": "text",
+              "name": "nro_lettrage"
+            },
+            {
+              "type": "text",
+              "name": "ano_fact"
+            },
+            {
+              "type": "text",
+              "name": "annulation"
+            },
+            {
+              "type": "text",
+              "name": "date_maj"
+            },
+            {
+              "type": "text",
+              "name": "user_maj"
+            },
+            {
+              "type": "text",
+              "name": "type_mvt"
+            },
+            {
+              "type": "text",
+              "name": "id_mvt"
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "name": "headers",
+          "sub": [
+            {
+              "type": "text",
+              "name": "content-type"
+            },
+            {
+              "type": "text",
+              "name": "date"
+            },
+            {
+              "type": "text",
+              "name": "server"
+            },
+            {
+              "type": "text",
+              "name": "transfer-encoding"
+            }
+          ]
+        }
+      ],
+      "outputType": "object"
+    }
+  }
+}

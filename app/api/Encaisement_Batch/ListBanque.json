@@ -1,0 +1,23 @@
+{
+  "name": "custom",
+  "module": "dbupdater",
+  "action": "custom",
+  "options": {
+    "connection": "postgres",
+    "sql": {
+      "query": "SELECT 0 AS ID_LIGNE, ' ' AS  LIB_LONG  FROM  dual UNION all SELECT ID_LIGNE, LIB_LONG  FROM  TABLES_VALEURS  WHERE (CODE_TABLE = 'BANQ') AND (CODE_SUPPR IS NULL)  ",
+      "params": []
+    }
+  },
+  "output": true,
+  "meta": [
+    {
+      "name": "id_ligne",
+      "type": "number"
+    },
+    {
+      "name": "lib_long",
+      "type": "text"
+    }
+  ]
+}

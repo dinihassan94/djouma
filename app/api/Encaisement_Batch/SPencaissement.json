@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "id_contrat"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argmt_cash"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argmt_cheque"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argno_doc"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argbanque"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argusermaj"
+      },
+      {
+        "type": "text",
+        "options": {
+          "rules": {
+            "core:required": {}
+          }
+        },
+        "name": "argmvtpaye_tx"
+      },
+      {
+        "type": "text",
+        "name": "argmode_paimnt"
+      },
+      {
+        "type": "boolean",
+        "name": "arg_checkassign"
+      },
+      {
+        "type": "text",
+        "name": "arg_totcr"
+      },
+      {
+        "type": "text",
+        "name": "arg_nomfenetre"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "custom",
+      "module": "dbupdater",
+      "action": "custom",
+      "options": {
+        "connection": "postgres",
+        "sql": {
+          "query": "call sp_encaissement12(:P1,:P2,:P3,:P4,:P5,:P6,:P7,:P8,:P9,:P10,:P11)\n",
+          "params": [
+            {
+              "name": ":P1",
+              "value": "{{$_GET.id_contrat}}",
+              "test": "311289",
+              "recid": 1
+            },
+            {
+              "name": ":P2",
+              "value": "{{$_GET.argmt_cash}}",
+              "test": "38150",
+              "recid": 2
+            },
+            {
+              "name": ":P3",
+              "value": "{{$_GET.argmt_cheque}}",
+              "test": "0",
+              "recid": 3
+            },
+            {
+              "name": ":P4",
+              "value": "{{$_GET.argno_doc}}",
+              "test": "4525",
+              "recid": 4
+            },
+            {
+              "name": ":P5",
+              "value": "{{$_GET.argbanque}}",
+              "test": "390",
+              "recid": 5
+            },
+            {
+              "name": ":P6",
+              "value": "{{$_GET.argusermaj}}",
+              "test": "47433",
+              "recid": 6
+            },
+            {
+              "name": ":P7",
+              "value": "{{$_GET.argmvtpaye_tx}}",
+              "test": "F§202305006100§14§0¿",
+              "recid": 7
+            },
+            {
+              "name": ":P8",
+              "value": "{{$_GET.argmode_paimnt}}",
+              "test": "0",
+              "recid": 8
+            },
+            {
+              "name": ":P9",
+              "value": "{{$_GET.arg_checkassign}}",
+              "test": "false",
+              "recid": 9
+            },
+            {
+              "name": ":P10",
+              "value": "{{$_GET.arg_totcr}}",
+              "test": "0",
+              "recid": 10
+            },
+            {
+              "name": ":P11",
+              "value": "{{$_GET.arg_nomfenetre}}",
+              "test": "frmautrecashmvmt",
+              "recid": 11
+            }
+          ]
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "out_nrolettrage",
+          "type": "text"
+        },
+        {
+          "name": "out_id_autremvt",
+          "type": "text"
+        },
+        {
+          "name": "out_id_autremvt2",
+          "type": "text"
+        }
+      ],
+      "outputType": "array"
+    }
+  }
+}

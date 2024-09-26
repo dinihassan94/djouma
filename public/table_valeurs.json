@@ -1,0 +1,5075 @@
+{
+  "NewDataSet": {
+    "tv": [
+      {
+        "CODE_TABLE": "ACPT",
+        "ID_LIGNE": 33,
+        "LIB_COURT": "EXTERIEUR",
+        "LIB_LONG": "ACCES EXTERIEUR",
+        "NOM_TABLE": "ACCES COMPTEUR",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "ACPT",
+        "ID_LIGNE": 32,
+        "LIB_COURT": "INTERIEUR",
+        "LIB_LONG": "ACCES A L'INTERIEUR",
+        "NOM_TABLE": "ACCES COMPTEUR",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "AFAC",
+        "ID_LIGNE": 52,
+        "LIB_COURT": "CONSO NEGATIVE",
+        "LIB_LONG": "Consommation négative",
+        "NOM_TABLE": "ANOMALIE FACTURATION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "AFAC",
+        "ID_LIGNE": 54,
+        "LIB_COURT": "CONSO ELEVEE",
+        "LIB_LONG": "CONSOMMATION TROP ELEVEE",
+        "NOM_TABLE": "ANOMALIE FACTURATION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "AFAC",
+        "ID_LIGNE": 55,
+        "LIB_COURT": "TARIF ABS",
+        "LIB_LONG": "Tarif absent",
+        "NOM_TABLE": "ANOMALIE FACTURATION",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "AFAC",
+        "ID_LIGNE": 68,
+        "LIB_COURT": "QUANTITE ABSENTE",
+        "LIB_LONG": "QUANTITE ABSENTE",
+        "NOM_TABLE": "ANOMALIE FACTURATION",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "AFAC",
+        "ID_LIGNE": 134,
+        "LIB_COURT": "DUREE NULLE",
+        "LIB_LONG": "DUREE NULLE",
+        "NOM_TABLE": "ANOMALIE FACTURATION",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "AFAC",
+        "ID_LIGNE": 69,
+        "LIB_COURT": "INVALIDE PRECD. RELV",
+        "LIB_LONG": "INVALIDE PRECEDENT RELEVE",
+        "NOM_TABLE": "ANOMALIE FACTURATION",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "AFAC",
+        "ID_LIGNE": 920,
+        "LIB_COURT": "AGENT SANS MATRICULE",
+        "LIB_LONG": "AGENT SANS MATRICULE",
+        "NOM_TABLE": "ANOMALIE FACTURATION",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 86,
+        "LIB_COURT": "BRED(BCIMR)",
+        "LIB_LONG": "BCIMR",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 87,
+        "LIB_COURT": "BOA",
+        "LIB_LONG": "BANK OF AFRICA",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 289,
+        "LIB_COURT": "BCI TADJ",
+        "LIB_LONG": "BCI TADJOURAH",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 290,
+        "LIB_COURT": "BCI ALISAB",
+        "LIB_LONG": "BCI ALI SABIEH",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 291,
+        "LIB_COURT": "CSBS",
+        "LIB_LONG": "CSBS",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 5,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 292,
+        "LIB_COURT": "CBE",
+        "LIB_LONG": "CBE",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 6,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 293,
+        "LIB_COURT": "GTB",
+        "LIB_LONG": "GTB",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 7,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 295,
+        "LIB_COURT": "BDMO",
+        "LIB_LONG": "BDMO",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 8,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 296,
+        "LIB_COURT": "SABA",
+        "LIB_LONG": "SABA  AFRICAN BANK",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 299,
+        "LIB_COURT": "INT. INVESTMENT BANK",
+        "LIB_LONG": "INTERNATIONAL INVESTMENT BANK",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 368,
+        "LIB_COURT": "BDCD",
+        "LIB_LONG": "BANQUE DE DEPOT ET CREDIT DE DJIBOUTI",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 389,
+        "LIB_COURT": "SALAAM",
+        "LIB_LONG": "SALAAM AFRICAN BANK",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 390,
+        "LIB_COURT": "EAB",
+        "LIB_LONG": "EAST AFRICAN BANK (DAHABSHILL INTERNATIONAL BANK)",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 391,
+        "LIB_COURT": "CAC",
+        "LIB_LONG": "CAC INTERNATIONAL BANK",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 392,
+        "LIB_COURT": "SHOURAH",
+        "LIB_LONG": "SHOURAH BANK",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 393,
+        "LIB_COURT": "EXIM BANQ",
+        "LIB_LONG": "EXIM BANQ",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 394,
+        "LIB_COURT": "DEV BANQ",
+        "LIB_LONG": "Test Banque Dev",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "BANQ",
+        "ID_LIGNE": 395,
+        "LIB_COURT": "DMONEY_TEST",
+        "LIB_LONG": "DMONEY TEST",
+        "NOM_TABLE": "BANQUE",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "CASR",
+        "ID_LIGNE": 62,
+        "LIB_COURT": "CAISSE 1",
+        "LIB_LONG": "COMPTA CAISSE 1",
+        "NOM_TABLE": "CAISSE / SERVICE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "CASR",
+        "ID_LIGNE": 63,
+        "LIB_COURT": "SERVICE CLIENTELE",
+        "LIB_LONG": "SERVICE CLIENTELE",
+        "NOM_TABLE": "CAISSE / SERVICE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1100,
+        "LIB_COURT": "USAGE INCONNU",
+        "LIB_LONG": "USAGE INCONNU",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 0
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1101,
+        "LIB_COURT": "RESIDENTIEL DOM/CC",
+        "LIB_LONG": "RESIDENTIEL DOMESTIQUE CC",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 1,
+        "ID_PARENT": 41
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1106,
+        "LIB_COURT": "RESIDENTIEL SOCIAL/CC",
+        "LIB_LONG": "RESIDENTIEL SOCIAL CC",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 2,
+        "ID_PARENT": 41
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1110,
+        "LIB_COURT": "GENERALE CC",
+        "LIB_LONG": "GENERALE CC",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 3,
+        "ID_PARENT": 41
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1114,
+        "LIB_COURT": "BOULANGERIE",
+        "LIB_LONG": "BOULANGERIE POPULAIRE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 4,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1105,
+        "LIB_COURT": "COMMERCE",
+        "LIB_LONG": "COMMERCE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 5,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1103,
+        "LIB_COURT": "RESIDENTIEL DOM/CS",
+        "LIB_LONG": "RESIDENTIEL DOMESTIQUE CS",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 6,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1116,
+        "LIB_COURT": "ECLAIRAGE PUBLIC",
+        "LIB_LONG": "ECLAIRAGE PUBLIC",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 7,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1122,
+        "LIB_COURT": "ECOLE",
+        "LIB_LONG": "ECOLE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 8,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1115,
+        "LIB_COURT": "GENERAL",
+        "LIB_LONG": "GENERAL",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 9,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1120,
+        "LIB_COURT": "HOTEL",
+        "LIB_LONG": "HOTEL",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 10,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1109,
+        "LIB_COURT": "INDUSTRIE",
+        "LIB_LONG": "INDUSTRIE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 11,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1113,
+        "LIB_COURT": "PME",
+        "LIB_LONG": "PETITE ET MOYENNE ENTR.",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 12,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1112,
+        "LIB_COURT": "FINANCES NATIONALES",
+        "LIB_LONG": "FINANCES NATIONALES",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 13,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1102,
+        "LIB_COURT": "RESIDENTIEL SOCIAL/CS",
+        "LIB_LONG": "RESIDENTIEL SOCIAL CS",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 14,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1125,
+        "LIB_COURT": "REPRESENTATION GOUV",
+        "LIB_LONG": "REPRESENTATION GOUVERNEMENTALE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 15,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1126,
+        "LIB_COURT": "ONG",
+        "LIB_LONG": "ORGANISATION NON GOUVERNEMENTALE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 16,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1127,
+        "LIB_COURT": "HAUT RESIDENTIEL",
+        "LIB_LONG": "HAUT RESIDENTIEL",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 17,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1107,
+        "LIB_COURT": "CHANTIER",
+        "LIB_LONG": "CHANTIER",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 18,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1128,
+        "LIB_COURT": "POSTE MT/HT",
+        "LIB_LONG": "POSTE DE DISTRIBUTION MT/HT",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 19,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1129,
+        "LIB_COURT": "CLINIQUE",
+        "LIB_LONG": "CLINIQUE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 20,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "CCLI",
+        "ID_LIGNE": 1130,
+        "LIB_COURT": "PHARMACIE",
+        "LIB_LONG": "PHARMACIE",
+        "NOM_TABLE": "CATEG CLIENT",
+        "CODE_LIGNE": 21,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "TYC1",
+        "ID_LIGNE": 285,
+        "LIB_COURT": "CAT_COM_REP",
+        "LIB_LONG": "CATEGORIECOMMERCIALEREPRISE",
+        "NOM_TABLE": "CATEGORIE CLIENT",
+        "CODE_LIGNE": 0
+      },
+      {
+        "CODE_TABLE": "TYC1",
+        "ID_LIGNE": 450,
+        "LIB_COURT": "CLIENTELE",
+        "LIB_LONG": "CATEGORIE CLIENTELE",
+        "NOM_TABLE": "CATEGORIE CLIENT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYC1",
+        "ID_LIGNE": 481,
+        "LIB_COURT": "TESTE",
+        "LIB_LONG": "TESTE",
+        "NOM_TABLE": "CATEGORIE CLIENT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYC1",
+        "ID_LIGNE": 56,
+        "LIB_COURT": "COMPTABLE",
+        "LIB_LONG": "CATEGORIE COMPTABLE",
+        "NOM_TABLE": "CATEGORIE CLIENT",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1001,
+        "LIB_COURT": "COUPURE",
+        "LIB_LONG": "COUPURE",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1002,
+        "LIB_COURT": "REBRANCHEMENT",
+        "LIB_LONG": "REBRANCHEMENT",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1003,
+        "LIB_COURT": "MODIFIER_PS",
+        "LIB_LONG": "MODIFIER_PS",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1004,
+        "LIB_COURT": "LINK_PL_COMPTUER",
+        "LIB_LONG": "LINK_PL_COMPTUER",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1005,
+        "LIB_COURT": "DISABLE_LINK_PL",
+        "LIB_LONG": "DISABLE_LINK_PL_COMPTUER",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1006,
+        "LIB_COURT": "MODIFIER_TARIF",
+        "LIB_LONG": "MODIFIER_TARIF",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1008,
+        "LIB_COURT": "RESILIATION",
+        "LIB_LONG": "RESILIATION",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1009,
+        "LIB_COURT": "MISE_EN_SERVICE",
+        "LIB_LONG": "MISE_EN_SERVICE",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "CCMT",
+        "ID_LIGNE": 1010,
+        "LIB_COURT": "AUTRES",
+        "LIB_LONG": "AUTRES",
+        "NOM_TABLE": "CC_MDM_TACHE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "CCWL",
+        "ID_LIGNE": 975,
+        "LIB_COURT": "INFORMATION",
+        "LIB_LONG": "INFORMATION",
+        "NOM_TABLE": "CC_WARNING_LEVEL",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "CCWL",
+        "ID_LIGNE": 976,
+        "LIB_COURT": "AVERTISSEMENT",
+        "LIB_LONG": "AVERTISSEMENT",
+        "NOM_TABLE": "CC_WARNING_LEVEL",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "CCWL",
+        "ID_LIGNE": 977,
+        "LIB_COURT": "TENTATIVE DE FRAUDE",
+        "LIB_LONG": "TENTATIVE DE FRAUDE",
+        "NOM_TABLE": "CC_WARNING_LEVEL",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "CCWL",
+        "ID_LIGNE": 978,
+        "LIB_COURT": "ERREUR FATALE",
+        "LIB_LONG": "ERREUR FATALE",
+        "NOM_TABLE": "CC_WARNING_LEVEL",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "CCWL",
+        "ID_LIGNE": 979,
+        "LIB_COURT": "ANOMALIE",
+        "LIB_LONG": "ANOMALIE",
+        "NOM_TABLE": "CC_WARNING_LEVEL",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 951,
+        "LIB_COURT": "OBSERVATION NON RÉPE",
+        "LIB_LONG": "OBSERVATION NON RÉPERTORIÉE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 952,
+        "LIB_COURT": "BRANCHEMENT DIRECT,",
+        "LIB_LONG": "BRANCHEMENT DIRECT, FRAUDE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 953,
+        "LIB_COURT": "CE PL EST ACTIF-RÉAC",
+        "LIB_LONG": "CE PL EST ACTIF-RÉACTIF",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 954,
+        "LIB_COURT": "CE PL EST MIXTE",
+        "LIB_LONG": "CE PL EST MIXTE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 955,
+        "LIB_COURT": "CHANGEMENT DE COMPTE",
+        "LIB_LONG": "CHANGEMENT DE COMPTEUR",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 956,
+        "LIB_COURT": "COMMERCE",
+        "LIB_LONG": "COMMERCE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 957,
+        "LIB_COURT": "COMPTEUR À VÉRIFER",
+        "LIB_LONG": "COMPTEUR À VÉRIFER",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 958,
+        "LIB_COURT": "COMPTEUR BLOQUÉ",
+        "LIB_LONG": "COMPTEUR BLOQUÉ",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 959,
+        "LIB_COURT": "COMPTEUR CASSÉ",
+        "LIB_LONG": "COMPTEUR CASSÉ",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 960,
+        "LIB_COURT": "COMPTEUR DÉPOSÉ ET F",
+        "LIB_LONG": "COMPTEUR DÉPOSÉ ET FRAUDE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 961,
+        "LIB_COURT": "COMPTEUR DÉPOSÉ PAR",
+        "LIB_LONG": "COMPTEUR DÉPOSÉ PAR LE CLIENT",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 962,
+        "LIB_COURT": "COMPTEUR DÉTRUIT",
+        "LIB_LONG": "COMPTEUR DÉTRUIT",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 963,
+        "LIB_COURT": "COMPTEUR NON POSÉ",
+        "LIB_LONG": "COMPTEUR NON POSÉ",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 964,
+        "LIB_COURT": "DÉJÀ COUPÉ",
+        "LIB_LONG": "DÉJÀ COUPÉ",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 965,
+        "LIB_COURT": "DÉPOSÉ SUITE CONSTRU",
+        "LIB_LONG": "DÉPOSÉ SUITE CONSTRUCTION",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 966,
+        "LIB_COURT": "FRAUDE",
+        "LIB_LONG": "FRAUDE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 967,
+        "LIB_COURT": "INDEX ILLISIBLE",
+        "LIB_LONG": "INDEX ILLISIBLE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 968,
+        "LIB_COURT": "INTROUVABLE DANS MON",
+        "LIB_LONG": "INTROUVABLE DANS MON SECTEUR",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 969,
+        "LIB_COURT": "IPM CASSÉ OU AVEC DÉ",
+        "LIB_LONG": "IPM CASSÉ OU AVEC DÉFAUT",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 19
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 970,
+        "LIB_COURT": "MAISON BRÛLÉE",
+        "LIB_LONG": "MAISON BRÛLÉE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 20
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 971,
+        "LIB_COURT": "REFUS POUR CAUSE DE",
+        "LIB_LONG": "REFUS POUR CAUSE DE COUPURE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 21
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 972,
+        "LIB_COURT": "REFUS POUR CAUSE DE",
+        "LIB_LONG": "REFUS POUR CAUSE DE FRAUDE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 22
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 973,
+        "LIB_COURT": "VITRE CASSÉE",
+        "LIB_LONG": "VITRE CASSÉE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 23
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 974,
+        "LIB_COURT": "VITRE CASSÉE ET COMP",
+        "LIB_LONG": "VITRE CASSÉE ET COMPTEUR BLOQUÉ",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 24
+      },
+      {
+        "CODE_TABLE": "CMRV",
+        "ID_LIGNE": 1014,
+        "LIB_COURT": "INDEX INCHANGE",
+        "LIB_LONG": "INDEX INCHANGE",
+        "NOM_TABLE": "COMENT_RLV",
+        "CODE_LIGNE": 25
+      },
+      {
+        "CODE_TABLE": "TRVC",
+        "ID_LIGNE": 595,
+        "LIB_COURT": "TRAVAUX SIMPLES",
+        "LIB_LONG": "TRAVAUX SIMPLE",
+        "NOM_TABLE": "COMPLEXITE_TRAVAUX",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TRVC",
+        "ID_LIGNE": 596,
+        "LIB_COURT": "TRAVAUX COMPLEXES",
+        "LIB_LONG": "TRAVAUX COMPLEXES",
+        "NOM_TABLE": "COMPLEXITE_TRAVAUX",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "DMWE",
+        "ID_LIGNE": 981,
+        "LIB_COURT": "DMD_INSCRIPTION",
+        "LIB_LONG": "DEMANDE INSCRIPTION EN LIGNE",
+        "NOM_TABLE": "DEMANDE_MAIL",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "DMWE",
+        "ID_LIGNE": 982,
+        "LIB_COURT": "DMD_REINITIALISATION_PASSWORD",
+        "LIB_LONG": "Demande de réinitialisation de mot de passe",
+        "NOM_TABLE": "DEMANDE_MAIL",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "EQUP",
+        "ID_LIGNE": 1601,
+        "LIB_COURT": "CLI",
+        "LIB_LONG": "CLIMATISEUR",
+        "NOM_TABLE": "EQUIPEMENT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "EQUP",
+        "ID_LIGNE": 1602,
+        "LIB_COURT": "PIECE ECLAIRE",
+        "LIB_LONG": "PIECE ECLAIRE",
+        "NOM_TABLE": "EQUIPEMENT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "EQUP",
+        "ID_LIGNE": 1603,
+        "LIB_COURT": "REFG-CONG",
+        "LIB_LONG": "REFRIGERATEUR",
+        "NOM_TABLE": "EQUIPEMENT",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "ETCT",
+        "ID_LIGNE": 286,
+        "LIB_COURT": "HORS SERVICE",
+        "LIB_LONG": "HORS SERVICE",
+        "NOM_TABLE": "ETAT COMPTEUR",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "ETCT",
+        "ID_LIGNE": 287,
+        "LIB_COURT": "IRREPARABLE",
+        "LIB_LONG": "IRREPARABLE",
+        "NOM_TABLE": "ETAT COMPTEUR",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "ETCT",
+        "ID_LIGNE": 294,
+        "LIB_COURT": "BON ETAT",
+        "LIB_LONG": "BON ETAT",
+        "NOM_TABLE": "ETAT COMPTEUR",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "ETCT",
+        "ID_LIGNE": 501,
+        "LIB_COURT": "DETRUIT",
+        "LIB_LONG": "DETRUIT",
+        "NOM_TABLE": "ETAT COMPTEUR",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1401,
+        "LIB_COURT": "BON ETAT",
+        "LIB_LONG": "BON ETAT",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1402,
+        "LIB_COURT": "DEFECTUEUX",
+        "LIB_LONG": "DEFECTUEUX",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1403,
+        "LIB_COURT": "INCENDIE",
+        "LIB_LONG": "INCENDIE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1404,
+        "LIB_COURT": "GRILLE",
+        "LIB_LONG": "GRILLE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1405,
+        "LIB_COURT": "FUSIBLE DEFECTUEUX",
+        "LIB_LONG": "FUSIBLE DEFECTUEUX",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1406,
+        "LIB_COURT": "SANS CACHE BORNE",
+        "LIB_LONG": "SANS CACHE BORNE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1407,
+        "LIB_COURT": "DISJONCTEUR GRILLE",
+        "LIB_LONG": "DISJONCTEUR GRILLE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1408,
+        "LIB_COURT": "DEFECTUEUX A CHANGER",
+        "LIB_LONG": "DEFECTUEUX A CHANGER",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1409,
+        "LIB_COURT": "ANCIEN SECURA",
+        "LIB_LONG": "ANCIEN SECURA",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1410,
+        "LIB_COURT": "MODEM NON CONFIGURE",
+        "LIB_LONG": "MODEM NON CONFIGURE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1411,
+        "LIB_COURT": "SIM MAL PLACE",
+        "LIB_LONG": "SIM MAL PLACE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1412,
+        "LIB_COURT": "ANTENNE COUPE OU DEBRANCHE",
+        "LIB_LONG": "ANTENNE COUPE OU DEBRANCHE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1413,
+        "LIB_COURT": "PHASE GRILLE",
+        "LIB_LONG": "PHASE GRILLE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1414,
+        "LIB_COURT": "COMPTEUR",
+        "LIB_LONG": "COMPTEUR",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1415,
+        "LIB_COURT": "TC",
+        "LIB_LONG": "TC",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1416,
+        "LIB_COURT": "MODEM SIM",
+        "LIB_LONG": "MODEM_SIM",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 19
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1417,
+        "LIB_COURT": "DISJONCTEUR",
+        "LIB_LONG": "DISJONCTEUR",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 20
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1418,
+        "LIB_COURT": "TABLEAU",
+        "LIB_LONG": "TABLEAU",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 21
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1419,
+        "LIB_COURT": "CHANGEMENT_CABLAGE",
+        "LIB_LONG": "CHANGEMENT CABLAGE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 22
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1420,
+        "LIB_COURT": "CORRRECTION_SENS_CABLAGE",
+        "LIB_LONG": "CORRRECTION SENS CABLAGE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 23
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1422,
+        "LIB_COURT": "NEANT",
+        "LIB_LONG": "NEANT",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 25
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1423,
+        "LIB_COURT": "AVEC SUCCES",
+        "LIB_LONG": "AVEC SUCCES",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 26
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1424,
+        "LIB_COURT": "EN ECHEC",
+        "LIB_LONG": "EN ECHEC",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 27
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1425,
+        "LIB_COURT": "NON REALISER",
+        "LIB_LONG": "NON REALISE",
+        "NOM_TABLE": "ETAT CONTROLE",
+        "CODE_LIGNE": 28
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 34,
+        "LIB_COURT": "COUPURE SIMPLE",
+        "LIB_LONG": "FUSIBLE ENLEVE",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 36,
+        "LIB_COURT": "CABLE DEPOSE",
+        "LIB_LONG": "LE CABLE ARRIVANT AU PL EST DEPOSE",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 35,
+        "LIB_COURT": "COUPURE EXTERIEURE",
+        "LIB_LONG": "CABLE COUPE",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 37,
+        "LIB_COURT": "BRANCH SUPPRIME",
+        "LIB_LONG": "BRANCHEMENT SUPPRIME",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 162,
+        "LIB_COURT": "DEJA COUPE",
+        "LIB_LONG": "DEJA COUPE",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 163,
+        "LIB_COURT": "REFUS",
+        "LIB_LONG": "REFUS",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 164,
+        "LIB_COURT": "INTROUVABLE",
+        "LIB_LONG": "INTROUVABLE",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 179,
+        "LIB_COURT": "INACCESSIBLE",
+        "LIB_LONG": "INACCESSIBLE",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "ECTP",
+        "ID_LIGNE": 182,
+        "LIB_COURT": "NON COUPE",
+        "LIB_LONG": "NON COUPE",
+        "NOM_TABLE": "ETAT COUPURE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "ETDD",
+        "ID_LIGNE": 2216,
+        "LIB_COURT": "DEMANDE INTERVENTION PLANIFIER",
+        "LIB_LONG": "DEMANDE INTERVENTION PLANIFIER",
+        "NOM_TABLE": "ETAT DEMANDE",
+        "CODE_LIGNE": 100
+      },
+      {
+        "CODE_TABLE": "ETDD",
+        "ID_LIGNE": 2217,
+        "LIB_COURT": "DEMANDE INTERVENTION EXECUTER",
+        "LIB_LONG": "DEMANDE INTERVENTION EXECUTER",
+        "NOM_TABLE": "ETAT DEMANDE",
+        "CODE_LIGNE": 101
+      },
+      {
+        "CODE_TABLE": "ETPL",
+        "ID_LIGNE": 38,
+        "LIB_COURT": "EN PROJET",
+        "LIB_LONG": "BRANCHEMENT EN PROJET",
+        "NOM_TABLE": "ETAT PL",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "ETPL",
+        "ID_LIGNE": 39,
+        "LIB_COURT": "EN SERVICE",
+        "LIB_LONG": "BRANCHEMENT EN FONCTIONNEMENT",
+        "NOM_TABLE": "ETAT PL",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "ETPL",
+        "ID_LIGNE": 40,
+        "LIB_COURT": "COUPE",
+        "LIB_LONG": "PL COUPE",
+        "NOM_TABLE": "ETAT PL",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "ETPL",
+        "ID_LIGNE": 98,
+        "LIB_COURT": "SUPPRIME",
+        "LIB_LONG": "PL SUPPRIME",
+        "NOM_TABLE": "ETAT PL",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "ETPL",
+        "ID_LIGNE": 339,
+        "LIB_COURT": "TRANSFERE",
+        "LIB_LONG": "TRANSFERE",
+        "NOM_TABLE": "ETAT PL",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "FABR",
+        "ID_LIGNE": 222,
+        "LIB_COURT": "THOM",
+        "LIB_LONG": "THOMSON",
+        "NOM_TABLE": "FABRICANTS COMPTEUR",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "FABR",
+        "ID_LIGNE": 219,
+        "LIB_COURT": "GE",
+        "LIB_LONG": "GENERAL ELECTRIC",
+        "NOM_TABLE": "FABRICANTS COMPTEUR",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "FABR",
+        "ID_LIGNE": 208,
+        "LIB_COURT": "SIEM",
+        "LIB_LONG": "SIEMENS",
+        "NOM_TABLE": "FABRICANTS COMPTEUR",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "FABR",
+        "ID_LIGNE": 461,
+        "LIB_COURT": "INCONNU",
+        "LIB_LONG": "INCONNU",
+        "NOM_TABLE": "FABRICANTS COMPTEUR",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "FABR",
+        "ID_LIGNE": 280,
+        "LIB_COURT": "SCHLUMBERGER",
+        "LIB_LONG": "FABRICANT SCHLUMBERGER",
+        "NOM_TABLE": "FABRICANTS COMPTEUR",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "FABR",
+        "ID_LIGNE": 281,
+        "LIB_COURT": "SAGEMCOM",
+        "LIB_LONG": "SAGEMCOM",
+        "NOM_TABLE": "FABRICANTS COMPTEUR",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "FABR",
+        "ID_LIGNE": 462,
+        "LIB_COURT": "ITRON",
+        "LIB_LONG": "ITRON",
+        "NOM_TABLE": "FABRICANTS COMPTEUR",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1881,
+        "LIB_COURT": "POSTE MT/BT",
+        "LIB_LONG": "POSTE MT/BT",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1882,
+        "LIB_COURT": "CABLE RESEAU BT",
+        "LIB_LONG": "CABLE RESEAU BT",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1883,
+        "LIB_COURT": "SUPPORT / BORNE BT",
+        "LIB_LONG": "SUPPORT / BORNE BT",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1884,
+        "LIB_COURT": "CABLE DE BRANCHEMENT",
+        "LIB_LONG": "CABLE DE BRANCHEMENT",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1885,
+        "LIB_COURT": "APPAREIL DE COMPTAGE",
+        "LIB_LONG": "APPAREIL DE COMPTAGE",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1886,
+        "LIB_COURT": "DEFAULT / INSTALLATION INTERIEUR",
+        "LIB_LONG": "DEFAULT / INSTALLATION INTERIEUR",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1887,
+        "LIB_COURT": "INCENDIE",
+        "LIB_LONG": "INCENDIE",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "DFAM",
+        "ID_LIGNE": 1890,
+        "LIB_COURT": "NON DEFINI",
+        "LIB_LONG": "NON DEFINI",
+        "NOM_TABLE": "FAMILLE_DEPANNAGE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "FEPL",
+        "ID_LIGNE": 29,
+        "LIB_COURT": "MT",
+        "LIB_LONG": "MOYENNE TENSION",
+        "NOM_TABLE": "FORME ENERGIE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "FEPL",
+        "ID_LIGNE": 30,
+        "LIB_COURT": "GBT",
+        "LIB_LONG": "GROS CONSOMMATEUR BT",
+        "NOM_TABLE": "FORME ENERGIE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "FEPL",
+        "ID_LIGNE": 31,
+        "LIB_COURT": "BT",
+        "LIB_LONG": "BASSE TENSION",
+        "NOM_TABLE": "FORME ENERGIE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "GSEC",
+        "ID_LIGNE": 2201,
+        "LIB_COURT": "CLIENTELE",
+        "LIB_LONG": "CLIENTELE",
+        "NOM_TABLE": "GROUPE_SECTION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "GSEC",
+        "ID_LIGNE": 2202,
+        "LIB_COURT": "ETUDE",
+        "LIB_LONG": "ETUDE",
+        "NOM_TABLE": "GROUPE_SECTION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "GSEC",
+        "ID_LIGNE": 2203,
+        "LIB_COURT": "LABO",
+        "LIB_LONG": "LABO",
+        "NOM_TABLE": "GROUPE_SECTION",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "GSEC",
+        "ID_LIGNE": 2208,
+        "LIB_COURT": "GROS TRAVAUX",
+        "LIB_LONG": "GROS TRAVAUX",
+        "NOM_TABLE": "GROUPE_SECTION",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "GSEC",
+        "ID_LIGNE": 2206,
+        "LIB_COURT": "CLIENT",
+        "LIB_LONG": "CLIENT",
+        "NOM_TABLE": "GROUPE_SECTION",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "GSEC",
+        "ID_LIGNE": 2215,
+        "LIB_COURT": "SYSTEME",
+        "LIB_LONG": "SYSTEME",
+        "NOM_TABLE": "GROUPE_SECTION",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "GSEC",
+        "ID_LIGNE": 2209,
+        "LIB_COURT": "DERD",
+        "LIB_LONG": "DERD",
+        "NOM_TABLE": "GROUPE_SECTION",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 510,
+        "LIB_COURT": "DEVIS BRANCH",
+        "LIB_LONG": "DEVIS POUR BRANCHEMENT NEUF",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 511,
+        "LIB_COURT": "REOUVERTURE",
+        "LIB_LONG": "BON POUR REOUVERTURE",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 512,
+        "LIB_COURT": "RESILIATION",
+        "LIB_LONG": "BON POUR RESILIATION",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 513,
+        "LIB_COURT": "CHANTIER",
+        "LIB_LONG": "CHANTIER",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 516,
+        "LIB_COURT": "MODIFICATION PS",
+        "LIB_LONG": "BON POUR MODIFICATION COMPTAGE",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 517,
+        "LIB_COURT": "CONTROLE",
+        "LIB_LONG": "BON POUR VERIFICATION ET CONTROLE",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 527,
+        "LIB_COURT": "DEPLACEMENT POTEAU",
+        "LIB_LONG": "DEPLACEMENT POTEAU",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "INTV",
+        "ID_LIGNE": 528,
+        "LIB_COURT": "DEVIS_EXCEPTIONNEL",
+        "LIB_LONG": "DEVIS_EXCEPTIONNEL",
+        "NOM_TABLE": "INTERVENTION",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "JRNL",
+        "ID_LIGNE": 318,
+        "LIB_COURT": "VENTES",
+        "LIB_LONG": "VENTES ET ANNULATIONS",
+        "NOM_TABLE": "JOURNAL",
+        "CODE_LIGNE": 41
+      },
+      {
+        "CODE_TABLE": "JRNL",
+        "ID_LIGNE": 930,
+        "LIB_COURT": "AVANCES AU PERSONNEL",
+        "LIB_LONG": "AVANCES AU PERSONNEL",
+        "NOM_TABLE": "JOURNAL",
+        "CODE_LIGNE": 42
+      },
+      {
+        "CODE_TABLE": "JRNL",
+        "ID_LIGNE": 331,
+        "LIB_COURT": "REGLEMENTS",
+        "LIB_LONG": "REGLEMENTS, IMPAYES ET ANNULATIONS",
+        "NOM_TABLE": "JOURNAL",
+        "CODE_LIGNE": 50
+      },
+      {
+        "CODE_TABLE": "JRNL",
+        "ID_LIGNE": 366,
+        "LIB_COURT": "ENCAIS. DIV.",
+        "LIB_LONG": "ENCAISSEMENT DIVERS",
+        "NOM_TABLE": "JOURNAL",
+        "CODE_LIGNE": 53
+      },
+      {
+        "CODE_TABLE": "JRNL",
+        "ID_LIGNE": 365,
+        "LIB_COURT": "DEPENSE",
+        "LIB_LONG": "JOURNAL DE DEPENSE",
+        "NOM_TABLE": "JOURNAL",
+        "CODE_LIGNE": 54
+      },
+      {
+        "CODE_TABLE": "JRNL",
+        "ID_LIGNE": 332,
+        "LIB_COURT": "OD",
+        "LIB_LONG": "OD",
+        "NOM_TABLE": "JOURNAL",
+        "CODE_LIGNE": 91
+      },
+      {
+        "CODE_TABLE": "JRNL",
+        "ID_LIGNE": 367,
+        "LIB_COURT": "A DETERMINER",
+        "LIB_LONG": "JOURNAL A DETERMINER",
+        "NOM_TABLE": "JOURNAL",
+        "CODE_LIGNE": 99
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 129,
+        "LIB_COURT": "TRANCHE (F&amp;KWH)",
+        "LIB_LONG": "TRANCHE CONSO  (FDJ et KWH)",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 130,
+        "LIB_COURT": "FIXE  PF",
+        "LIB_LONG": "FIXE PRIME FIXE",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 131,
+        "LIB_COURT": "TRAVAUX AVEC PRIX",
+        "LIB_LONG": "TRAVAUX AVEC PRIX FIXE",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 132,
+        "LIB_COURT": "REGUL CONSO (F&amp;KWH)",
+        "LIB_LONG": "REGULARISATION DE CONSOMMATION  (FDJ et KWH)",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 410,
+        "LIB_COURT": "TRAVAUX SANS PRIX",
+        "LIB_LONG": "TRAVAUX SANS PRIX FIXE",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 411,
+        "LIB_COURT": "FIXE  ASC",
+        "LIB_LONG": "FIXE AVANCE SUR CONSO",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 53,
+        "LIB_COURT": "REMBOURS ASC",
+        "LIB_LONG": "REMBOURSEMENT AVANCE SUR CONSO",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 67,
+        "LIB_COURT": "TIMBRE (&amp; Frais Dos)",
+        "LIB_LONG": "TIMBRE et FRAIS DE DOSSIER",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "MCLT",
+        "ID_LIGNE": 66,
+        "LIB_COURT": "TIMBRE -TVA",
+        "LIB_LONG": "TIMBRE - TVA",
+        "NOM_TABLE": "METHODE_CALCUL",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "MFAC",
+        "ID_LIGNE": 800,
+        "LIB_COURT": "INDEX",
+        "LIB_LONG": "SUR RELEVE D'INDEX",
+        "NOM_TABLE": "METHODE FACTURATION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "MFAC",
+        "ID_LIGNE": 801,
+        "LIB_COURT": "ESTIME",
+        "LIB_LONG": "PAR ESTIMATION",
+        "NOM_TABLE": "METHODE FACTURATION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 271,
+        "LIB_COURT": "ENERGIE TR1",
+        "LIB_LONG": "ENERGIE TRANCHE 1  (FDJ et KWH)",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 272,
+        "LIB_COURT": "ENERGIE TR2",
+        "LIB_LONG": "ENERGIE TRANCHE 2 (FDJ et KWH)",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 273,
+        "LIB_COURT": "PRIME FIXE",
+        "LIB_LONG": "PRIME FIXE",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 274,
+        "LIB_COURT": "ENERGIE FRAUDEE",
+        "LIB_LONG": "ENERGIE FRAUDEE ESTIMEE",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 275,
+        "LIB_COURT": "PENALITE FRAUDE",
+        "LIB_LONG": "PENALITE FRAUDE (frais de constat)",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 276,
+        "LIB_COURT": "MAINTENANCE LOC MT",
+        "LIB_LONG": "MAINTENANCE",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 277,
+        "LIB_COURT": "PI",
+        "LIB_LONG": "PETITE INTERVENTION",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 278,
+        "LIB_COURT": "FRAIS DOSSIER",
+        "LIB_LONG": "FRAIS DE DOSSIER",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 344,
+        "LIB_COURT": "VENTE DIVERSE",
+        "LIB_LONG": "VENTE DIVERSE",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 340,
+        "LIB_COURT": "ASC",
+        "LIB_LONG": "AVANCE SUR CONSOMMATION",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 341,
+        "LIB_COURT": "SUBVENTION",
+        "LIB_LONG": "SUBVENTION POUR TRAVAUX",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 342,
+        "LIB_COURT": "ENERGIE REACTIVE",
+        "LIB_LONG": "ENERGIE REACTIVE  (FDJ et KWH)",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 343,
+        "LIB_COURT": "TIMBRE",
+        "LIB_LONG": "TIMBRE",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 345,
+        "LIB_COURT": "PREST SERV &amp; FRAIS J",
+        "LIB_LONG": "PRESTATIONS DE SERVICE et FRAIS JUDICIAIRES",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 912,
+        "LIB_COURT": "AMENDE (not used)",
+        "LIB_LONG": "Amende (plus utilisé après 09/11/04)",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 348,
+        "LIB_COURT": "TVA",
+        "LIB_LONG": "TVA",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 371,
+        "LIB_COURT": "ENERGIE REACTIVE MT",
+        "LIB_LONG": "ENERGIE REATIF MT  (FDJ et KWH)",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "MCLG",
+        "ID_LIGNE": 372,
+        "LIB_COURT": "ENERGIE REACTIVE HT",
+        "LIB_LONG": "ENERGIE REATIF HT (FDJ et KWH)",
+        "NOM_TABLE": "MODE COMPTA LIGNE TARIF",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "MEVF",
+        "ID_LIGNE": 17,
+        "LIB_COURT": "RELEVEUR",
+        "LIB_LONG": "RELEVEUR DISTRIBUE FACTURES",
+        "NOM_TABLE": "MODE ENVOI FACTURE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "MEVF",
+        "ID_LIGNE": 16,
+        "LIB_COURT": "POSTE",
+        "LIB_LONG": "FACTURES SONT ENVOYEES PAR LE BIAIS DE LA POSTE",
+        "NOM_TABLE": "MODE ENVOI FACTURE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "MEVF",
+        "ID_LIGNE": 83,
+        "LIB_COURT": "REGROUPEMENT",
+        "LIB_LONG": "FACTURES REGROUPEES",
+        "NOM_TABLE": "MODE ENVOI FACTURE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "MIMP",
+        "ID_LIGNE": 238,
+        "LIB_COURT": "CUMUL",
+        "LIB_LONG": "CUMUL",
+        "NOM_TABLE": "MODE IMPUTATION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "MIMP",
+        "ID_LIGNE": 239,
+        "LIB_COURT": "SANS CUMUL",
+        "LIB_LONG": "SANS CUMUL",
+        "NOM_TABLE": "MODE IMPUTATION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "MPMT",
+        "ID_LIGNE": 57,
+        "LIB_COURT": "LIQUIDE",
+        "LIB_LONG": "EN LIQUIDE",
+        "NOM_TABLE": "MODE PAIEMENT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "MPMT",
+        "ID_LIGNE": 58,
+        "LIB_COURT": "CHEQUE",
+        "LIB_LONG": "PAR CHEQUE",
+        "NOM_TABLE": "MODE PAIEMENT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "MPMT",
+        "ID_LIGNE": 59,
+        "LIB_COURT": "VIREMENT INDIRECT",
+        "LIB_LONG": "PAR VIREMENT OU PRELEVEMENT",
+        "NOM_TABLE": "MODE PAIEMENT",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "MPMT",
+        "ID_LIGNE": 133,
+        "LIB_COURT": "AFFECTn ou COMPn EXT",
+        "LIB_LONG": "PAR ENCAISSEMENT DIVERS (DB ou CR)",
+        "NOM_TABLE": "MODE PAIEMENT",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "MPMT",
+        "ID_LIGNE": 60,
+        "LIB_COURT": "VIREMENT DIRECT",
+        "LIB_LONG": "PAR VIREMENT OU PRELEVEMENT",
+        "NOM_TABLE": "MODE PAIEMENT",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "MPMT",
+        "ID_LIGNE": 64,
+        "LIB_COURT": "VIREMENT FINANCE",
+        "LIB_LONG": "PAR VIREMENT OU PRELEVEMENT",
+        "NOM_TABLE": "MODE PAIEMENT",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "MPMT",
+        "ID_LIGNE": 119,
+        "LIB_COURT": "COMPTE CLIENT",
+        "LIB_LONG": "PAR DEBIT DE COMPTE CLIENT",
+        "NOM_TABLE": "MODE PAIEMENT",
+        "CODE_LIGNE": 8,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "MRUS",
+        "ID_LIGNE": 18,
+        "LIB_COURT": "PAS DE PRELEVEMENT",
+        "LIB_LONG": "PAS DE PRELEVEMENT BANCAIRE",
+        "NOM_TABLE": "MODE PAIEMENT USUEL",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "MRUS",
+        "ID_LIGNE": 20,
+        "LIB_COURT": "PREL BANCAIRE",
+        "LIB_LONG": "PRELEVEMENT BANCAIRE",
+        "NOM_TABLE": "MODE PAIEMENT USUEL",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "NATD",
+        "ID_LIGNE": 590,
+        "LIB_COURT": "DEPANNAGE CLIENT",
+        "LIB_LONG": "DEPANNAGE CLIENT",
+        "NOM_TABLE": "NATURE DEPANNAGE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "NATD",
+        "ID_LIGNE": 592,
+        "LIB_COURT": "DEPANNAGE RESEAU",
+        "LIB_LONG": "DEPANNAGE RESEAU",
+        "NOM_TABLE": "NATURE DEPANNAGE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "NAJU",
+        "ID_LIGNE": 81,
+        "LIB_COURT": "PERSONNE PHYSIQUE",
+        "LIB_LONG": "PERSONNE PHYSIQUE",
+        "NOM_TABLE": "NATURE_JURIDIQUE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "NAJU",
+        "ID_LIGNE": 82,
+        "LIB_COURT": "PERSONNE MORALE",
+        "LIB_LONG": "COMPAGNIE",
+        "NOM_TABLE": "NATURE_JURIDIQUE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "NTMP",
+        "ID_LIGNE": 50,
+        "LIB_COURT": "FACTURE",
+        "LIB_LONG": "FACTURE",
+        "NOM_TABLE": "NATURE MVT  PORTEFEUILLE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "NTMP",
+        "ID_LIGNE": 51,
+        "LIB_COURT": "PAYEMENT",
+        "LIB_LONG": "PAYEMENT",
+        "NOM_TABLE": "NATURE MVT  PORTEFEUILLE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "NTPS",
+        "ID_LIGNE": 401,
+        "LIB_COURT": "ENERGIE",
+        "LIB_LONG": "ENERGIE",
+        "NOM_TABLE": "NATURE PRESTATION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "NTPS",
+        "ID_LIGNE": 402,
+        "LIB_COURT": "TRAVAUX",
+        "LIB_LONG": "TRAVAUX",
+        "NOM_TABLE": "NATURE PRESTATION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "NTPS",
+        "ID_LIGNE": 403,
+        "LIB_COURT": "FRAUDE",
+        "LIB_LONG": "AMENDE POUR FRAUDE",
+        "NOM_TABLE": "NATURE PRESTATION",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "NTPS",
+        "ID_LIGNE": 404,
+        "LIB_COURT": "PI",
+        "LIB_LONG": "PETITE INTERVENTION",
+        "NOM_TABLE": "NATURE PRESTATION",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "NTPS",
+        "ID_LIGNE": 405,
+        "LIB_COURT": "ABONNEMENT",
+        "LIB_LONG": "ABONNEMENT",
+        "NOM_TABLE": "NATURE PRESTATION",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "NTPS",
+        "ID_LIGNE": 279,
+        "LIB_COURT": "ENERGIE FRAUDEE",
+        "LIB_LONG": "ENERGIE FRAUDEE ESTIMEE",
+        "NOM_TABLE": "NATURE PRESTATION",
+        "CODE_LIGNE": 6,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "NTRV",
+        "ID_LIGNE": 152,
+        "LIB_COURT": "REEL",
+        "LIB_LONG": "REEL",
+        "NOM_TABLE": "NATURE RELEVE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "NTRV",
+        "ID_LIGNE": 153,
+        "LIB_COURT": "ESTIME",
+        "LIB_LONG": "ESTIME",
+        "NOM_TABLE": "NATURE RELEVE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "NTRV",
+        "ID_LIGNE": 154,
+        "LIB_COURT": "SAISI",
+        "LIB_LONG": "SAISI",
+        "NOM_TABLE": "NATURE RELEVE",
+        "CODE_LIGNE": 3,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "POCO",
+        "ID_LIGNE": 61,
+        "LIB_COURT": "EN PROJET",
+        "LIB_LONG": "DEMANDE FAITE CONTRAT NON SIGNE",
+        "NOM_TABLE": "POSITION CONTRAT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "POCO",
+        "ID_LIGNE": 12,
+        "LIB_COURT": "ACTIF",
+        "LIB_LONG": "CONTRAT ACTIF",
+        "NOM_TABLE": "POSITION CONTRAT",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "POCO",
+        "ID_LIGNE": 14,
+        "LIB_COURT": "CONTENTIEUX",
+        "LIB_LONG": "CONTRAT EN CONTENTIEUX",
+        "NOM_TABLE": "POSITION CONTRAT",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "POCO",
+        "ID_LIGNE": 13,
+        "LIB_COURT": "RESILIE",
+        "LIB_LONG": "CONTRAT RESILIE",
+        "NOM_TABLE": "POSITION CONTRAT",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "POCO",
+        "ID_LIGNE": 100,
+        "LIB_COURT": "REPRISE EN PROJET",
+        "LIB_LONG": "REPRISE EN PROJET",
+        "NOM_TABLE": "POSITION CONTRAT",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "POCO",
+        "ID_LIGNE": 99,
+        "LIB_COURT": "CONTRAT SUPPRIME",
+        "LIB_LONG": "CONTRAT SUPPRIME",
+        "NOM_TABLE": "POSITION CONTRAT",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "POTI",
+        "ID_LIGNE": 177,
+        "LIB_COURT": "SANS PERTE",
+        "LIB_LONG": "SANS PERTE",
+        "NOM_TABLE": "POSITION TI",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "POTI",
+        "ID_LIGNE": 178,
+        "LIB_COURT": "AVEC PERTE",
+        "LIB_LONG": "AVEC PERTE",
+        "NOM_TABLE": "POSITION TI",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "POST",
+        "ID_LIGNE": 102,
+        "LIB_COURT": "CAISSIER 1",
+        "LIB_LONG": "CAISSIER 1",
+        "NOM_TABLE": "POSTE OU PINCE",
+        "CODE_LIGNE": 1,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "POST",
+        "ID_LIGNE": 103,
+        "LIB_COURT": "CAISSIER 2",
+        "LIB_LONG": "CAISSIER 2",
+        "NOM_TABLE": "POSTE OU PINCE",
+        "CODE_LIGNE": 2,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "POST",
+        "ID_LIGNE": 104,
+        "LIB_COURT": "CAISSIER 3",
+        "LIB_LONG": "CAISSIER 3",
+        "NOM_TABLE": "POSTE OU PINCE",
+        "CODE_LIGNE": 3,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "POST",
+        "ID_LIGNE": 105,
+        "LIB_COURT": "CAISSIER 4",
+        "LIB_LONG": "CAISSIER 4",
+        "NOM_TABLE": "POSTE OU PINCE",
+        "CODE_LIGNE": 4,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "POST",
+        "ID_LIGNE": 84,
+        "LIB_COURT": "PINCE 1",
+        "LIB_LONG": "PINCE 1",
+        "NOM_TABLE": "POSTE OU PINCE",
+        "CODE_LIGNE": 11,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "POST",
+        "ID_LIGNE": 85,
+        "LIB_COURT": "PINCE 2",
+        "LIB_LONG": "PINCE 2",
+        "NOM_TABLE": "POSTE OU PINCE",
+        "CODE_LIGNE": 12,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "PRIO",
+        "ID_LIGNE": 581,
+        "LIB_COURT": "URGENT",
+        "LIB_LONG": "URGENT",
+        "NOM_TABLE": "PRIORITE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "PRIO",
+        "ID_LIGNE": 585,
+        "LIB_COURT": "NORMALE",
+        "LIB_LONG": "NORMALE",
+        "NOM_TABLE": "PRIORITE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "QLCL",
+        "ID_LIGNE": 1,
+        "LIB_COURT": "BON",
+        "LIB_LONG": "BON CLIENT",
+        "NOM_TABLE": "QUALITE CLIENT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "QLCL",
+        "ID_LIGNE": 2,
+        "LIB_COURT": "MAUVAIS",
+        "LIB_LONG": "MAUVAIS CLIENT",
+        "NOM_TABLE": "QUALITE CLIENT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "QLCL",
+        "ID_LIGNE": 3,
+        "LIB_COURT": "FRAUDEUR",
+        "LIB_LONG": "CLIENT QUI FRAUDE SOUVENT",
+        "NOM_TABLE": "QUALITE CLIENT",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 202,
+        "LIB_COURT": "RELEVEUR",
+        "LIB_LONG": "SECTION DE RELEVE",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 1,
+        "ID_PARENT": 2201
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 203,
+        "LIB_COURT": "LABO",
+        "LIB_LONG": "SECTION DU LABORATOIRE",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 2,
+        "ID_PARENT": 2203
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 204,
+        "LIB_COURT": "SBN",
+        "LIB_LONG": "SECTION BRANCHEMENT NEUF",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 3,
+        "ID_PARENT": 2202
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 244,
+        "LIB_COURT": "CELLULE",
+        "LIB_LONG": "CELLULE DISTRICT",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 205,
+        "LIB_COURT": "CAISSES",
+        "LIB_LONG": "CAISSES",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 206,
+        "LIB_COURT": "CELLULE CC",
+        "LIB_LONG": "CELLULE CLIENTELE COURANTE",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 6,
+        "ID_PARENT": 2201
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 207,
+        "LIB_COURT": "CELLULE CS",
+        "LIB_LONG": "CELLULE CLIENTELE SPECIALE",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 7,
+        "ID_PARENT": 2201
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 209,
+        "LIB_COURT": "METH COORD",
+        "LIB_LONG": "METHODE COORDINATION",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 8,
+        "ID_PARENT": 2201
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 210,
+        "LIB_COURT": "COUPURE",
+        "LIB_LONG": "EQUIPE COUPURE",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 211,
+        "LIB_COURT": "GARAGE",
+        "LIB_LONG": "GARAGE",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 212,
+        "LIB_COURT": "COMPTA",
+        "LIB_LONG": "COMPTA",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 213,
+        "LIB_COURT": "ETUDE BT",
+        "LIB_LONG": "ETUDE BT",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 12,
+        "ID_PARENT": 2202
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 214,
+        "LIB_COURT": "ETUDE MT",
+        "LIB_LONG": "ETUDE MT",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 13,
+        "ID_PARENT": 2202
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 215,
+        "LIB_COURT": "GROS TRAVAUX",
+        "LIB_LONG": "GROS TRAVAUX",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 14,
+        "ID_PARENT": 2209
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 216,
+        "LIB_COURT": "TRAVAUX BT",
+        "LIB_LONG": "TRAVAUX BT",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 15,
+        "ID_PARENT": 2209
+      },
+      {
+        "CODE_TABLE": "SECT",
+        "ID_LIGNE": 201,
+        "LIB_COURT": "DEPANNAGE",
+        "LIB_LONG": "DEPANNAGE",
+        "NOM_TABLE": "SECTION",
+        "CODE_LIGNE": 16,
+        "ID_PARENT": 2208
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 932,
+        "LIB_COURT": "SP",
+        "LIB_LONG": "SERVICE PRODUCTION",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 933,
+        "LIB_COURT": "STD",
+        "LIB_LONG": "SERVICE TRANSPORT ET DISTRIBUTION",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 934,
+        "LIB_COURT": "DI",
+        "LIB_LONG": "DIRECTION",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 935,
+        "LIB_COURT": "GARG",
+        "LIB_LONG": "SECTION GARAGE",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 936,
+        "LIB_COURT": "ENT",
+        "LIB_LONG": "SECTION ENTRETIEN",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 937,
+        "LIB_COURT": "SAS",
+        "LIB_LONG": "SERVICE APPROVISIONNEMENT STOCK",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 938,
+        "LIB_COURT": "AC",
+        "LIB_LONG": "AGENCE COMPTABLE",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 939,
+        "LIB_COURT": "SC",
+        "LIB_LONG": "SERVICE COMMERCIAL",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 940,
+        "LIB_COURT": "SI",
+        "LIB_LONG": "SERVICE INFORMATIQUE",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 941,
+        "LIB_COURT": "CFP",
+        "LIB_LONG": "CENTRE DE FORMATION PROFESSIONNELLE",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 942,
+        "LIB_COURT": "SCX",
+        "LIB_LONG": "SERVICE CONTENTIEUX",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 943,
+        "LIB_COURT": "TAD",
+        "LIB_LONG": "TADJOURAH",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 944,
+        "LIB_COURT": "ALS",
+        "LIB_LONG": "ALI SABIEH",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 945,
+        "LIB_COURT": "DIK",
+        "LIB_LONG": "DIKHIL",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 946,
+        "LIB_COURT": "OBK",
+        "LIB_LONG": "OBOCK",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 947,
+        "LIB_COURT": "SA",
+        "LIB_LONG": "SERVICE ADMINISTRATIF",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 949,
+        "LIB_COURT": "INT",
+        "LIB_LONG": "INTERCONNEXION",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "SVRC",
+        "ID_LIGNE": 950,
+        "LIB_COURT": "GEO",
+        "LIB_LONG": "GEOTHERMIE",
+        "NOM_TABLE": "SERVICES",
+        "CODE_LIGNE": 19
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1302,
+        "LIB_COURT": "Facture Périodique",
+        "LIB_LONG": "Facture Energie Périodique",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1303,
+        "LIB_COURT": "Devis Signé",
+        "LIB_LONG": "Etude Devis Signé",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1304,
+        "LIB_COURT": "Encaissement en ligne",
+        "LIB_LONG": "Encaissement en ligne",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1305,
+        "LIB_COURT": "Dépannage Client",
+        "LIB_LONG": "Avis Dépannage Client",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1306,
+        "LIB_COURT": "Dépannage Facture",
+        "LIB_LONG": "Dépannage Facturé",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1307,
+        "LIB_COURT": "Message Client",
+        "LIB_LONG": "Message aux Clients",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1308,
+        "LIB_COURT": "Dossier Expiré",
+        "LIB_LONG": "Document Imcomplet Expiré",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1309,
+        "LIB_COURT": "Cas Rejeté",
+        "LIB_LONG": "Cas Rejeté",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "SMSC",
+        "ID_LIGNE": 1399,
+        "LIB_COURT": "Alerte Informatique",
+        "LIB_LONG": "Alerte Bug Informatique",
+        "NOM_TABLE": "SMS MESSAGE",
+        "CODE_LIGNE": 199
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1018,
+        "LIB_COURT": "DEVIS CREE",
+        "LIB_LONG": "DEVIS CREE EN ATTENTE DE VALIDATION",
+        "NOM_TABLE": "STATUT DEVIS",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1019,
+        "LIB_COURT": "DEVIS VALIDE",
+        "LIB_LONG": "DEVIS VALIDE POUR SIGNATURE",
+        "NOM_TABLE": "STATUT DEVIS",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1020,
+        "LIB_COURT": "DEVIS SIGNE",
+        "LIB_LONG": "DEVIS SIGNE A FACTURER",
+        "NOM_TABLE": "STATUT DEVIS",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1021,
+        "LIB_COURT": "DEVIS FACTURE",
+        "LIB_LONG": "DEVIS FACTURE A PAYER",
+        "NOM_TABLE": "STATUT DEVIS",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1030,
+        "LIB_COURT": "DEVIS PAYE",
+        "LIB_LONG": "DEVIS PAYE",
+        "NOM_TABLE": "STATUT DEVIS",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1025,
+        "LIB_COURT": "DEVIS SOUMIS",
+        "LIB_LONG": "DEVIS SOUMIS",
+        "NOM_TABLE": "STATUT DEVIS",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 600,
+        "LIB_COURT": "Salarié non Dir.",
+        "LIB_LONG": "Agent Actif non Directeur - à aligner sur la Paye",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 0
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 601,
+        "LIB_COURT": "Directeur et A.C.",
+        "LIB_LONG": "Directeur et Agent Comptable (prise en charge EDD hors quota)",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 602,
+        "LIB_COURT": "Agent Retraité",
+        "LIB_LONG": "Agent Retraité",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 603,
+        "LIB_COURT": "Agent Décédé",
+        "LIB_LONG": "Agent Décédé",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 604,
+        "LIB_COURT": "Agent Licencié",
+        "LIB_LONG": "Agent Licencié",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 605,
+        "LIB_COURT": "Agent Coopérant",
+        "LIB_LONG": "Agent Coopérant",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 606,
+        "LIB_COURT": "M.C.A.",
+        "LIB_LONG": "Membre du Conseil d'Administraiton",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 607,
+        "LIB_COURT": "Ex Agent (détaché)",
+        "LIB_LONG": "Agent Détaché",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 608,
+        "LIB_COURT": "Utilisateur SI",
+        "LIB_LONG": "Code utilisé pour tests SI",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "STEM",
+        "ID_LIGNE": 609,
+        "LIB_COURT": "Autoconsommation EDD",
+        "LIB_LONG": "Autoconsommation EDD (syndicat, logement visiteur de marqueÂ¿)",
+        "NOM_TABLE": "STATUT EMPLOYE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "STFA",
+        "ID_LIGNE": 166,
+        "LIB_COURT": "CREE",
+        "LIB_LONG": "LOT / PERIODE CREE ETRE FACTURE",
+        "NOM_TABLE": "STATUT LOT DE FACTURATION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "STFA",
+        "ID_LIGNE": 165,
+        "LIB_COURT": "PRET",
+        "LIB_LONG": "LOT PRET A  ETRE FACTURE A BLANC",
+        "NOM_TABLE": "STATUT LOT DE FACTURATION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "STFA",
+        "ID_LIGNE": 167,
+        "LIB_COURT": "FAIT A BLANC",
+        "LIB_LONG": "FACTURATION A BLANC FAITE",
+        "NOM_TABLE": "STATUT LOT DE FACTURATION",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "STFA",
+        "ID_LIGNE": 168,
+        "LIB_COURT": "VALIDE",
+        "LIB_LONG": "FACTURATION A BLANC DU LOT VALIDEE",
+        "NOM_TABLE": "STATUT LOT DE FACTURATION",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "STFA",
+        "ID_LIGNE": 169,
+        "LIB_COURT": "FACTURE",
+        "LIB_LONG": "LOT FACTURE EN REEL",
+        "NOM_TABLE": "STATUT LOT DE FACTURATION",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "STFA",
+        "ID_LIGNE": 170,
+        "LIB_COURT": "IMPRIME",
+        "LIB_LONG": "FACTURES RELLES IMPRIMEES",
+        "NOM_TABLE": "STATUT LOT DE FACTURATION",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "STFA",
+        "ID_LIGNE": 1013,
+        "LIB_COURT": "MDM MAJ EFFECTUEE",
+        "LIB_LONG": "LOT MISE A JOUR MDM EFFECTUEE",
+        "NOM_TABLE": "STATUT LOT DE FACTURATION",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "STCL",
+        "ID_LIGNE": 4,
+        "LIB_COURT": "PRIVE",
+        "LIB_LONG": "CLIENT PRIVE",
+        "NOM_TABLE": "STATUT SOCIAL",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "STCL",
+        "ID_LIGNE": 267,
+        "LIB_COURT": "ADMIN PUBLIQUE",
+        "LIB_LONG": "ADMINISTRATION PUBLIQUE DJIBOUTIENNE",
+        "NOM_TABLE": "STATUT SOCIAL",
+        "CODE_LIGNE": 2,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "STCL",
+        "ID_LIGNE": 5,
+        "LIB_COURT": "NON UTILISABLE",
+        "LIB_LONG": "NON UTILISABLE",
+        "NOM_TABLE": "STATUT SOCIAL",
+        "CODE_LIGNE": 3,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "STCL",
+        "ID_LIGNE": 6,
+        "LIB_COURT": "ADMIN ETRANGERE",
+        "LIB_LONG": "ADMINISTRATION ETRANGERE",
+        "NOM_TABLE": "STATUT SOCIAL",
+        "CODE_LIGNE": 4,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "STCL",
+        "ID_LIGNE": 7,
+        "LIB_COURT": "AGENT EDD",
+        "LIB_LONG": "AGENT EDD",
+        "NOM_TABLE": "STATUT SOCIAL",
+        "CODE_LIGNE": 5,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "STCL",
+        "ID_LIGNE": 268,
+        "LIB_COURT": "ADMINISTRATEUR",
+        "LIB_LONG": "ADMINISTRATEUR EDD",
+        "NOM_TABLE": "STATUT SOCIAL",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "STCL",
+        "ID_LIGNE": 297,
+        "LIB_COURT": "AUTOCONSOMMATION",
+        "LIB_LONG": "AUTOCONSOMMATION EDD",
+        "NOM_TABLE": "STATUT SOCIAL",
+        "CODE_LIGNE": 7,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "STC2",
+        "ID_LIGNE": 701,
+        "LIB_COURT": "PRIVE CC",
+        "LIB_LONG": "PRIVE CC",
+        "NOM_TABLE": "STATUT SOCIAL 2",
+        "CODE_LIGNE": 1,
+        "ID_PARENT": 41
+      },
+      {
+        "CODE_TABLE": "STC2",
+        "ID_LIGNE": 702,
+        "LIB_COURT": "PRIVE CS",
+        "LIB_LONG": "PRIVE CS",
+        "NOM_TABLE": "STATUT SOCIAL 2",
+        "CODE_LIGNE": 2,
+        "ID_PARENT": 42
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 155,
+        "LIB_COURT": "TOURNEE CREEE",
+        "LIB_LONG": "TOURNEE CREEE",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 156,
+        "LIB_COURT": "BORDEREAUX CREES",
+        "LIB_LONG": "BORDEREAUX RELEVE CREES NON IMPRIMES",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 157,
+        "LIB_COURT": "BORDEREAUX IMPRIMES",
+        "LIB_LONG": "BORDEREAU RELEVE IMPRIME",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 158,
+        "LIB_COURT": "INDEX SAISIS",
+        "LIB_LONG": "RELEVE INDEX SAISIE",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 160,
+        "LIB_COURT": "CORRECTIONS SAISIES",
+        "LIB_LONG": "CORRECTION INDEX SAISIE",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 173,
+        "LIB_COURT": "EXPORT VERS TSP",
+        "LIB_LONG": "EXPORT VERS TSP",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 174,
+        "LIB_COURT": "IMPORT DU TSP",
+        "LIB_LONG": "IMPORT DU TSP",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 2101,
+        "LIB_COURT": "PRET A RELANCER",
+        "LIB_LONG": "PRET A RELANCER",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 2102,
+        "LIB_COURT": "EXPORT CORRECTION",
+        "LIB_LONG": "EXPORT CORRECTION",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "STTR",
+        "ID_LIGNE": 2103,
+        "LIB_COURT": "IMPORT CORRECTION",
+        "LIB_LONG": "IMPORT CORRECTION",
+        "NOM_TABLE": "STATUT TOURNEE DE RELEVE",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1460,
+        "LIB_COURT": "EN COURS",
+        "LIB_LONG": "EN COURS",
+        "NOM_TABLE": "SUIVIE CONTROLE",
+        "CODE_LIGNE": 40
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1462,
+        "LIB_COURT": "ENREGISTRE",
+        "LIB_LONG": "ENREGISTRE",
+        "NOM_TABLE": "SUIVIE CONTROLE",
+        "CODE_LIGNE": 41
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1463,
+        "LIB_COURT": "CONFIRME",
+        "LIB_LONG": "CONFIRME",
+        "NOM_TABLE": "SUIVIE CONTROLE",
+        "CODE_LIGNE": 43
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1466,
+        "LIB_COURT": "VALIDE",
+        "LIB_LONG": "VALIDE",
+        "NOM_TABLE": "SUIVIE CONTROLE",
+        "CODE_LIGNE": 45
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1801,
+        "LIB_COURT": "EN COURS",
+        "LIB_LONG": "EN COURS",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1802,
+        "LIB_COURT": "EN ATTENTE",
+        "LIB_LONG": "EN ATTENTE",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1803,
+        "LIB_COURT": "EXECUTER",
+        "LIB_LONG": "EXECUTER",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1805,
+        "LIB_COURT": "PROVISOIRE",
+        "LIB_LONG": "PROVISOIRE",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1807,
+        "LIB_COURT": "LABO",
+        "LIB_LONG": "LABO",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1810,
+        "LIB_COURT": "TERMINE",
+        "LIB_LONG": "TERMINE",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1811,
+        "LIB_COURT": "EXPIRER",
+        "LIB_LONG": "EXPIRER",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1815,
+        "LIB_COURT": "OK CLIENT",
+        "LIB_LONG": "OK CLIENT",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1819,
+        "LIB_COURT": "A FACTURER",
+        "LIB_LONG": "A FACTURER",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1820,
+        "LIB_COURT": "FACTURER",
+        "LIB_LONG": "FACTURER",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1806,
+        "LIB_COURT": "DERD",
+        "LIB_LONG": "DERD",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1808,
+        "LIB_COURT": "AERIEN",
+        "LIB_LONG": "AERIEN",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1809,
+        "LIB_COURT": "SOUTERRAIN",
+        "LIB_LONG": "SOUTERRAIN",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1812,
+        "LIB_COURT": "ECLAIRAGE",
+        "LIB_LONG": "ECLAIRAGE",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1813,
+        "LIB_COURT": "ENTRETIEN",
+        "LIB_LONG": "ENTRETIEN",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1814,
+        "LIB_COURT": "DEPANNAGE",
+        "LIB_LONG": "DEPANNAGE",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "DEPG",
+        "ID_LIGNE": 1816,
+        "LIB_COURT": "MANUTENTION",
+        "LIB_LONG": "MANUTENTION",
+        "NOM_TABLE": "SUIVIE_DEPANNAGE",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1701,
+        "LIB_COURT": "EN COURS",
+        "LIB_LONG": "EN COURS",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1702,
+        "LIB_COURT": "DOCS COMPLET",
+        "LIB_LONG": "DOCS COMPLET",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1703,
+        "LIB_COURT": "DOSSIER VALIDE",
+        "LIB_LONG": "DOSSIER VALIDE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1725,
+        "LIB_COURT": "REVALIDER",
+        "LIB_LONG": "REVALIDER",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1023,
+        "LIB_COURT": "DOCS COMPLET",
+        "LIB_LONG": "DOCS COMPLET",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1704,
+        "LIB_COURT": "EN ETUDE",
+        "LIB_LONG": "EN ETUDE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1705,
+        "LIB_COURT": "CAS DIFFICILE/INSTANCE",
+        "LIB_LONG": "CAS DIFFICILE OU EN INSTANCE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "STDV",
+        "ID_LIGNE": 1024,
+        "LIB_COURT": "DOSSIER VALIDER",
+        "LIB_LONG": "DOSSIER VALIDER",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1706,
+        "LIB_COURT": "CAS REJETE",
+        "LIB_LONG": "CAS REJETE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1708,
+        "LIB_COURT": "DOCUMENT INCOMPLET / DOSSIER REJETE",
+        "LIB_LONG": "DOCUMENT INCOMPLET / DOSSIER REJETE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1712,
+        "LIB_COURT": "DOCS COMPLET POUR ENQUETE LABO",
+        "LIB_LONG": "DOCS COMPLET POUR ENQUETE LABO",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1716,
+        "LIB_COURT": "DOSSIER TRANSFERE VERS LABO",
+        "LIB_LONG": "DOSSIER TRANSFERE VERS LABO",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1714,
+        "LIB_COURT": "DOSSIER VALIDE APRES ENQUETE LABO",
+        "LIB_LONG": "DOSSIER VALIDE APRES ENQUETE LABO",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1713,
+        "LIB_COURT": "CONSTRUCTION INACHEVEE /REJETE",
+        "LIB_LONG": "CONSTRUCTION INACHEVEE /REJETE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1707,
+        "LIB_COURT": "DEVIS A BLANC",
+        "LIB_LONG": "DEVIS A BLANC",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1709,
+        "LIB_COURT": "DEVIS CREE",
+        "LIB_LONG": "DEVIS CREE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1715,
+        "LIB_COURT": "DEVIS VALIDER BEP",
+        "LIB_LONG": "DEVIS VALIDER BEP",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1740,
+        "LIB_COURT": "DEVIS VALIDER DERD",
+        "LIB_LONG": "DEVIS VALIDER DERD",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1710,
+        "LIB_COURT": "DEVIS SIGNE",
+        "LIB_LONG": "DEVIS SIGNE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 19
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1711,
+        "LIB_COURT": "DEVIS FACTURE",
+        "LIB_LONG": "DEVIS FACTURE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 20
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1717,
+        "LIB_COURT": "DEVIS PAYE",
+        "LIB_LONG": "DEVIS PAYE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 21
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1718,
+        "LIB_COURT": "DEVIS EXPIRE",
+        "LIB_LONG": "DEVIS EXPIRE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 22
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1720,
+        "LIB_COURT": "RELANCE DOSSIER",
+        "LIB_LONG": "RELANCE DOSSIER",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 23
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1721,
+        "LIB_COURT": "DOSSIER SUPPRIME",
+        "LIB_LONG": "DOSSIER SUPPRIME",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 24
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1722,
+        "LIB_COURT": "DOSSIER EXPIRE",
+        "LIB_LONG": "DOSSIER EXPIRE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 25
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1730,
+        "LIB_COURT": "EN ATTENTE POSE COMPTEUR",
+        "LIB_LONG": "EN ATTENTE POSE COMPTEUR",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 30
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1727,
+        "LIB_COURT": "PRISE EN CHARGE CLIENT",
+        "LIB_LONG": "PRISE EN CHARGE CLIENT",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 37
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1719,
+        "LIB_COURT": "DEVIS TRANSFERER POUR TRVX",
+        "LIB_LONG": "DEVIS TRANSFERER POUR TRVX",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 40
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1723,
+        "LIB_COURT": "DEVIS VALIDER PAR EQUIPE TRAVAUX",
+        "LIB_LONG": "DEVIS VALIDER PAR EQUIPE TRAVAUX",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 41
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1724,
+        "LIB_COURT": "DEVIS VALIDER APRES TRAVAUX",
+        "LIB_LONG": "DEVIS VALIDER APRES TRAVAUX",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 42
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1743,
+        "LIB_COURT": "PP FRAUDE COMPLET",
+        "LIB_LONG": "PP FRAUDE COMPLET",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 43
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1744,
+        "LIB_COURT": "EN ATTENTE TRAVAUX",
+        "LIB_LONG": "EN ATTENTE TRAVAUX",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 44
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1745,
+        "LIB_COURT": "DEVIS PLANIFIER",
+        "LIB_LONG": "DEVIS PLANIFIER",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 45
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1748,
+        "LIB_COURT": "ETUDE PLANIFIER",
+        "LIB_LONG": "ETUDE PLANIFIER",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 48
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1750,
+        "LIB_COURT": "DEVIS EN EXECUTION",
+        "LIB_LONG": "DEVIS EN EXECUTION",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 50
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1755,
+        "LIB_COURT": "DOSSIER TRAVAUX NON EXECUTE",
+        "LIB_LONG": "DOSSIER TRAVAUX NON_EXECUTE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 55
+      },
+      {
+        "CODE_TABLE": "DOSV",
+        "ID_LIGNE": 1770,
+        "LIB_COURT": "DOSSIER CLOTURE",
+        "LIB_LONG": "DOSSIER CLOTURE",
+        "NOM_TABLE": "SUIVIE_DOSSIER",
+        "CODE_LIGNE": 70
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 11,
+        "LIB_COURT": "ATTENTE PAIEMENT",
+        "LIB_LONG": "CONTRAT EN ATTENTE DE PAIEMENT CONNEXION",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 49,
+        "LIB_COURT": "ATTENTE MISE SERVICE",
+        "LIB_LONG": "CONTRAT EN ATTENTE DE MISE EN SERVICE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 284,
+        "LIB_COURT": "ATTENTE MODIF",
+        "LIB_LONG": "ATTENTE MODIF",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 282,
+        "LIB_COURT": "INTERVENTION FAITE",
+        "LIB_LONG": "INTERVENTION (MISE EN SERVICE OU MODIF)  EFECTUEE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 159,
+        "LIB_COURT": "A COUPER",
+        "LIB_LONG": "ACTIF PROPOSE A COUPURE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 283,
+        "LIB_COURT": "SANS FOUR ENERGIE",
+        "LIB_LONG": "SANS FOURNITURE ENERGIE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 161,
+        "LIB_COURT": "ATTEND REBRANCHEMENT",
+        "LIB_LONG": "ACTIF EN ATTENTE DE REBRANCHEMENT",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 180,
+        "LIB_COURT": "NON SOLDE",
+        "LIB_LONG": "RESILIE ET NON SOLDE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 502,
+        "LIB_COURT": "TERMINE SOLDE",
+        "LIB_LONG": "RESILIE ET SOLDE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 181,
+        "LIB_COURT": "EN COURS",
+        "LIB_LONG": "CONTENTIEUX EN COURS",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 15,
+        "LIB_COURT": "TERMINE P &amp; P",
+        "LIB_LONG": "CONTRAT PASSE PAR PERTE ET PROFIT",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 300,
+        "LIB_COURT": "A COUPER ECH/CHQ IMP",
+        "LIB_LONG": "A COUPER ECHEANCIER/CHQ IMP",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 298,
+        "LIB_COURT": "A FACTURER COUPURE",
+        "LIB_LONG": "A FACTURER COUPURE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 171,
+        "LIB_COURT": "RESTE A COUPER",
+        "LIB_LONG": "RESTE A COUPER",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 172,
+        "LIB_COURT": "A COUPER RP",
+        "LIB_LONG": "ACTIF PROPOSE A COUPER RP",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 175,
+        "LIB_COURT": "RESTE A REBRANCHER",
+        "LIB_LONG": "ACTIF RESTE A REBRANCHER",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 176,
+        "LIB_COURT": "ACTIF REBRANCHE",
+        "LIB_LONG": "ACTIF REBRANCHE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "SPCT",
+        "ID_LIGNE": 183,
+        "LIB_COURT": "NON REBRANCHE",
+        "LIB_LONG": "REBRANCHEMENT NON EFFECTUE",
+        "NOM_TABLE": "SUIVI PROC. CONTRAT",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "TMOB",
+        "ID_LIGNE": 990,
+        "LIB_COURT": "INDEX ENVOYE",
+        "LIB_LONG": "INDEX WEB CLIENT ENVOYE",
+        "NOM_TABLE": "TMP_RELEVE_EDDMOBILE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TMOB",
+        "ID_LIGNE": 991,
+        "LIB_COURT": "INDEX ACCEPTE",
+        "LIB_LONG": "INDEX WEB CLIENT ACCEPTE",
+        "NOM_TABLE": "TMP_RELEVE_EDDMOBILE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TMOB",
+        "ID_LIGNE": 992,
+        "LIB_COURT": "INDEX REJETE",
+        "LIB_LONG": "INDEX WEB CLIENT REJETE",
+        "NOM_TABLE": "TMP_RELEVE_EDDMOBILE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TMOB",
+        "ID_LIGNE": 998,
+        "LIB_COURT": "INDEX EXPIRE",
+        "LIB_LONG": "INDEX EXPIRE",
+        "NOM_TABLE": "TMP_RELEVE_EDDMOBILE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYCD",
+        "ID_LIGNE": 360,
+        "LIB_COURT": "PAIEMENT",
+        "LIB_LONG": "PAIEMENT DIVERS",
+        "NOM_TABLE": "TYPE CAISSE DIVERS",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYCD",
+        "ID_LIGNE": 361,
+        "LIB_COURT": "CHEQUES/ESPECES",
+        "LIB_LONG": "CHEQUES/ESPECES",
+        "NOM_TABLE": "TYPE CAISSE DIVERS",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYCD",
+        "ID_LIGNE": 362,
+        "LIB_COURT": "ENC. DIVERS",
+        "LIB_LONG": "ENCAISSEMENT DIVERS",
+        "NOM_TABLE": "TYPE CAISSE DIVERS",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TYCD",
+        "ID_LIGNE": 363,
+        "LIB_COURT": "AVANCES",
+        "LIB_LONG": "AVANCES AU PERSONNEL",
+        "NOM_TABLE": "TYPE CAISSE DIVERS",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYCD",
+        "ID_LIGNE": 364,
+        "LIB_COURT": "TRANSFERT",
+        "LIB_LONG": "TRANSFERT  COFFRE",
+        "NOM_TABLE": "TYPE CAISSE DIVERS",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TCLU",
+        "ID_LIGNE": 41,
+        "LIB_COURT": "CC",
+        "LIB_LONG": "CLIENTELE COURANTE",
+        "NOM_TABLE": "TYPE CELLULE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TCLU",
+        "ID_LIGNE": 42,
+        "LIB_COURT": "CS",
+        "LIB_LONG": "CLIENTELE SPECIALE",
+        "NOM_TABLE": "TYPE CELLULE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYCP",
+        "ID_LIGNE": 230,
+        "LIB_COURT": "REACT",
+        "LIB_LONG": "COMPTEUR REACTIF",
+        "NOM_TABLE": "TYPE COMPTEUR",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYCP",
+        "ID_LIGNE": 233,
+        "LIB_COURT": "MIXTE",
+        "LIB_LONG": "MIXTE",
+        "NOM_TABLE": "TYPE COMPTEUR",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TYCP",
+        "ID_LIGNE": 262,
+        "LIB_COURT": "ACTIF",
+        "LIB_LONG": "COMPTEUR ACTIF",
+        "NOM_TABLE": "TYPE COMPTEUR",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYCP",
+        "ID_LIGNE": 234,
+        "LIB_COURT": "CC_MONO",
+        "LIB_LONG": "MONO COMMUNICANT- SAGEM",
+        "NOM_TABLE": "TYPE COMPTEUR",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TYCP",
+        "ID_LIGNE": 235,
+        "LIB_COURT": "CC_TRIPHASE",
+        "LIB_LONG": "TRIPHASE COMMUNICANT- SAGEM",
+        "NOM_TABLE": "TYPE COMPTEUR",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYCT",
+        "ID_LIGNE": 1550,
+        "LIB_COURT": "CONSTAT FRAUDE",
+        "LIB_LONG": "CONSTAT DE FRAUDE",
+        "NOM_TABLE": "TYPE_CONSTAT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TCOP",
+        "ID_LIGNE": 2021,
+        "LIB_COURT": "PLANIFIER",
+        "LIB_LONG": "COUPURE PLANIFIEE",
+        "NOM_TABLE": "TYPE_COUPURE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TCOP",
+        "ID_LIGNE": 2022,
+        "LIB_COURT": "NON PLANIFIER",
+        "LIB_LONG": "COUPURE NON PLANIFIEE",
+        "NOM_TABLE": "TYPE_COUPURE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TCOP",
+        "ID_LIGNE": 2023,
+        "LIB_COURT": "RETRAIT VOLONTAIRE",
+        "LIB_LONG": "RETRAIT VOLONTAIRE",
+        "NOM_TABLE": "TYPE_COUPURE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TCOP",
+        "ID_LIGNE": 2024,
+        "LIB_COURT": "DESASTRE",
+        "LIB_LONG": "DESASTRE",
+        "NOM_TABLE": "TYPE_COUPURE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYCR",
+        "ID_LIGNE": 224,
+        "LIB_COURT": "MONO",
+        "LIB_LONG": "MONOPHASE",
+        "NOM_TABLE": "TYPE COURANT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYCR",
+        "ID_LIGNE": 226,
+        "LIB_COURT": "TRI",
+        "LIB_LONG": "TRIPHASE",
+        "NOM_TABLE": "TYPE COURANT",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 70,
+        "LIB_COURT": "RESILIATION",
+        "LIB_LONG": "DEMANDE RESILIATION",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 0
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 71,
+        "LIB_COURT": "REOUVERTURE",
+        "LIB_LONG": "DEMANDE REOUVERTURE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 72,
+        "LIB_COURT": "REMIS.ETAT.FRAUDE",
+        "LIB_LONG": "REMISE EN ETAT DE FRAUDE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 73,
+        "LIB_COURT": "VERIF. CONTROL",
+        "LIB_LONG": "VERIFICATION/CONTROLE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 74,
+        "LIB_COURT": "ETALONNAGE",
+        "LIB_LONG": "ETALONNAGE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 75,
+        "LIB_COURT": "DEPANNAGE",
+        "LIB_LONG": "DEPANNAGE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 79,
+        "LIB_COURT": "DEPOSE_COMPTEUR_FRAUDE",
+        "LIB_LONG": "DEPOSE_COMPTEUR_SUITE_FRAUDE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 184,
+        "LIB_COURT": "REPOSE_COMPTEUR_FRAUDE",
+        "LIB_LONG": "REPOSE_COMPTEUR_SUITE_FRAUDE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 514,
+        "LIB_COURT": "DEPOSE COMPTEUR",
+        "LIB_LONG": "BON POUR DEPOSE COMPTEUR",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 515,
+        "LIB_COURT": "REPOSE COMPTEUR",
+        "LIB_LONG": "BON POUR REPOSE COMPTEUR",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 519,
+        "LIB_COURT": "DEPLACEMENT COMPTAGE",
+        "LIB_LONG": "DEPLACEMENT COMPTAGE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 520,
+        "LIB_COURT": "AUGMENTATION PS",
+        "LIB_LONG": "AUGMENTATION PS",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 521,
+        "LIB_COURT": "DIMINUTION PS",
+        "LIB_LONG": "DIMINUTION PS",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 522,
+        "LIB_COURT": "DEPLACEMENT CABLE",
+        "LIB_LONG": "DEPLACEMENT CABLE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 1501,
+        "LIB_COURT": "DMD BRANCHEMENT",
+        "LIB_LONG": "DEMANDE DE BRANCHEMENT",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 523,
+        "LIB_COURT": "DEPLACEMENT RESEAU-PYLONE",
+        "LIB_LONG": "DEPLACEMENT RESEAU-PYLONE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 524,
+        "LIB_COURT": "CHANGEMENT COMPTAGE",
+        "LIB_LONG": "CHANGEMENT COMPTAGE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 525,
+        "LIB_COURT": "VENTES MATERIELS",
+        "LIB_LONG": "VENTES MATERIELS",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 526,
+        "LIB_COURT": "ETAT_SOLDE",
+        "LIB_LONG": "ETAT_SOLDE",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 19
+      },
+      {
+        "CODE_TABLE": "TYDD",
+        "ID_LIGNE": 2218,
+        "LIB_COURT": "DEMANDE PLANIFIER",
+        "LIB_LONG": "DEMANDE PLANIFIER",
+        "NOM_TABLE": "TYPE DEMANDE",
+        "CODE_LIGNE": 20
+      },
+      {
+        "CODE_TABLE": "TYRV",
+        "ID_LIGNE": 141,
+        "LIB_COURT": "PERIODIQUE",
+        "LIB_LONG": "PERIODIQUE",
+        "NOM_TABLE": "TYPE DE RELEVE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYRV",
+        "ID_LIGNE": 142,
+        "LIB_COURT": "RESILIATION",
+        "LIB_LONG": "RESILIATION",
+        "NOM_TABLE": "TYPE DE RELEVE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYRV",
+        "ID_LIGNE": 143,
+        "LIB_COURT": "COUPURE",
+        "LIB_LONG": "COUPURE",
+        "NOM_TABLE": "TYPE DE RELEVE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TYRV",
+        "ID_LIGNE": 145,
+        "LIB_COURT": "MOUVEMENT CPTEUR",
+        "LIB_LONG": "MOUVEMENT DE COMPTEUR",
+        "NOM_TABLE": "TYPE DE RELEVE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TYRV",
+        "ID_LIGNE": 146,
+        "LIB_COURT": "REGULARISATION",
+        "LIB_LONG": "REGULARISATION",
+        "NOM_TABLE": "TYPE DE RELEVE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYRV",
+        "ID_LIGNE": 147,
+        "LIB_COURT": "REBRANCHE",
+        "LIB_LONG": "REBRANCHE",
+        "NOM_TABLE": "TYPE DE RELEVE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "TYRV",
+        "ID_LIGNE": 357,
+        "LIB_COURT": "ERREUR",
+        "LIB_LONG": "ERREUR",
+        "NOM_TABLE": "TYPE DE RELEVE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1490,
+        "LIB_COURT": "FICHE CONTROLE CPT",
+        "LIB_LONG": "FICHE CONTROLE COMPTEUR",
+        "NOM_TABLE": "TYPE FICHE COMPTEUR",
+        "CODE_LIGNE": 70
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1491,
+        "LIB_COURT": "FICHE INTERVENTION",
+        "LIB_LONG": "FICHE INTERVENTION COMPTEUR",
+        "NOM_TABLE": "TYPE FICHE COMPTEUR",
+        "CODE_LIGNE": 71
+      },
+      {
+        "CODE_TABLE": "TGMP",
+        "ID_LIGNE": 77,
+        "LIB_COURT": "NATURE",
+        "LIB_LONG": "NATURE MOUVEMENT",
+        "NOM_TABLE": "TYPE GROUPE MVT_PORT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TGMP",
+        "ID_LIGNE": 80,
+        "LIB_COURT": "ORIGINE",
+        "LIB_LONG": "MOUVEMENT ORIGINE",
+        "NOM_TABLE": "TYPE GROUPE MVT_PORT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TGMP",
+        "ID_LIGNE": 78,
+        "LIB_COURT": "TRAITE",
+        "LIB_LONG": "MOUVEMENT TRAITE",
+        "NOM_TABLE": "TYPE GROUPE MVT_PORT",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TGMP",
+        "ID_LIGNE": 76,
+        "LIB_COURT": "TRANSFERABILITE",
+        "LIB_LONG": "TYPE MVT TRANSFERABLE O/N",
+        "NOM_TABLE": "TYPE GROUPE MVT_PORT",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1430,
+        "LIB_COURT": "CONTROLE SYSTEMATIQUE",
+        "LIB_LONG": "CONTROLE SYSTEMATIQUE",
+        "NOM_TABLE": "TYPE INTERVENTION",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1431,
+        "LIB_COURT": "CONTROLE INOPINE",
+        "LIB_LONG": "CONTROLE INOPINE",
+        "NOM_TABLE": "TYPE INTERVENTION",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1432,
+        "LIB_COURT": "CONTROLE DEMANDE PAR CLIENT",
+        "LIB_LONG": "CONTROLE DEMANDE PAR CLIENT",
+        "NOM_TABLE": "TYPE INTERVENTION",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1435,
+        "LIB_COURT": "ENTRETIEN",
+        "LIB_LONG": "ENTRETIEN",
+        "NOM_TABLE": "TYPE INTERVENTION",
+        "CODE_LIGNE": 30
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1436,
+        "LIB_COURT": "DIAGNOSTIC COMPTEUR",
+        "LIB_LONG": "DIAGNOSTIC COMPTEUR",
+        "NOM_TABLE": "TYPE INTERVENTION",
+        "CODE_LIGNE": 31
+      },
+      {
+        "CODE_TABLE": "CTLB",
+        "ID_LIGNE": 1437,
+        "LIB_COURT": "CONFIGURATION",
+        "LIB_LONG": "CONFIGURATION",
+        "NOM_TABLE": "TYPE INTERVENTION",
+        "CODE_LIGNE": 32
+      },
+      {
+        "CODE_TABLE": "ITRV",
+        "ID_LIGNE": 1512,
+        "LIB_COURT": "ABONNEMENT",
+        "LIB_LONG": "ABONNEMENT",
+        "NOM_TABLE": "TYPE_INTERVENTION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "ITRV",
+        "ID_LIGNE": 1514,
+        "LIB_COURT": "REPOSE COMPTEUR",
+        "LIB_LONG": "REPOSE COMPTEUR",
+        "NOM_TABLE": "TYPE_INTERVENTION",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 121,
+        "LIB_COURT": "TRANCHE1",
+        "LIB_LONG": "1° TRANCHE DE CONSOMMATION",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 122,
+        "LIB_COURT": "TRANCHE2",
+        "LIB_LONG": "2EME TRANCHE CONSOMMATION",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 123,
+        "LIB_COURT": "PF (et MAINTENANCE)",
+        "LIB_LONG": "PRIME FIXE (et MAINTENANCE)",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 124,
+        "LIB_COURT": "ASC",
+        "LIB_LONG": "AVANCE SUR CONSOMMATION",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 125,
+        "LIB_COURT": "FRAIS DE CONSTAT",
+        "LIB_LONG": "FRAIS DE CONSTAT (normaux ou réduits)",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 126,
+        "LIB_COURT": "RTC",
+        "LIB_LONG": "RATRAPPAGE DE CONSOMMATION",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 127,
+        "LIB_COURT": "TRAVAUX BRANCH NEUF",
+        "LIB_LONG": "TRAVAUX BRANCHEMENT NEUF",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 128,
+        "LIB_COURT": "PI NORMALE",
+        "LIB_LONG": "PETITES INTERVENTIONS HORS FRAUDE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 301,
+        "LIB_COURT": "FRAIS COUPURE",
+        "LIB_LONG": "FRAIS DE COUPURE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 302,
+        "LIB_COURT": "POSE-DEPO-CPT",
+        "LIB_LONG": "POSE ET DEPOSE COMPTEUR",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 10,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 303,
+        "LIB_COURT": "VERIF.COMPTEUR",
+        "LIB_LONG": "VERIFICATION DE COMPTEUR",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 11,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 304,
+        "LIB_COURT": "PI DEPL.COMPT",
+        "LIB_LONG": "PETITE INTERVENTION DEPLACEMENT COMPTAGE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 12,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 305,
+        "LIB_COURT": "PI DEPL. BRANCH",
+        "LIB_LONG": "PETITE INTERVENTION DEPLACEMENT BRANCHEMENT",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 13,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 306,
+        "LIB_COURT": "PI DEPAN. BT",
+        "LIB_LONG": "PETITE INTERVENTION DEPANAGE BT",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 14,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 309,
+        "LIB_COURT": "FRAIS CONSTAT",
+        "LIB_LONG": "FRAIS DE CONSTAT",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 15,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 310,
+        "LIB_COURT": "FRAIS REDUIT.CONST",
+        "LIB_LONG": "FRAIS REDUIT DE CONSTAT",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 16,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 311,
+        "LIB_COURT": "REMIS.ETAT.FRAUDE",
+        "LIB_LONG": "REMISE EN ETAT DE FRAUDE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 17,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 312,
+        "LIB_COURT": "RELEVE.HORS.TOUR",
+        "LIB_LONG": "RELEVE HORS TOURNEE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 18,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 313,
+        "LIB_COURT": "DEPAN. MT",
+        "LIB_LONG": "DEPANNAGE MT",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 19,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 314,
+        "LIB_COURT": "MTA-REPA-INCID",
+        "LIB_LONG": "MTA-REPARATION-INCID",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 20,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 315,
+        "LIB_COURT": "MTS-RPA-INCID",
+        "LIB_LONG": "MTS-REPARATION-INCID",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 21,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 316,
+        "LIB_COURT": "FRAIS JUDICIAIRE",
+        "LIB_LONG": "FRAIS JUDICIAIRE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 22
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 317,
+        "LIB_COURT": "ELAGAGE",
+        "LIB_LONG": "ELAGAGE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 23,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 319,
+        "LIB_COURT": "BTA-REPA-INCID",
+        "LIB_LONG": "BTA-REPARATION-INCID",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 24,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 320,
+        "LIB_COURT": "BTS-REPA-INCID",
+        "LIB_LONG": "BTS-REPARATION-INCID",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 25,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 321,
+        "LIB_COURT": "CESSION MATERIEL",
+        "LIB_LONG": "CESSION DE MATERIEL",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 26
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 324,
+        "LIB_COURT": "ENT. ECLAIR.PUBLIC",
+        "LIB_LONG": "ENTRETIEN ECLAIRAGE PUBLIC",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 29,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 326,
+        "LIB_COURT": "PREST.SERVICE",
+        "LIB_LONG": "PRESTATION DE SERVICE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 31
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 327,
+        "LIB_COURT": "TR DEPL. COMPTAGE",
+        "LIB_LONG": "TR DEPLACEMENT COMPTAGE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 32,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 328,
+        "LIB_COURT": "TR DEPL. BRANCH",
+        "LIB_LONG": "TR DEPLACEMENT BRANCHEMENT",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 33,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 329,
+        "LIB_COURT": "BRANCH. AGENT 1-3 KW",
+        "LIB_LONG": "BRANCHEMENT AGENT EDD 1-3 KW",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 34,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 330,
+        "LIB_COURT": "1 KW CREAT.BRANCH",
+        "LIB_LONG": "CREATION BRANCHEMENT POUR 1 KVA",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 35,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 333,
+        "LIB_COURT": "3-6 KW CREAT.BRANCH",
+        "LIB_LONG": "CREATION BRANCHEMENT POUR 3  a 6 KVA",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 36,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 334,
+        "LIB_COURT": "6-12 KW CREAT.BRANCH",
+        "LIB_LONG": "CREATION BRANCHEMENT POUR 6  a 12 KVA",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 37,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 335,
+        "LIB_COURT": "15-18 KW CREA.BRANCH",
+        "LIB_LONG": "CREATION BRANCHEMENT POUR 15  a 18 KVA",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 38,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 336,
+        "LIB_COURT": "18-36 KW CREA.BRANCH",
+        "LIB_LONG": "CREATION BRANCHEMENT POUR 18  a 36 KVA",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 39,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 337,
+        "LIB_COURT": "PLUS 36 CREA.BRAN",
+        "LIB_LONG": "CREATION BRANCHEMENT POUR PLUS DE 36 KVA",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 40,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 338,
+        "LIB_COURT": "FRAIS ABONNEMENT",
+        "LIB_LONG": "FRAIS DE DOSSIER D'ABONNEMENT",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 41
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 855,
+        "LIB_COURT": "TIMBRE",
+        "LIB_LONG": "TIMBRE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 42
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 137,
+        "LIB_COURT": "REMBOURS ASC",
+        "LIB_LONG": "REMBOURSEMENT FRAIS ASC",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 43
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 359,
+        "LIB_COURT": "ENERGIE FRAUDEE",
+        "LIB_LONG": "ENERGIE FRAUDEE ESTIMEE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 44
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 346,
+        "LIB_COURT": "TRAVAUX AUTRES",
+        "LIB_LONG": "TRAVAUX NON BRANCHEMENT NEUF",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 45
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 347,
+        "LIB_COURT": "PI FRAUDE",
+        "LIB_LONG": "PETITES INTERVENTIONS POUR FRAUDE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 46
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 322,
+        "LIB_COURT": "RELEVE PERIODIQUE",
+        "LIB_LONG": "RELEVE PERIODIQUE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 47,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 856,
+        "LIB_COURT": "TVA",
+        "LIB_LONG": "TVA",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 50
+      },
+      {
+        "CODE_TABLE": "TYLT",
+        "ID_LIGNE": 358,
+        "LIB_COURT": "REPRISE",
+        "LIB_LONG": "REPRISE",
+        "NOM_TABLE": "TYPE_LIGNE_TARIF",
+        "CODE_LIGNE": 99
+      },
+      {
+        "CODE_TABLE": "TLOG",
+        "ID_LIGNE": 1206,
+        "LIB_COURT": "DUR EN TYPE BATIMENT",
+        "LIB_LONG": "LOGEMENT DE TYPE BATIMENT",
+        "NOM_TABLE": "TYPE LOGEMENT",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TLOG",
+        "ID_LIGNE": 1205,
+        "LIB_COURT": "DUR AVEC CONTRAT LOG",
+        "LIB_LONG": "LOGEMENT EN DUR AVEC CONTRAT DE LOGEMENT",
+        "NOM_TABLE": "TYPE LOGEMENT",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TLOG",
+        "ID_LIGNE": 1204,
+        "LIB_COURT": "DUR AVEC DEROGATION",
+        "LIB_LONG": "LOGEMENT EN DUR AVEC DEROGATION",
+        "NOM_TABLE": "TYPE LOGEMENT",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TLOG",
+        "ID_LIGNE": 1203,
+        "LIB_COURT": "BOIS",
+        "LIB_LONG": "LOGEMENT EN BOIS",
+        "NOM_TABLE": "TYPE LOGEMENT",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TLOG",
+        "ID_LIGNE": 1202,
+        "LIB_COURT": "SEMI DUR",
+        "LIB_LONG": "LOGEMENT EN SEMI DUR",
+        "NOM_TABLE": "TYPE LOGEMENT",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TLOG",
+        "ID_LIGNE": 1201,
+        "LIB_COURT": "DUR",
+        "LIB_LONG": "LOGEMENT EN DUR",
+        "NOM_TABLE": "TYPE LOGEMENT",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 189,
+        "LIB_COURT": "POSE",
+        "LIB_LONG": "POSE",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_CLI",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 188,
+        "LIB_COURT": "DEPOSE",
+        "LIB_LONG": "DEPOSE",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_CLI",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 196,
+        "LIB_COURT": "ENTREE STOCK",
+        "LIB_LONG": "Entree du compteur au Stock",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": -2
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 197,
+        "LIB_COURT": "SORTIE STOCK",
+        "LIB_LONG": "Sortie du compteur du Stock",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": -1
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 186,
+        "LIB_COURT": "ENTREE LABO",
+        "LIB_LONG": "Entrée au labo",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 193,
+        "LIB_COURT": "DESTRUCT",
+        "LIB_LONG": "Destruction",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 192,
+        "LIB_COURT": "DESAFF",
+        "LIB_LONG": "Désaffectation",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 191,
+        "LIB_COURT": "REPAR",
+        "LIB_LONG": "Réparation/Test",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 190,
+        "LIB_COURT": "REMETAT",
+        "LIB_LONG": "Remise en état",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 187,
+        "LIB_COURT": "VERIF. CONTROL ENTRETIEN",
+        "LIB_LONG": "VERIFICATION/CONTROLE ENTRETIEN",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 185,
+        "LIB_COURT": "TRFT SBN",
+        "LIB_LONG": "Transfert au SBN",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "TYMT",
+        "ID_LIGNE": 198,
+        "LIB_COURT": "DEPOSE CPTEUR INVERSE",
+        "LIB_LONG": "DEPOSE CPTEUR INVERSE",
+        "NOM_TABLE": "TYPE_MVMT_COMPTEUR_TECH",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 257,
+        "LIB_COURT": "CG DB",
+        "LIB_LONG": "CG DEBIT",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 258,
+        "LIB_COURT": "CG CR",
+        "LIB_LONG": "CG CREDIT",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 259,
+        "LIB_COURT": "CODE CR",
+        "LIB_LONG": "CODE CR",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 260,
+        "LIB_COURT": "CODE CA",
+        "LIB_LONG": "CODE CA",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 264,
+        "LIB_COURT": "AXE 2",
+        "LIB_LONG": "AXE 2",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 5,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 265,
+        "LIB_COURT": "AXE 3",
+        "LIB_LONG": "AXE 3",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 6,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 256,
+        "LIB_COURT": "C. CREDIT",
+        "LIB_LONG": "CODE CREDIT",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 266,
+        "LIB_COURT": "AXE 6",
+        "LIB_LONG": "AXE 6",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 9,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 261,
+        "LIB_COURT": "RUBRIQUE",
+        "LIB_LONG": "RUBRIQUE",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 10,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 263,
+        "LIB_COURT": "TYPE PIECE",
+        "LIB_LONG": "TYPE PIECE",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 255,
+        "LIB_COURT": "CONSO",
+        "LIB_LONG": "COMPTABILISER CONSO",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 254,
+        "LIB_COURT": "CODE MVT",
+        "LIB_LONG": "CODE MOUVEMENT",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "TCAR",
+        "ID_LIGNE": 253,
+        "LIB_COURT": "PI - OT",
+        "LIB_LONG": "PI - OT",
+        "NOM_TABLE": "TYPE PARAM IMPUTATION",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "TPID",
+        "ID_LIGNE": 8,
+        "LIB_COURT": "CNI",
+        "LIB_LONG": "CARTE NATIONALE D' IDENTITE",
+        "NOM_TABLE": "TYPE PIECE ID",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TPID",
+        "ID_LIGNE": 101,
+        "LIB_COURT": "CARTE SEJOUR",
+        "LIB_LONG": "CARTE DE SEJOUR",
+        "NOM_TABLE": "TYPE PIECE ID",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TPID",
+        "ID_LIGNE": 9,
+        "LIB_COURT": "PASSEPORT",
+        "LIB_LONG": "PASSEPORT VALIDE",
+        "NOM_TABLE": "TYPE PIECE ID",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TPID",
+        "ID_LIGNE": 10,
+        "LIB_COURT": "PERMIS DE CONDUIRE",
+        "LIB_LONG": "PERMIS DE CONDUIRE VALIDE",
+        "NOM_TABLE": "TYPE PIECE ID",
+        "CODE_LIGNE": 4,
+        "CODE_SUPPR": "S"
+      },
+      {
+        "CODE_TABLE": "TPID",
+        "ID_LIGNE": 400,
+        "LIB_COURT": "N° COURRIER",
+        "LIB_LONG": "COURRIER ADM",
+        "NOM_TABLE": "TYPE_PIECE_ID",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TPID",
+        "ID_LIGNE": 482,
+        "LIB_COURT": "N° COURRIER PLT",
+        "LIB_LONG": "COURRIER PLAINTE",
+        "NOM_TABLE": "TYPE_PIECE_ID",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TRGL",
+        "ID_LIGNE": 270,
+        "LIB_COURT": "CREATION FACTURE",
+        "LIB_LONG": "IMPUTATION POUR CREATION DE FACTURE",
+        "NOM_TABLE": "TYPE REGLE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TRES",
+        "ID_LIGNE": 2001,
+        "LIB_COURT": "AERIEN",
+        "LIB_LONG": "RESEAU AERIEN",
+        "NOM_TABLE": "TYPE_RESEAU",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TRES",
+        "ID_LIGNE": 2002,
+        "LIB_COURT": "SOUTERRAIN",
+        "LIB_LONG": "RESEAU SOUTERRAIN",
+        "NOM_TABLE": "TYPE_RESEAU",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TPRL",
+        "ID_LIGNE": 25,
+        "LIB_COURT": "UTILISATEUR",
+        "LIB_LONG": "UTILISE LE SERVICE",
+        "NOM_TABLE": "TYPE ROLE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TPRL",
+        "ID_LIGNE": 28,
+        "LIB_COURT": "COPIE FACTURES",
+        "LIB_LONG": "DESTINATAIRE D'UNE COPIE DES FACTURES",
+        "NOM_TABLE": "TYPE ROLE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TPRL",
+        "ID_LIGNE": 26,
+        "LIB_COURT": "PAYEUR",
+        "LIB_LONG": "PAYEUR CONTRAT",
+        "NOM_TABLE": "TYPE ROLE",
+        "CODE_LIGNE": 3
+      },
+      {
+        "CODE_TABLE": "TPRL",
+        "ID_LIGNE": 27,
+        "LIB_COURT": "GARANT(E)",
+        "LIB_LONG": "GARANT DU CONTRAT",
+        "NOM_TABLE": "TYPE ROLE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TPRL",
+        "ID_LIGNE": 218,
+        "LIB_COURT": "DESTINATAIRE",
+        "LIB_LONG": "REGROUPEMENT D UTILISATEURS",
+        "NOM_TABLE": "TYPE ROLE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TPRL",
+        "ID_LIGNE": 220,
+        "LIB_COURT": "PROPRIETAIR",
+        "LIB_LONG": "PROPRIETAIR",
+        "NOM_TABLE": "TYPE ROLE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 900,
+        "LIB_COURT": "NOM",
+        "LIB_LONG": "NOM CLIENT",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 901,
+        "LIB_COURT": "N° CPTE BANCAIRE",
+        "LIB_LONG": "N° CPTE BANCAIRE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 902,
+        "LIB_COURT": "BANQUE",
+        "LIB_LONG": "BANQUE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 3,
+        "CODE_SUPPR": "O"
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 903,
+        "LIB_COURT": "DATE SERVICE",
+        "LIB_LONG": "DATE MISE EN SERVICE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 4
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 904,
+        "LIB_COURT": "DATE RESILIATION",
+        "LIB_LONG": "DATE RESILIATION",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 5
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 905,
+        "LIB_COURT": "PS",
+        "LIB_LONG": "PUISSANCE SOUSCRITE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 6
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 906,
+        "LIB_COURT": "STATUT SOCIAL",
+        "LIB_LONG": "STATUT SOCIAL",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 7
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 907,
+        "LIB_COURT": "GROUPE FACTURATION",
+        "LIB_LONG": "GROUPE FACTURATION",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 8
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 908,
+        "LIB_COURT": "SOUS CATEG TARIF",
+        "LIB_LONG": "SOUS CATEGORIE TARIFAIRE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 9
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 909,
+        "LIB_COURT": "POSITION TI",
+        "LIB_LONG": "POSITION TI",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 10
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 910,
+        "LIB_COURT": "N° CLIENT",
+        "LIB_LONG": "N° CLIENT",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 11
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 911,
+        "LIB_COURT": "N° COMPTEUR",
+        "LIB_LONG": "N° COMPTEUR",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 12
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 913,
+        "LIB_COURT": "RELEVE",
+        "LIB_LONG": "DETAILS RELEVE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 13
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 914,
+        "LIB_COURT": "MISC",
+        "LIB_LONG": "MISC",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 14
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 915,
+        "LIB_COURT": "RESILIATION",
+        "LIB_LONG": "RESILIATION",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 15
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 916,
+        "LIB_COURT": "ABONNEMENT",
+        "LIB_LONG": "ABONNEMENT",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 16
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 917,
+        "LIB_COURT": "PRE DEBITEUR",
+        "LIB_LONG": "PREDECESSEUR DEBITEUR",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 17
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 918,
+        "LIB_COURT": "ABONNEMENT BR. NEUF",
+        "LIB_LONG": "ABONNEMENT BR. NEUF",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 18
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 919,
+        "LIB_COURT": "MVT. COMPTEUR",
+        "LIB_LONG": "MOUVEMENT COMPTEUR",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 19
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 921,
+        "LIB_COURT": "ENGAGEMENT",
+        "LIB_LONG": "ENGAGEMENT",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 21
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 922,
+        "LIB_COURT": "ANNUL ENGAGEMENT",
+        "LIB_LONG": "ANNULATION ENGAGEMENT",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 22
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 923,
+        "LIB_COURT": "FORME ENERGIE",
+        "LIB_LONG": "FORME ENERGIE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 23
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 924,
+        "LIB_COURT": "ADRESSE PHYSIQUE",
+        "LIB_LONG": "ADRESSE PHYSIQUE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 24
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 925,
+        "LIB_COURT": "CODE SUPPORT",
+        "LIB_LONG": "CODE SUPPORT",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 25
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 931,
+        "LIB_COURT": "RESI. AVEC MSG",
+        "LIB_LONG": "RESILIATION AVEC MESSAGE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 26
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 999,
+        "LIB_COURT": "ROLE",
+        "LIB_LONG": "CHANGEMENT DE ROLE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 27
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 926,
+        "LIB_COURT": "ANNUL DEMANDE",
+        "LIB_LONG": "ANNULATION DEMANDE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 28
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 927,
+        "LIB_COURT": "CATEG CONTRAT",
+        "LIB_LONG": "CATEGORIE CONTRAT",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 29
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1007,
+        "LIB_COURT": "BRANCHMT SOCIAL",
+        "LIB_LONG": "BRANCHEMENT SOCIAL",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 30
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1011,
+        "LIB_COURT": "MSG MODIFIE",
+        "LIB_LONG": "MESSAGE MODIFIE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 31
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1012,
+        "LIB_COURT": "TYPE CHAINE",
+        "LIB_LONG": "TYPE CHAINE CLIENTELE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 32
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1015,
+        "LIB_COURT": "COEF ACT MODIFIE",
+        "LIB_LONG": "COEFFICIENT ACTIF MODIFIE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 33
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1016,
+        "LIB_COURT": "COEF REA MODIFIE",
+        "LIB_LONG": "COEFFICIENT REACTIF MODIFIE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 34
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1017,
+        "LIB_COURT": "COEF IPM MODIFIE",
+        "LIB_LONG": "COEFFICIENT IPM MODIFIE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 35
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 928,
+        "LIB_COURT": "FACTURE 0",
+        "LIB_LONG": "NUMERO FACTURE ZERO",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 36
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 929,
+        "LIB_COURT": "COSPHI",
+        "LIB_LONG": "COSPHI",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 37
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1903,
+        "LIB_COURT": "PROCEDURE PED",
+        "LIB_LONG": "PROCEDURE PED",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 46
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1904,
+        "LIB_COURT": "PARAMETRE LIMIT ET NBR FACTURE",
+        "LIB_LONG": "PARAMETRE LIMIT ET NBR FACTURE",
+        "NOM_TABLE": "TYPE TRACE",
+        "CODE_LIGNE": 47
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 948,
+        "LIB_COURT": "SUPPRESSION CONSTAT",
+        "LIB_LONG": "SUPPRESSION CONSTAT",
+        "NOM_TABLE": "TYPE_TRACE",
+        "CODE_LIGNE": 20
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1901,
+        "LIB_COURT": "CHEQUE AUTORISE",
+        "LIB_LONG": "CHEQUE AUTORISE",
+        "NOM_TABLE": "TYPE_TRACE",
+        "CODE_LIGNE": 38,
+        "CODE_SUPPR": "N"
+      },
+      {
+        "CODE_TABLE": "TYTR",
+        "ID_LIGNE": 1902,
+        "LIB_COURT": "DATE ECHEANCE",
+        "LIB_LONG": "DATE ECHEANCE",
+        "NOM_TABLE": "TYPE_TRACE",
+        "CODE_LIGNE": 45
+      },
+      {
+        "CODE_TABLE": "VOLT",
+        "ID_LIGNE": 237,
+        "LIB_COURT": 380,
+        "LIB_LONG": "382 V",
+        "NOM_TABLE": "VOLTAGE",
+        "CODE_LIGNE": 1
+      },
+      {
+        "CODE_TABLE": "VOLT",
+        "ID_LIGNE": 240,
+        "LIB_COURT": 220,
+        "LIB_LONG": "220 V",
+        "NOM_TABLE": "VOLTAGE",
+        "CODE_LIGNE": 2
+      },
+      {
+        "CODE_TABLE": "VOLT",
+        "ID_LIGNE": 243,
+        "LIB_COURT": 110,
+        "LIB_LONG": "110 V",
+        "NOM_TABLE": "VOLTAGE",
+        "CODE_LIGNE": 3
+      }
+    ]
+  }
+}

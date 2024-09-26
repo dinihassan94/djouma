@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "$_PARAM": [
+      {
+        "type": "text",
+        "name": "data"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "api",
+      "module": "api",
+      "action": "send",
+      "options": {
+        "url": "http://192.168.9.60:8595/Apis_Gescli/Api_Encaisements/Getencaissement2?",
+        "dataType": "json",
+        "schema": [
+          {
+            "type": "array",
+            "name": "data",
+            "sub": [
+              {
+                "type": "number",
+                "name": "id_contrat"
+              },
+              {
+                "type": "number",
+                "name": "argmt_cash"
+              },
+              {
+                "type": "number",
+                "name": "argmt_cheque"
+              },
+              {
+                "type": "text",
+                "name": "argno_doc"
+              },
+              {
+                "type": "number",
+                "name": "argbanque"
+              },
+              {
+                "type": "number",
+                "name": "argusermaj"
+              },
+              {
+                "type": "text",
+                "name": "argmvtpaye_tx"
+              },
+              {
+                "type": "number",
+                "name": "argmode_paimnt"
+              },
+              {
+                "type": "boolean",
+                "name": "arg_checkassign"
+              },
+              {
+                "type": "number",
+                "name": "arg_totcr"
+              },
+              {
+                "type": "text",
+                "name": "arg_nomfenetre"
+              },
+              {
+                "type": "text",
+                "name": "Nro_lettrage"
+              },
+              {
+                "type": "text",
+                "name": "tmp_PayNo"
+              },
+              {
+                "type": "text",
+                "name": "tmp_PayNo2"
+              }
+            ]
+          },
+          {
+            "type": "object",
+            "name": "headers",
+            "sub": [
+              {
+                "type": "text",
+                "name": "content-type"
+              },
+              {
+                "type": "text",
+                "name": "date"
+              },
+              {
+                "type": "text",
+                "name": "server"
+              },
+              {
+                "type": "text",
+                "name": "transfer-encoding"
+              }
+            ]
+          }
+        ],
+        "data": "{{$_PARAM.data}}",
+        "method": "POST"
+      },
+      "output": true,
+      "meta": [
+        {
+          "type": "array",
+          "name": "data",
+          "sub": [
+            {
+              "type": "number",
+              "name": "id_contrat"
+            },
+            {
+              "type": "number",
+              "name": "argmt_cash"
+            },
+            {
+              "type": "number",
+              "name": "argmt_cheque"
+            },
+            {
+              "type": "text",
+              "name": "argno_doc"
+            },
+            {
+              "type": "number",
+              "name": "argbanque"
+            },
+            {
+              "type": "number",
+              "name": "argusermaj"
+            },
+            {
+              "type": "text",
+              "name": "argmvtpaye_tx"
+            },
+            {
+              "type": "number",
+              "name": "argmode_paimnt"
+            },
+            {
+              "type": "boolean",
+              "name": "arg_checkassign"
+            },
+            {
+              "type": "number",
+              "name": "arg_totcr"
+            },
+            {
+              "type": "text",
+              "name": "arg_nomfenetre"
+            },
+            {
+              "type": "text",
+              "name": "Nro_lettrage"
+            },
+            {
+              "type": "text",
+              "name": "tmp_PayNo"
+            },
+            {
+              "type": "text",
+              "name": "tmp_PayNo2"
+            }
+          ]
+        },
+        {
+          "type": "object",
+          "name": "headers",
+          "sub": [
+            {
+              "type": "text",
+              "name": "content-type"
+            },
+            {
+              "type": "text",
+              "name": "date"
+            },
+            {
+              "type": "text",
+              "name": "server"
+            },
+            {
+              "type": "text",
+              "name": "transfer-encoding"
+            }
+          ]
+        }
+      ],
+      "outputType": "object"
+    }
+  }
+}
